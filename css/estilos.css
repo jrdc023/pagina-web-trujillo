@@ -1,0 +1,231 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body{
+	font-size: 16px;
+}
+header{
+	position: relative;
+	display: block;
+	width: 100%;
+	*height: 100%;
+	color: #fff;
+	background: #00ba00;
+	/*background: red;*/
+}
+.contenedor-menu{
+	height: 55px;
+}
+#menu{
+	display: flex;
+	*margin: auto;
+	width: 100%;
+	justify-content: space-between;
+	*align-items: center;
+	max-width: 100%;
+	overflow: hidden;
+	/*background: red;*/
+	*padding-top: 15px;
+	*padding-bottom: 20px;
+}
+.contenedor-menu img{
+	padding-left: 20%;
+	height: 60%;
+	margin-top: 10px;
+}
+#menu #enlaces{
+	padding-top: 20px;
+	padding-right: 5%;
+	*background: red;
+}
+#menu #enlaces a{
+	display: inline-block;
+	padding: 5px 0;
+	color: #fff;
+	margin-right: 17px;
+	font-size: 12px;
+	font-weight: 300;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+}
+#menu #enlaces a:hover{
+	color: orange;
+	transition: 0.6s;
+}
+.icono-responsivo{
+	display: none;
+	font-size: 24px;
+	padding: 23.5px 20px;
+}
+/*	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.conten-img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}*/
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+}
+.slider ul{
+	display: flex;
+	padding: 0;
+	width: 300%;
+
+	animation: cambio 30s infinite linear;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+	height: 100%
+}
+@keyframes cambio{
+	0%{margin-left: 0;}
+	25%{margin-left: 0;}
+	
+	30%{margin-left: -100%;}
+	55%{margin-left: -100%;}
+
+	60%{margin-left: -200%;}
+	80%{margin-left: -200%;}	
+}
+#mensaje-bienvenida{
+	width: 250px;
+	text-align: right;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: right;
+	margin-left: 75%;
+	margin-top: 15%;
+	position: absolute;
+}
+h1{
+	color: #fff;
+}
+#h1_2{
+	color: #00ba00;
+}
+p{
+	font-size:12px;
+	color: #fff;
+}
+p strong{
+	font-size:15px;
+}
+#descarga{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.content-descarga-fondo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mensaje-descargalo2 img{
+	width: 90px;
+	height: 30px;
+	position: relative;
+}
+#mensaje-descargalo2{
+	margin-left: 5%;
+}
+#mensaje-descargalo1{
+	width: 200px;
+	text-align: left;
+	margin-left: 5%;
+	padding-top: 10%;
+	position: relative;
+}
+#registro{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.content-registro-fondo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mensaje-registro2 button{
+	width: 52%;
+	height: 30px;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+}
+#mensaje-registro2{
+	margin-left: 75%;
+}
+#mensaje-registro1{
+	width: 200px;
+	text-align: right;
+	margin-left: 73%;
+	padding-top: 12%;
+	position: relative;
+}
+.bt2{
+	background: #00ba00;
+	color: #fff;
+	font-size: 12px; 
+	padding-top: 9px;
+	padding-left: 50px; 
+	padding-bottom: 9px; 
+	padding-right: 50px;
+	border-radius:10px;
+	border-style: none;
+	outline: 0px;
+	position: absolute;
+	font-family: sans-serif;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+}
+button:hover {
+	cursor: pointer;
+}
+footer{
+	background: #00ba00;
+	text-align: center;
+	padding-top: 3%;
+	color: #fff;
+}
+footer .marca-logo{
+	margin-bottom: 2%;
+}
+footer .direccion{
+	margin-bottom: 1.5%;
+}
+footer .contactar{
+	margin-bottom: 2%;
+}
+footer h5{
+	margin-bottom: 5px;
+}
+.contactar i{
+	padding: 0.5em;
+}
+.derechos{
+	background: orange;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}

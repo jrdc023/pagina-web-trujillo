@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viwport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Productos</title>
+	<link rel="stylesheet" href="css/stilosDobleRango.css">
+	<link rel="stylesheet" href="css/productos.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script>
+  		$(function(){
+    		$("#slider-range").slider({
+      			range: true,
+      			min: 10.00,
+      			max: 100.00,
+      			values: [ 10.00, 100.00],
+      			slide: function( event, ui ) {
+        			$("#amount").val("$"+ui.values[0]);
+        			$("#amount2").val("$"+ui.values[1]);
+      			}
+    		});
+    		$("#amount").val("$"+$("#slider-range").slider("values", 0));
+    		$("#amount2").val("$"+$("#slider-range").slider("values", 1));
+  		});
+  	</script>
+</head>
+<body>
+	<header>
+		<nav id="menu">
+			<div class="contenedor-menu">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="contenedor-menu" id="buscador">
+				<input type="text" id="bar" placeholder="¿Qué estas buscando?">
+				<a href="#"><img src="img/icon-search.png" alt=""></a>
+			</div>
+			<div class="contenedor-menu" id="enlaces">
+				<a href="#" id="e-inicio" class="btn-header">INICIO</a>
+				<a href="#" id="e-iniciar-sesion" class="btn-header">PROMOCIONES</a>
+			</div>
+			<div class="carrito">
+				<img src="img/icon-car-shoppping.png" style="width: 35px; margin-top: 15px;"></img>
+			</div>
+			<div class="perfil">
+				<img src="img/perfilcirculo.png" style="width: 35px; margin-top: 15px;"></img>
+			</div>
+			<div class="submenu">
+				<ul>
+					<li class="item-submenu">
+						<a href="" style="width: 35px; margin-top: 15px;">Nombre Usuario<span>v</span></a>
+						<ul>
+							<li><a href="">Mi perfil</a></li>
+							<li><a href="">Mis direcciones</a></li>
+							<li id="separa"><a href="">Mis pedido</a></li>
+							<li><a href="">Comfiguracion</a></li>
+							<li><a href="">Ayuda</a></li>
+							<li><a href="">Salir</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="icono-responsivo" id="open">
+				<span>&#9776;</span>
+			</div>
+		</nav>	
+	</header>
+	<main style="display: flex; width: 100%; height: 100%;">
+		<div class="block-izq">
+			<p>Elegir categoría</p>
+			<ul class="menu2">
+				<li>
+					<a href="#"><img src="img/icon-abarrotes.png" alt="">Abarrotes<span>></span></a>
+					<ul class="sub-menu2">
+						<li><a href="#">sasas</a></li>
+						<li><a href="#">asas</a></li>
+						<li><a href="#">asass</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><img src="img/icon-licuor.png" alt="">Licores<span>></span></a>
+					<ul class="sub-menu2">
+						<li><a href="#">sasas</a></li>
+						<li><a href="#">asas</a></li>
+						<li><a href="#">asass</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><img src="img/icon-pharmacy.png" alt="">Farmacia<span>></span></a>
+					<ul class="sub-menu2">
+						<li><a href="#">sasas</a></li>
+						<li><a href="#">asas</a></li>
+						<li><a href="#">asass</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#"><img src="img/icon-mascotas.png" alt="">Mascotas<span>></span></a>
+					<ul class="sub-menu2">
+						<li><a href="#">sasas</a></li>
+						<li><a href="#">asas</a></li>
+						<li><a href="#">asass</a></li>
+					</ul>
+				</li>
+			</ul>
+			<hr style="margin-top: 10px; margin-bottom: 10px; border: 0.5px solid #DBD9D8;">
+			<span></span>
+			<p>Precio</p>
+			<div id="slider-range" style="width: 95%; margin: 8px 0px 10px 7px; "></div>
+			<p>
+  				<label for="amount">Desde:</label>
+  				<input type="text" id="amount" readonly style="border: 1px solid #DBD9D8;">
+  				<label for="amount">Hasta:</label>
+  				<input type="text" id="amount2" readonly style="border: 1px solid #DBD9D8;">
+			</p>
+			<button class="btn-filtrar" >Filtrar</button>
+			<hr style="margin-top: 10px; margin-bottom: 10px; border: 0.5px solid #DBD9D8;">
+			<p>Promociones 
+				<a href="#"><span id="dere" style="float: right; color: #00ba00;">></span></a>
+				<a href="#"><span id="izqui" style="float: right; color: #00ba00; margin-right: 10px;"><</span></a>  
+			</p>
+			<div class="promociones_productos">
+				<img src="img/IMG_5825.png" alt="" >
+				<span><strong>$ 15.50</strong></span>
+				<p>Ron don Juan</p>
+			</div>
+			<div class="promociones_productos">
+				<img src="img/IMG_5825.png" alt="" >
+				<span><strong>$ 15.50</strong></span>
+				<p>Ron don Juan</p>
+			</div>
+		</div>
+		<div class="block-der">
+			<div>
+				<img src="img/img-descuento2.png" alt="">
+			</div>
+			<div class="table-responsive">
+				<table class="tabla-productos">
+					<tr >
+						<td class="celda">
+							<img src="img/IMG_5825.png" alt="">
+							<span><strong>$ 15.50</strong></span>
+							<p>Ron don Juan</p>
+						</td>
+						<td class="celda">
+							<img id="descu" src="img/descuento.png" alt="">
+							<img src="img/cafe-ruavieja.png" alt="">
+							<span><strong>$ 22.10</strong></span>
+							<p>Reposado Anisado</p>
+						</td>
+						<td class="celda">
+							<img src="img/IMG_5825.png" alt="">
+							<span><strong>$ 15.50</strong></span>
+							<p>Ron don Juan</p>
+						</td>
+						<td class="celda">
+							<img id="descu" src="img/descuento.png" alt="">
+							<img src="img/cafe-ruavieja.png" alt="">
+							<span><strong>$ 22.10</strong></span>
+							<p>Reposado Anisado</p>
+						</td>
+					</tr>
+					<tr>
+						<td class="celda">
+							<img id="descu" src="img/descuento.png" alt="" >
+							<img src="img/vinoBlanco.png" alt="">
+							<span><strong>$ 5.24</strong></span>
+							<p>Vino Tinto "Emperador"</p>
+						</td>
+						<td class="celda">
+							<img src="img/licor-blue-curacao-moya.png" alt="">
+							<span><strong>$ 8.75</strong></span>
+							<p>Blue Curacao</p>
+						</td>
+						<td class="celda">
+							<img id="descu" src="img/descuento.png" alt="">
+							<img src="img/vinoBlanco.png" alt="">
+							<span><strong>$ 5.24</strong></span>
+							<p>Vino Tinto "Emperador"</p>
+						</td>
+						<td class="celda">
+							<img src="img/licor-blue-curacao-moya.png" alt="">
+							<span><strong>$ 8.75</strong></span>
+							<p>Blue Curacao</p>
+						</td>
+						
+					</tr>
+					<tr>
+						<td class="celda">
+							<img src="img/IMG_5825.png" alt="">
+							<span><strong>$ 15.50</strong></span>
+							<p>Ron don Juan</p>
+						</td>
+						<td class="celda">
+							<img id="descu" src="img/descuento.png" alt="">
+							<img src="img/cafe-ruavieja.png" alt="">
+							<span><strong>$ 22.10</strong></span>
+							<p>Reposado Anisado</p>
+						</td>
+						<td class="celda">
+							<img src="img/IMG_5825.png" alt="">
+							<span><strong>$ 15.50</strong></span>
+							<p>Ron don Juan</p>
+						</td>
+						<td class="celda">
+							<img id="descu" src="img/descuento.png" alt="">
+							<img src="img/cafe-ruavieja.png" alt="">
+							<span><strong>$ 22.10</strong></span>
+							<p>Reposado Anisado</p>
+						</td>
+					</tr>
+				</table> 
+			</div>dfdfdff
+		</div>	
+		
+	</main>
+	<!--<script src="js/rango.js"></script>-->
+</body>
+</html>
