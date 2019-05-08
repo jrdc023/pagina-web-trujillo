@@ -16,6 +16,19 @@
 	<!--<link rel="stylesheet" type="text/css" href="css/util.css">-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<!--<script type="text/javascript">
+		function validarInicioSesion(){
+	        /*var user = document.getElementById("user").value;
+	        var password = document.getElementById("password").value;*/
+	        var user = $("#user").val();
+	        var password = $("#password").val();
+	        if ($("#user").val()=="trujillo@gamil.com" && $("#password").val()=="1234") {
+	            window.location.href="https://jrdc023.github.io/pagina-web-trujillo/registro.html";
+        	}
+    	}
+	</script>-->
 <!--===============================================================================================-->
 </head>
 <body>
@@ -43,23 +56,24 @@
 						<strong>Iniciar Sesión</strong>
 					</span>
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-						<input class="input100" type="text" name="email">
+						<input class="input100" id="user" type="text" name="email">
 						<span class="focus-input100" id="email" data-placeholder="Usuario/Email"></span>
 					</div>
 					<div class="wrap-input100 validate-input" data-validate="Enter password">
 						<span class="btn-show-pass">
 							<i class="zmdi zmdi-eye"></i>
 						</span>
-						<input class="input100" type="password" name="pass">
+						<input class="input100" id="password" type="password" name="pass">
 						<span class="focus-input100" data-placeholder="Contraseña"></span>
 					</div>
 					<div class="container-login100-form-btn">
 						<div class="wrap-login100-form-btn">
 							<!--<div class="login100-form-bgbtn"></div>-->
+							<!--<input class="input100" type="button" name="btnEnviar" id="btnEnviar" onclick="validarInicioSesion()" value="Ingresar">-->
 							<a href="productos.html">
-								<button class="login100-form-btn">
-								Ingresar
-							</button>
+								<button  type="button" class="login100-form-btn" onclick="validarInicioSesion()">
+									Ingresar
+								</button>
 							</a>
 						</div>
 					</div>
