@@ -164,7 +164,7 @@ header{
 /*------------- bloque izquierdo ------------------*/
 .block-izq{
 	*background: red; 
-	width:16%; 
+	*width:16%; 
 	margin: 1em 0.5em 0em 1em; 
 	border: 1px solid #DBD9D8;
 	border-radius: 15px;
@@ -259,6 +259,9 @@ label{
 	display: block;
 	margin: 8px 5px 5px 90px;
 }
+.container{
+	margin-top: 15px;
+}
 .tabla-productos{
 	width: 100%;
 	margin: 5px 10px 5px 0px;
@@ -266,9 +269,12 @@ label{
 tr, td{
 	width: 22%;
 	*border: 2px solid red;
-	border: 1px solid #DBD9D8;
+	*border: 1px solid #DBD9D8;
 	height: 200px;
 	border-radius: 15px;
+}
+.encabezados{
+  display:none;
 }
 .celda{
 	margin: 15px 10px 10px 15px;

@@ -9,6 +9,15 @@
 	<link rel="stylesheet" href="css/productos.css">
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/jquery_rangos.js"></script>
+	<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.2.3/js/responsive.bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery_tabla.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="css/responsive.bootstrap.min.css">
   	<script>
   		$(function(){
     		$("#slider-range").slider({
@@ -134,86 +143,97 @@
 			<div>
 				<img src="img/img-descuento2.png" alt="">
 			</div>
-			<div class="table-responsive">
-				<table class="tabla-productos">
-					<tr >
-						<td class="celda">
-							<img src="img/IMG_5825.png" alt="">
-							<span><strong>$ 15.50</strong></span>
-							<p>Ron don Juan</p>
-						</td>
-						<td class="celda">
-							<img id="descu" src="img/descuento.png" alt="">
-							<img src="img/cafe-ruavieja.png" alt="">
-							<span><strong>$ 22.10</strong></span>
-							<p>Reposado Anisado</p>
-						</td>
-						<td class="celda">
-							<img src="img/IMG_5825.png" alt="">
-							<span><strong>$ 15.50</strong></span>
-							<p>Ron don Juan</p>
-						</td>
-						<td class="celda">
-							<img id="descu" src="img/descuento.png" alt="">
-							<img src="img/cafe-ruavieja.png" alt="">
-							<span><strong>$ 22.10</strong></span>
-							<p>Reposado Anisado</p>
-						</td>
-					</tr>
-					<tr>
-						<td class="celda">
-							<img id="descu" src="img/descuento.png" alt="" >
-							<img src="img/vinoBlanco.png" alt="">
-							<span><strong>$ 5.24</strong></span>
-							<p>Vino Tinto "Emperador"</p>
-						</td>
-						<td class="celda">
-							<img src="img/licor-blue-curacao-moya.png" alt="">
-							<span><strong>$ 8.75</strong></span>
-							<p>Blue Curacao</p>
-						</td>
-						<td class="celda">
-							<img id="descu" src="img/descuento.png" alt="">
-							<img src="img/vinoBlanco.png" alt="">
-							<span><strong>$ 5.24</strong></span>
-							<p>Vino Tinto "Emperador"</p>
-						</td>
-						<td class="celda">
-							<img src="img/licor-blue-curacao-moya.png" alt="">
-							<span><strong>$ 8.75</strong></span>
-							<p>Blue Curacao</p>
-						</td>
-						
-					</tr>
-					<tr>
-						<td class="celda">
-							<img src="img/IMG_5825.png" alt="">
-							<span><strong>$ 15.50</strong></span>
-							<p>Ron don Juan</p>
-						</td>
-						<td class="celda">
-							<img id="descu" src="img/descuento.png" alt="">
-							<img src="img/cafe-ruavieja.png" alt="">
-							<span><strong>$ 22.10</strong></span>
-							<p>Reposado Anisado</p>
-						</td>
-						<td class="celda">
-							<img src="img/IMG_5825.png" alt="">
-							<span><strong>$ 15.50</strong></span>
-							<p>Ron don Juan</p>
-						</td>
-						<td class="celda">
-							<img id="descu" src="img/descuento.png" alt="">
-							<img src="img/cafe-ruavieja.png" alt="">
-							<span><strong>$ 22.10</strong></span>
-							<p>Reposado Anisado</p>
-						</td>
-					</tr>
-				</table> 
-			</div>dfdfdff
+			<div class="container">
+		      <div class="row">
+		        <div class="col-xs-12">
+		        	<table id="example" class="table table-striped table-bordered dt-responsive nowrap" style="width:100%;border: none;">
+		            	<thead class="encabezados">
+		                <tr>
+		                    <th>First name</th>
+		                    <th>Last name</th>
+		                    <th>Position</th>
+		                    <th>Office</th>
+		                </tr>
+		            	</thead>
+		            	<tbody class="tabla-productos" >
+		                <tr >
+		                    <td class="celda">
+		                        <img src="img/IMG_5825.png" alt="">
+		                        <span><strong>$ 15.50</strong></span>
+		                        <p>Ron don Juan</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img id="descu" src="img/descuento.png" alt="">
+		                        <img src="img/cafe-ruavieja.png" alt="">
+		                        <span><strong>$ 22.10</strong></span>
+		                        <p>Reposado Anisado</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img src="img/IMG_5825.png" alt="">
+		                        <span><strong>$ 15.50</strong></span>
+		                        <p>Ron don Juan</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img id="descu" src="img/descuento.png" alt="">
+		                        <img src="img/cafe-ruavieja.png" alt="">
+		                        <span><strong>$ 22.10</strong></span>
+		                        <p>Reposado Anisado</p>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <td class="celda">
+		                        <img id="descu" src="img/descuento.png" alt="" >
+		                        <img src="img/vinoBlanco.png" alt="">
+		                        <span><strong>$ 5.24</strong></span>
+		                        <p>Vino Tinto "Emperador"</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img src="img/licor-blue-curacao-moya.png" alt="">
+		                        <span><strong>$ 8.75</strong></span>
+		                        <p>Blue Curacao</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img id="descu" src="img/descuento.png" alt="">
+		                        <img src="img/vinoBlanco.png" alt="">
+		                        <span><strong>$ 5.24</strong></span>
+		                        <p>Vino Tinto "Emperador"</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img src="img/licor-blue-curacao-moya.png" alt="">
+		                        <span><strong>$ 8.75</strong></span>
+		                        <p>Blue Curacao</p>
+		                    </td>
+		                </tr>
+		                <tr>
+		                    <td class="celda">
+		                        <img src="img/IMG_5825.png" alt="">
+		                        <span><strong>$ 15.50</strong></span>
+		                        <p>Ron don Juan</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img id="descu" src="img/descuento.png" alt="">
+		                        <img src="img/cafe-ruavieja.png" alt="">
+		                        <span><strong>$ 22.10</strong></span>
+		                        <p>Reposado Anisado</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img src="img/IMG_5825.png" alt="">
+		                        <span><strong>$ 15.50</strong></span>
+		                        <p>Ron don Juan</p>
+		                    </td>
+		                    <td class="celda">
+		                        <img id="descu" src="img/descuento.png" alt="">
+		                        <img src="img/cafe-ruavieja.png" alt="">
+		                        <span><strong>$ 22.10</strong></span>
+		                        <p>Reposado Anisado</p>
+		                    </td>
+		                </tr>
+		            	</tbody>
+		          	</table>
+		        </div>
+		      </div>
+		    </div>
 		</div>	
-		
 	</main>
-	<!--<script src="js/rango.js"></script>-->
 </body>
 </html>
