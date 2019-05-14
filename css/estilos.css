@@ -8,6 +8,8 @@ header{
 	position: relative;
 	display: block;
 	width: 100%;
+	*height: 100%;
+	*color: #fff;
 	background: #00ba00;
 }
 .navbar{
@@ -48,6 +50,7 @@ header{
 	60%{margin-left: -200%;}
 	80%{margin-left: -200%;}	
 }
+
 #mensaje-bienvenida{
 	width: 100%;
  	position: absolute;
@@ -65,6 +68,8 @@ header{
 	margin-top: 10px;
 	margin-bottom: 0;
 	font-size: 15px;
+	*width: 19;
+	*float: right;
 }
 #parrafo2{
 	width: 25%;
@@ -131,9 +136,135 @@ footer{
 #pie{
 	margin-bottom: 0;
 }
+
+/*--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------- ESTILOS PARA LOGIN ------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+#formulario{
+	position: relative;
+	width: 400px;
+	padding: 0px 40px;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	margin: 200px 0px 0px 450px;
+}
+.contenedorInput{
+	position: relative;
+}
+.contenedorInput input{
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	letter-spacing: 1px;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	background: transparent;
+}
+.contenedorInpu{
+	position: relative;
+}
+.contenedorInput label{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	letter-spacing: 1px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: black;
+	pointer-events: none;
+	transition: .5s;
+}
+.contenedorInput #correo{
+	margin-right: 7px;
+	width: 17px;
+}
+.contenedorInput #clave{
+	margin-right: 18px;
+	width: 11px;
+}
+.contenedorInput input:focus ~ label, .contenedorInput input:valid ~ label{
+	top: -18px;
+	left: 0;
+	color: #03a9f4;
+	font-size: 12px;
+}
+#formulario input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #00ba00;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 20px;
+	width: 100%;
+	font-family: Helvetica;
+}
+#cargar_facebook {
+  width: 100%;
+  margin-left: 0;
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 0px;
+  cursor: pointer;
+  border-radius: 20px;
+  position: absolute;
+  background: #33f;
+  color: white;
+}
+#crear_cueta{
+	position: relative;
+	color: black;
+	margin-top: 55px;
+    text-align: center;
+}
+#crear_cueta span{
+	color: #00ba00;
+	font-weight: bold;
+}
+#crear_cueta a{
+	text-decoration: none;
+}
+#olvidar_clave a{
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+#olvidar_clave{
+	text-align: center;
+}
+.fab{
+	margin-right: 10px;
+}
+.btn-show-pass {
+  font-size: 15px;
+  color: #999999;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 70%;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn-show-pass:hover {
+  color: #6a7dfe;
+}
+
+.btn-show-pass.active {
+  color: #6a7dfe;
+}
 /* --------------------------------------------------------------------------------------------------------------------
 --------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------*/
+/*@media (max-width:575.98px)*/
 @media (width:360px) {
 	.navbar-nav{
 		font-size: 9px;
@@ -184,7 +315,16 @@ footer{
 	#pie img{
 		width: 3%;
 	}
-
+	/*------------------------------ PANTALLA DE INICIO SESION -----------------------------*/
+	#formulario{
+		width: 360px;
+		padding: 0px 10px;
+		margin: 88px 0px 0px 0px;
+	}
+	.contenedorInput input{
+		padding: 20px 0 5px 0;
+		font-size: 14px;
+	}
 }
 @media (width:640px) {
 	#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
@@ -209,6 +349,14 @@ footer{
 	    margin-top: 53px;
 	    margin-left: 50px;
 	    font-size: 10px;
+	}
+	/*------------------------------ PANTALLAS DE INICIO SESION -----------------------------*/
+	#formulario{
+		margin: 40px 0px 0px 140px;
+	}
+	.contenedorInput input{
+		padding: 20px 0 5px 0;
+		font-size: 14px;
 	}
 
 }
