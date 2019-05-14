@@ -6,11 +6,35 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap2.min.css">
+	<!--<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	 <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	 <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	 <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	 <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+	 <link rel="stylesheet" type="text/css" href="css/util.css">-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<!--<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	 <!-<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+	 <!-<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	 <!-<link rel="stylesheet" type="text/css" href="css/main.css">-->	
 <!--===============================================================================================-->
 </head>
 <body>
 	<header>
+		<!--<nav id="menu">
+			<div class="contenedor-menu">
+				<img src="img/logo.png" alt="">
+			</div>
+			<div class="contenedor-menu" id="enlaces">
+				<a href="index.html" id="e-inicio" class="btn-header">INICIO</a>
+				<a href="inicio_sesion.html" id="e-iniciar-sesion" class="btn-header">INICIAR SESIÓ</a>
+				<a href="registro.html" id="e-registrate" class="btn-header">REGISTRATE</a>
+				<a href="#" id="e-contacto" class="btn-header">CONTACTOS</a>
+			</div>
+			<div class="icono-responsivo" id="open">
+				<span>&#9776;</span>
+			</div>
+		 </nav>-->
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 		  	<!-- Brand/logo -->
 		  	<a class="navbar-brand" href="index.html">
@@ -38,7 +62,7 @@
 	</header>
 	
 	<form class="formulario-inicio validate-form" id="formulario" action="productos.html">
-		<h2 style="text-align: center;">Iniciar Sesión</h2>
+		<h2 style="text-align: center;color: #00ba00;margin-bottom: 25px;">Iniciar Sesión</h2>
 		<div class="contenedorInput validate-input" data-validate = "Valid email is: a@b.com">
 			<input class="campo" type="text" name="email" required="">
 			<label for=""><img id="correo" src="img/icon-correo.png" alt="" >Usuario/Email</label>
@@ -55,8 +79,101 @@
 			<p id="olvidar_clave"><a href="#">Olvidé mi contraseña</a></p>
 		</div>
 	</form>
+	<!--<form action="/action_page.php">->
+		<!-<form action="" class="form-inline justify-content-center">
+		  <!-<div class="imgcontainer">
+		    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+		  </div>->
+
+		  <div class="container" id="contenedor_login">
+		    <div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+				<input class="input100" type="text" name="email">
+				<span class="focus-input100" data-placeholder="Email"></span>
+			</div>
+		    <!-<label for="uname"><b>Username</b></label>
+		    <input type="text" placeholder="Enter Username" name="uname" required>->
+
+		    <label for="psw"><b>Password</b></label>
+		    <input type="password" placeholder="Enter Password" name="psw" required>
+		        
+		    <button id="boton_iniciar_cancelar" type="submit">Ingresar</button>
+		    
+		  <!-</div> <div class="container" id="contenedor_login">->
+		    <button id="boton_iniciar_cancelar" type="button" class="cancelbtn">Continuar con facebook</button>
+		    <label id="recordarme">
+		      <input type="checkbox" checked="checked" name="remember"> Remember me
+		    </label>
+		    <span class="psw">Olvidé mi <a href="#">contraseña</a></span>
+		  </div>
+		</form>->
+		<!-<div class="limiter">
+			<div class="container-login100">
+				<div class="wrap-login100">
+					<form class="login100-form validate-form">
+						<span class="login100-form-title p-b-26">
+							<strong>Iniciar Sesión</strong>
+						</span>
+						<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+							<input class="input100" type="text" name="email">
+							<span class="focus-input100" id="email" data-placeholder="Usuario/Email"></span>
+						</div>
+						<div class="wrap-input100 validate-input" data-validate="Enter password">
+							<span class="btn-show-pass">
+								<i class="zmdi zmdi-eye"></i>
+							</span>
+							<input class="input100" type="password" name="pass">
+							<span class="focus-input100" data-placeholder="Contraseña"></span>
+						</div>
+						<div class="container-login100-form-btn">
+							<div class="wrap-login100-form-btn">
+								<!-<div class="login100-form-bgbtn"></div>->
+								<a href="productos.html">
+									<button class="login100-form-btn">
+									Ingresar
+								</button>
+								</a>
+							</div>
+						</div>
+						<div class="container-login100-form-btn">
+							<div class="wrap-login100-form-btn">
+								<i class="fab fa-facebook"></i>
+								<!-<div class="login100-form-bgbtn"></div>->
+								<button class="login100-form-btn2">
+									Continua con Facebook
+								</button>
+							</div>
+						</div>
+						<div class="text-center p-t-115">
+							<span class="txt1">
+								¿No tienes una cuenta?
+							</span>
+							<a class="txt2" href="registro.html">
+								<strong>Creala aquí</strong>
+							</a>
+						</div>
+						<div class="text-center-2 p-t-115">
+							<a class="txt3" href="#">
+								Olvidé mi contraseña
+							</a>
+						</div>
+					</form>
+				</div>
+			</div>
+		 </div>
+		 <!-<div id="dropDownSelect1"></div>-->	
 <!--===============================================================================================-->
 	<script src="js/jquery-3.2.1.min.js"></script>
+	<!--<script src="vendor/animsition/js/animsition.min.js"></script>
+
+	 <script src="vendor/bootstrap/js/popper.js"></script>
+	 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	 <!-<script src="vendor/select2/select2.min.js"></script>
+
+	 <script src="vendor/daterangepicker/moment.min.js"></script>
+	 <script src="vendor/daterangepicker/daterangepicker.js"></script>
+
+	 <script src="vendor/countdowntime/countdowntime.js"></script>-->
 	<script src="js/main.js"></script>
 </body>
 </html>

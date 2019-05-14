@@ -1,3 +1,7 @@
+/*@font-face {
+  font-family: Helvetica;
+  src: url('../fonts/poppins/HelveticaNeueLTStd Lt.otf'); 
+}*/
 *{
 	margin: 0;
 	padding: 0;
@@ -11,15 +15,61 @@ header{
 	*height: 100%;
 	*color: #fff;
 	background: #00ba00;
+	/*background: red;*/
 }
 .navbar{
+	/*display: flex;
+	 *margin: auto;
+	 *width: 100%;*/
 	justify-content: space-between!important;
+	/*align-items: center;
+	 *max-width: 100%;
+	 *overflow: hidden;
+	 *height: 55px;
+	 *background: red;
+	 *padding-top: 15px;
+	 *padding-bottom: 20px;*/
 }
 .icono-responsivo{
 	display: none;
 	font-size: 24px;
 	padding: 23.5px 20px;
 }
+/*.contenedor-menu img{
+	padding-left: 15%;
+	height: 70%;
+	margin-top: 10px;
+}
+#menu #enlaces{
+	padding-top: 15px;
+	padding-right: 2%;
+}
+#menu #enlaces a{
+	display: inline-block;
+	*padding: 5px 0;
+	color: #fff;
+	margin-right: 10px;
+	font-size: 12px;
+	font-weight: 300;
+	text-decoration: none;
+	*border-bottom: 3px solid transparent;
+}
+#menu #enlaces a:hover{
+	color: orange;
+	transition: 0.5s;
+}
+
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+.conten-img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}*/
 .slider{
 	width: 100%;
 	margin: auto auto -7px auto;
@@ -56,6 +106,13 @@ header{
  	position: absolute;
     margin-top: 8%;
 	text-align: right;
+	/*display: flex;
+	 *justify-content: center;
+	 *flex-direction: column;
+	 *align-items: right;
+	 *margin-left: 75%;
+	 *font-size: 12px;
+	 *font-family: Helvetica;*/
 }
 #h1_mb{
 	margin-bottom: 0;
@@ -126,6 +183,79 @@ header{
 #redes_sociales{
 	margin-top: 30px;
 }
+/*.content-descarga-fondo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mensaje-descargalo2 img{
+	width: 90px;
+	height: 30px;
+	position: relative;
+}
+#mensaje-descargalo2{
+	margin-left: 5%;
+}
+#mensaje-descargalo1{
+	width: 200px;
+	text-align: left;
+	margin-left: 5%;
+	padding-top: 10%;
+	position: relative;
+}
+#registro{
+	width: 100%;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+}
+.content-registro-fondo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+#mensaje-registro2 button{
+	width: 52%;
+	height: 30px;
+	font-size: 10px;
+	text-align: center;
+	position: relative;
+}
+#mensaje-registro2{
+	margin-left: 75%;
+}
+#mensaje-registro1{
+	width: 200px;
+	text-align: right;
+	margin-left: 73%;
+	padding-top: 12%;
+	position: relative;
+}
+.bt2{
+	background: #00ba00;
+	color: #fff;
+	font-size: 12px; 
+	padding-top: 9px;
+	padding-left: 50px; 
+	padding-bottom: 9px; 
+	padding-right: 50px;
+	border-radius:10px;
+	border-style: none;
+	outline: 0px;
+	position: absolute;
+	font-family: sans-serif;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+}
+button:hover {
+	cursor: pointer;
+}*/
 footer{
 	background: orange;
 	text-align: center;
@@ -138,7 +268,7 @@ footer{
 }
 
 /*--------------------------------------------------------------------------------------------------------------
--------------------------------------------------- ESTILOS PARA LOGIN ------------------------------------------
+-------------------------------------------------- estilos para login ------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 #formulario{
 	position: relative;
@@ -155,11 +285,11 @@ footer{
 	width: 100%;
 	padding: 10px 0;
 	font-size: 16px;
-	color: black;
+	color: #bab3b2;
 	letter-spacing: 1px;
 	margin-bottom: 30px;
 	border: none;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #bab3b2;
 	outline: none;
 	background: transparent;
 }
@@ -174,7 +304,7 @@ footer{
 	letter-spacing: 1px;
 	padding: 10px 0;
 	font-size: 16px;
-	color: black;
+	color: #bab3b2;
 	pointer-events: none;
 	transition: .5s;
 }
@@ -220,7 +350,7 @@ footer{
 }
 #crear_cueta{
 	position: relative;
-	color: black;
+	color: #bab3b2;
 	margin-top: 55px;
     text-align: center;
 }
@@ -232,7 +362,7 @@ footer{
 	text-decoration: none;
 }
 #olvidar_clave a{
-	color: black;
+	color: #bab3b2;
 	text-align: center;
 	text-decoration: none;
 }
@@ -325,6 +455,7 @@ footer{
 		padding: 20px 0 5px 0;
 		font-size: 14px;
 	}
+
 }
 @media (width:640px) {
 	#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
@@ -360,3 +491,36 @@ footer{
 	}
 
 }
+/*@media (min-width:576px) {
+	
+}
+@media (max-width:767.98px) {
+	}
+@media (min-width:768px) {
+	}
+@media (max-width:991.98px) {
+	}
+@media (min-width:992px) {
+	}
+@media (max-width:1199.98px) {
+	}
+@media (min-width:1200px) {
+	.contenedor-menu img {
+	    padding-left: 8%;
+	}
+	#menu #enlaces a{
+		margin-right: 5px;
+	}
+	#mensaje-bienvenida{
+		margin-left: 48%;
+	    margin-top: 10%;
+	    padding-right: 15px;
+	    font-size: 10px;
+	}
+	.content-descarga-fondo{
+		*width: 100%;
+		height: 100%;
+		margin: auto;
+		overflow: hidden;
+	}
+}*/
