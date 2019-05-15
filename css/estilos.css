@@ -1,7 +1,7 @@
-/*@font-face {
+@font-face {
   font-family: Helvetica;
   src: url('../fonts/poppins/HelveticaNeueLTStd Lt.otf'); 
-}*/
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -18,58 +18,13 @@ header{
 	/*background: red;*/
 }
 .navbar{
-	/*display: flex;
-	 *margin: auto;
-	 *width: 100%;*/
 	justify-content: space-between!important;
-	/*align-items: center;
-	 *max-width: 100%;
-	 *overflow: hidden;
-	 *height: 55px;
-	 *background: red;
-	 *padding-top: 15px;
-	 *padding-bottom: 20px;*/
 }
 .icono-responsivo{
 	display: none;
 	font-size: 24px;
 	padding: 23.5px 20px;
 }
-/*.contenedor-menu img{
-	padding-left: 15%;
-	height: 70%;
-	margin-top: 10px;
-}
-#menu #enlaces{
-	padding-top: 15px;
-	padding-right: 2%;
-}
-#menu #enlaces a{
-	display: inline-block;
-	*padding: 5px 0;
-	color: #fff;
-	margin-right: 10px;
-	font-size: 12px;
-	font-weight: 300;
-	text-decoration: none;
-	*border-bottom: 3px solid transparent;
-}
-#menu #enlaces a:hover{
-	color: orange;
-	transition: 0.5s;
-}
-
-	width: 100%;
-	height: 500px;
-	position: relative;
-}
-.conten-img{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}*/
 .slider{
 	width: 100%;
 	margin: auto auto -7px auto;
@@ -106,13 +61,6 @@ header{
  	position: absolute;
     margin-top: 8%;
 	text-align: right;
-	/*display: flex;
-	 *justify-content: center;
-	 *flex-direction: column;
-	 *align-items: right;
-	 *margin-left: 75%;
-	 *font-size: 12px;
-	 *font-family: Helvetica;*/
 }
 #h1_mb{
 	margin-bottom: 0;
@@ -183,79 +131,6 @@ header{
 #redes_sociales{
 	margin-top: 30px;
 }
-/*.content-descarga-fondo{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-#mensaje-descargalo2 img{
-	width: 90px;
-	height: 30px;
-	position: relative;
-}
-#mensaje-descargalo2{
-	margin-left: 5%;
-}
-#mensaje-descargalo1{
-	width: 200px;
-	text-align: left;
-	margin-left: 5%;
-	padding-top: 10%;
-	position: relative;
-}
-#registro{
-	width: 100%;
-	height: 500px;
-	position: relative;
-	overflow: hidden;
-}
-.content-registro-fondo{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-}
-#mensaje-registro2 button{
-	width: 52%;
-	height: 30px;
-	font-size: 10px;
-	text-align: center;
-	position: relative;
-}
-#mensaje-registro2{
-	margin-left: 75%;
-}
-#mensaje-registro1{
-	width: 200px;
-	text-align: right;
-	margin-left: 73%;
-	padding-top: 12%;
-	position: relative;
-}
-.bt2{
-	background: #00ba00;
-	color: #fff;
-	font-size: 12px; 
-	padding-top: 9px;
-	padding-left: 50px; 
-	padding-bottom: 9px; 
-	padding-right: 50px;
-	border-radius:10px;
-	border-style: none;
-	outline: 0px;
-	position: absolute;
-	font-family: sans-serif;
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-}
-button:hover {
-	cursor: pointer;
-}*/
 footer{
 	background: orange;
 	text-align: center;
@@ -270,6 +145,14 @@ footer{
 /*--------------------------------------------------------------------------------------------------------------
 -------------------------------------------------- estilos para login ------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
+#titulo-is{
+	text-align: center;
+	color: #00ba00;
+	margin-bottom: 30px; 
+	font-weight: bold;
+	font-family: Helvetica;
+	font-size: 30px;
+}
 #formulario{
 	position: relative;
 	width: 400px;
@@ -310,11 +193,14 @@ footer{
 }
 .contenedorInput #correo{
 	margin-right: 7px;
-	width: 17px;
+	width: 19px;
+	margin-top: -4px;
 }
 .contenedorInput #clave{
-	margin-right: 18px;
-	width: 11px;
+	margin-right: 6px;
+	width: 14px;
+	margin-top: -7px;
+    margin-left: 7px;
 }
 .contenedorInput input:focus ~ label, .contenedorInput input:valid ~ label{
 	top: -18px;
@@ -387,10 +273,77 @@ footer{
 .btn-show-pass:hover {
   color: #6a7dfe;
 }
-
 .btn-show-pass.active {
   color: #6a7dfe;
 }
+/*--------------------------------------------------------------------------------------------------------------
+-------------------------------------------------- estilos para registro ------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+#titulo-registro{
+	text-align: center;
+	color: #00ba00;
+	margin-bottom: 30px; 
+	font-weight: bold;
+	font-family: Helvetica;
+	font-size: 30px;
+}
+#registro{
+	position: relative;
+	width: 450px;
+	*padding: 0px 40px;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	margin: 90px 0px 0px 450px;
+}
+.contenedorInpuRegistro{
+	position: relative;
+	width: 300px;
+	margin-left: 70px;
+}
+#registro input[type="submit"]{
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #fff;
+	background: #00ba00;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 20px;
+	width: 100%;
+	font-family: Helvetica;
+}
+#prefix{
+	position: absolute;
+	top: 0;
+	margin-top: 10px;
+	font-size: 16px;
+}
+#enunciado, #campo-prefix{
+	padding-left: 45px;
+}
+.contenedorInput #user{
+	margin-right: 7px;
+	width: 19px;
+	margin-top: -7px;
+}
+.contenedorInput #cedula{
+	margin-right: 7px;
+	width: 25px;
+	margin-top: -7px;
+}
+#login{
+	margin-top: 60px;
+    color: #bab3b2;
+    margin-left: 30px;
+    font-size: 14px;
+}
+#is{
+	margin-left: 4px;
+	color: #00ba00;
+	font-size: 14px;
+	font-weight: bold;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------
 --------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------*/
@@ -455,7 +408,19 @@ footer{
 		padding: 20px 0 5px 0;
 		font-size: 14px;
 	}
-
+	/*------------------------------ PANTALLA DE REGISTRO -----------------------------*/
+	#registro{
+		width: 340px;
+		padding: 0px 10px;
+		margin: 42px 0px 0px 0px;
+	}
+	.contenedorInpuRegistro{
+		width: 270px;
+		margin-left: 27px;
+	}
+	#login{
+	    margin-left: 21px;
+	}
 }
 @media (width:640px) {
 	#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
@@ -489,38 +454,9 @@ footer{
 		padding: 20px 0 5px 0;
 		font-size: 14px;
 	}
+	/*------------------------------ PANTALLA DE REGISTRO -----------------------------*/
+	#registro{
+		margin: 42px 0px 0px 90px;
+	}
 
 }
-/*@media (min-width:576px) {
-	
-}
-@media (max-width:767.98px) {
-	}
-@media (min-width:768px) {
-	}
-@media (max-width:991.98px) {
-	}
-@media (min-width:992px) {
-	}
-@media (max-width:1199.98px) {
-	}
-@media (min-width:1200px) {
-	.contenedor-menu img {
-	    padding-left: 8%;
-	}
-	#menu #enlaces a{
-		margin-right: 5px;
-	}
-	#mensaje-bienvenida{
-		margin-left: 48%;
-	    margin-top: 10%;
-	    padding-right: 15px;
-	    font-size: 10px;
-	}
-	.content-descarga-fondo{
-		*width: 100%;
-		height: 100%;
-		margin: auto;
-		overflow: hidden;
-	}
-}*/

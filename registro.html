@@ -1,148 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Registro</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" href="css/intlTelInput.css">
-	<link rel="stylesheet" href="css/registro.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap2.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-	<!--<link rel="stylesheet" href="css/main2.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+<!--===============================================================================================-->
 </head>
 <body>
-	
-	<!--<h1>International Telephone Input</h1>-->
 	<header>
-		<nav id="menu">
-			<div class="contenedor-menu">
-				<img src="img/logo.png" alt="">
-			</div>
-			<div class="contenedor-menu" id="enlaces">
-				<a href="index.html" id="e-inicio" class="btn-header">INICIO</a>
-				<a href="inicio_sesion.html" id="e-iniciar-sesion" class="btn-header">INICIAR SESIÓ</a>
-				<a href="registro.html" id="e-registrate" class="btn-header">REGISTRATE</a>
-				<a href="#" id="e-contacto" class="btn-header">CONTACTOS</a>
-			</div>
-			<div class="icono-responsivo" id="open">
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		  	<!-- Brand/logo -->
+		  	<a class="navbar-brand" href="index.html">
+		    	<img src="img/logo-trujillo.png" alt="logo" style="width:70%;">
+		  	</a>
+		  	<!-- Links -->
+		  	<ul class="navbar-nav" id="contenedor_menu">
+		    	<li class="nav-item">
+			    	<a class="nav-link" href="index.html">INICIO</a>
+				</li>
+				<li class="nav-item">
+			    	<a class="nav-link" href="inicio_sesion.html">INICIAR SESIÓN</a>
+				</li>
+				<li class="nav-item">
+			    	<a class="nav-link active" href="registro.html">REGISTRATE</a>
+				</li>
+				<li class="nav-item">
+			    	<a class="nav-link" href="contactos.html">CONTACTOS</a>
+				</li>
+		  	</ul>
+		  	<div class="icono-responsivo" id="open">
 				<span>&#9776;</span>
 			</div>
 		</nav>	
 	</header>
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-26">
-						<strong>Regístrate</strong>
-					</span>
-					<div class="wrap-input100 validate-input" data-validate = "Enter name">
-						<input class="input100" type="text" name="name">
-						<span class="focus-input100" id="name" data-placeholder="Nombres"></span>
-					</div>
-					<div class="wrap-input100 validate-input" data-validate = "Enter lastname">
-						<input class="input100" type="text" name="lastname">
-						<span class="focus-input100" id="lastname" data-placeholder="Apellidos"></span>
-					</div>
-					<div class="wrap-input100-cedula validate-input" data-validate = "Enter cedula">
-						<input class="input100" type="number" name="cedula">
-						<span class="focus-input100" id="cedula" data-placeholder="Cédula/Pasaporte"></span>
-					</div>
-					
-					<div class="wrap-input100-telefono validate-input" data-validate = "Enter phone">
-						<input class="input100-telefono" id="phone" name="phone" type="tel">
-						<span class="focus-input100-telefono" id="phone" data-placeholder="Número telefónico"></span>
-					</div>
-					
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-						<input class="input100" type="text" name="email">
-						<span class="focus-input100" id="email" data-placeholder="Email"></span>
-					</div>
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<span class="btn-show-pass">
-							<i class="zmdi zmdi-eye"></i>
-						</span>
-						<input class="input100" type="password" name="pass">
-						<span class="focus-input100" data-placeholder="Contraseña"></span>
-					</div>
-					<div class="checkbox">
-                        <label>
-                            <input type="checkbox" id="checkbox" value="true">Acepto <a href="/terminos/">términos y condiciones</a>
-                        </label>
-                    </div>
-
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<!--<div class="login100-form-bgbtn"></div>-->
-							<button class="login100-form-btn">
-								Ingresar
-							</button>
-						</div>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<i class="fab fa-facebook"></i>
-							<!--<div class="login100-form-bgbtn"></div>-->
-							<button class="login100-form-btn2">
-								Continua con Facebook
-							</button>
-						</div>
-					</div>
-					<div class="text-center p-t-115">
-						<span class="txt1">
-							¿No tienes una cuenta?
-						</span>
-						<a class="txt2" href="#">
-							<strong>Creala aquí</strong>
-						</a>
-					</div>
-					<div class="text-center-2 p-t-115">
-						<a class="txt3" href="#">
-							Olvidé mi contraseña
-						</a>
-					</div>
-				</form>
-			</div>
+	
+	<form class="formulario-registro validate-form" id="registro" action="productos.html">
+		<h2 id="titulo-registro">Regístrate</h2>
+		<div class="contenedorInput validate-input">
+			<input class="campo" type="text" name="name" required="">
+			<label for=""><img id="user" src="img/icon-user.png" alt="" >Nombres</label>
 		</div>
-	</div>
-	<!--<div id="dropDownSelect1"></div>-->	
+		<div class="contenedorInput validate-input">
+			<input class="campo" type="text" name="lastname" required="">
+			<label for=""><img id="user" src="img/icon-user.png" alt="" >Apellidos</label>
+		</div>
+		<div class="contenedorInput validate-input">
+			<input class="campo" type="text" name="di" required="">
+			<label for=""><img id="cedula" src="img/icon-cedula.png" alt="" >Cédula/Pasaporte</label>
+		</div>
+		<div class="contenedorInput validate-input">
+			<input class="campo" id="campo-prefix" type="text" name="phone" required="">
+			<span id="prefix">+593</span>
+			<label id="enunciado" for=""> Número telefónico</label>
+		</div>
+		<div class="contenedorInput validate-input" data-validate = "Valid email is: a@b.com">
+			<input class="campo" type="text" name="email" required="">
+			<label for=""><img id="correo" src="img/icon-correo.png" alt="" >E-mail</label>
+		</div>
+		<div class="contenedorInput validate-input" data-validate="Enter password">
+			<span class="btn-show-pass"><i class="fas fa-eye"></i></span>
+			<input class="campo" type="password" name="pass" required="">
+			<label for=""><img id="clave" src="img/icon-password.png" alt="" >Contraseña</label>
+		</div>
+		<div class="custom-control custom-checkbox mb-3" style="text-align: center;font-size: 14px;color: #bab3b2; ">
+      		<input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+      		<label class="custom-control-label" for="customCheck">Acepto términos y condiciones</label>
+    	</div>
+		<div class="contenedorInpuRegistro">
+			<input type="submit" name="" value="Ingresar">
+			<a id="cargar_facebook" href="#"><i class="fab fa-facebook-square"></i> Continuar con Facebook</a>
+			<p id="login">¿Tienes una cuenta?<a href="iniciar_sesion.html"><span id="is"> Iniciar Sesión</span></a></p>
+		</div>
+	</form>
 <!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-	<script src="vendor/select2/select2.min.js"></script>
-
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/main.js"></script>
-  <!--<form>
-    <input id="phone" name="phone" type="tel">
-    <!-<button type="submit">Submit</button>->
-  </form>-->
-
-	<script src="js/intlTelInput.js"></script>
-  	<script>
-    	var input = document.querySelector("#phone");
-    	window.intlTelInput(input);
-	</script>
 </body>
 </html>
