@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carrito</title>
+
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap2.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display: flex; justify-content: space-between; ">
+			<!-- Brand/logo -->
+		  	<a class="navbar-brand" href="#">
+		    	<img src="img/logo-trujillo.png" alt="logo" >
+		  	</a>
+		  	<!-- Search -->
+		  	<form class="form-inline" action="/action_page.php">
+		    	<input class="form-control mr-sm-2" type="text" placeholder="Search">
+		    	<button class="btn btn-success" type="submit">
+		    		<a href="index.html"><img src="img/icon-search.png" alt="logo" style="width:15px;"></a>
+		    	</button>
+		  	</form>  
+		  	<!-- Links -->
+		  	<ul class="navbar-nav justify-content-end">
+		    	<li class="nav-item">
+		      		<a class="nav-link" href="index.html">INICIO</a>
+		    	</li>
+		    	<li class="nav-item">
+		      		<a class="nav-link" href="#">PROMOCIONES</a>
+		    	</li>
+		    	<li class="nav-item">
+		    		<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
+		    	</li>
+		    	<li class="nav-item">
+		      		<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
+		    	</li>
+		    	<!-- Dropdown -->
+			    <li class="nav-item dropdown">
+			      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        	Nombre Usuario
+			      	</a>
+			      	<div class="dropdown-menu">
+				        <a class="dropdown-item" href="#">Mi perfil</a>
+				        <a class="dropdown-item" href="#">Mis direcciones</a>
+				        <hr>
+				        <a class="dropdown-item" href="#">Mis pedidos</a>
+				        <a class="dropdown-item" href="#">Configuración</a>
+				        <a class="dropdown-item" href="#">Ayuda</a>
+				        <a class="dropdown-item" href="#">Salir</a>
+			      	</div>
+			    </li>
+		  	</ul>
+		</nav>
+	</header>
+	<div class="container-fluid" style="padding: 0 34px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-10" style="padding-right: 40px;">
+					<h1 class="titulo-carrito">Carrito de compras</h1>
+					<hr>
+					<div class="row">
+						<div class="col-sm-2" id="b_producto">
+							<img class="img-fluid" src="img/cafe-ruavieja.png" alt="" style="width: 30%;">
+						</div>
+						<div class="col-sm-3" id="produc-selec">
+							<h6><strong>Reposado Anisado Ron Viejo</strong></h6>
+							<div class="row" id="eliminar-guadar">
+								<div class="col-sm-3" id="link-eliminar">Eliminar</div>
+								<div class="col-sm-9">Guardar producto</div>
+							</div>
+						</div>
+						<div class="col-sm-3 justify-content-end" id="costo-produc-selec"><span>$ 22,10</span></div>
+						<div class="col-sm-4" style="padding: 35px 0 0 60px;vertical-align: middle;">
+							<div id="disminuir-incrementar">
+				            	<button id="btn-incre-dismi-carrito" onclick="myFunction()">+</button>
+						        <input type="number" id="myNumber" min="1" value="1">
+						        <button id="btn-incre-dismi-carrito" onclick="myFunction2()">-</button>
+							</div>
+							<script> //script para aumentar y decrementar cantidad de productos
+							    function myFunction() {
+							      document.getElementById("myNumber").stepUp(1);
+							    }
+							    function myFunction2() {
+							      document.getElementById("myNumber").stepDown(1);
+							    }
+							</script>
+						</div>
+						<div class="col-sm-12" style="text-align: right;padding-bottom: 10px;">
+							<hr>
+							<h5 id="subtit-bd-carrito-izq">Subtotal (1producto): <span>$ 22,10</span></h5>
+						</div>
+						<div class="col-sm-12" style="padding: 10px 0 20px 20px;">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eum, quia eaque! Maiores laudantium repellat eligendi itaque esse dolorem, iste nobis tenetur ab qui, est odit expedita non fugiat impedit.
+						</div>
+						<div class="col-sm-12" style="padding-top: 20px;">
+							<h3>Productos relacionados</h3>
+						</div>
+						<div class="col-sm-12">
+							<div class="row" id="bl-pr-carrito">
+					    		<div class="col-sm-3" id="pr-carrito">
+					    			<img class="img-fluid" id="img-pr-carrito" src="img/IMG_5825.png" alt="">
+					    			<span id="precio-pr">$ 15,50</span><p id="nom-pr">Ron Don Juan</p>
+					    		</div>
+					   			<div class="col-sm-3" id="pr-carrito">
+					   				<img class="img-fluid" id="img-descu" src="img/descuento.png" alt="">
+					   				<img class="img-fluid" id="img-pr-carrito" src="img/cafe-ruavieja.png" alt="">
+					   				<span id="precio-pr">$ 22,10</span><p id="nom-pr">Reposado Anisado</p>
+					   			</div>
+					   			<div class="col-sm-3" id="pr-carrito">
+					   				<img class="img-fluid" id="img-pr-carrito" src="img/IMG_5825.png" alt="">
+					   				<span id="precio-pr">$ 15,50</span><p id="nom-pr">Ron Don Juan</p>
+					   			</div>
+					   			<div class="col-sm-3" id="pr-carrito">
+					   				<img class="img-fluid" id="img-descu" src="img/descuento.png" alt="">
+					   				<img class="img-fluid" id="img-pr-carrito" src="img/cafe-ruavieja.png" alt="">
+					   				<span id="precio-pr">$ 22,10</span><p id="nom-pr">Reposado Anisado</p>
+					   			</div>
+					  		</div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-sm-2" id="contenedor-der-carrito">
+		    		<strong><p id="subtitulo-bd-carrito">Subtotal (1 producto): <span id="precio-subtotal"> $22,10</span></p></strong>
+		    		<hr>
+		    		<div class="row">
+						<div class="col-sm-12">
+							<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
+							<button id="boton-bd-carrito"><i class="fa fa-home"></i><span>A domicilio</span></button>
+							<button id="boton-bd-carrito"><i class="fa fa-truck"></i><span>Para recoger</span></button>
+							<div class="custom-control custom-radio" style="padding-top: 5px;">
+						      <input type="radio" class="custom-control-input" id="customRadio" name="example1">
+						      <label class="custom-control-label" for="customRadio" id="l1">Casa Principal<span>Cedros y Laureles seq.</span></label>
+						    </div>
+						    <div class="custom-control custom-radio" style="padding-top: 5px;">
+						      <input type="radio" class="custom-control-input" id="customRadio2" name="example1">
+						      <label class="custom-control-label" for="customRadio2" id="l1">Trabajo<span>Av. Don Bosco y Juan de Dios</span></label>
+						    </div>
+						    <hr>
+						</div>
+						<div class="col-sm-12">
+							<strong><p id="subtitulo-bd-carrito">Metodo de pago:</p></strong>
+							<button id="boton-bd-carrito"><i class="fa fa-money"></i><span>Efectivo</span></button>
+							<button id="boton-bd-carrito"><i class="fa fa-id-card"></i><span>Targeta de crédito</span></button>
+							<p id="nota-pago-carrito">Recuerda que deberás cancelar a tu courier al momento de la entrega de tu pedido.</p>
+							<hr>
+						</div>
+						<div class="col-sm-12" id="bl-btn-pago-carrito">
+							<a href="#">
+								<buttom id="boton-pago-carrito">Proceder al pago</buttom>
+							</a>
+						</div>
+					</div>
+		    	</div>
+			</div>
+		</div>
+	</div>
+	<section class="informacion contenedor" id="informacion2">
+		<div class="container">
+			<div class="marca-logo">
+				<img class="img-fluid" src="img/logo-trujillo.png" alt="">		
+			</div>
+			<h5 id="h5_personal">Crisantemos y Anturios &nbsp; --- &nbsp; (07)210 4038-098 463 0519</h5>
+			<h5 id="h5_personal">info@goodapettit.com</h5>
+		</div>
+		<div id="redes_sociales_dp">
+			<h5 id="h5_personal">SIGUENOS EN:</h5>
+			<a href=""><img class="img-fluid" src="img/icon-facebook.png" alt=""></a>
+			<a href=""><img class="img-fluid" src="img/icon-twitter.png" alt=""></a>
+			<a href=""><img class="img-fluid" src="img/icon-instagram.png" alt=""></a>
+		</div>
+	</section>
+	<div class="footer">
+		<p id="pie">Copyright 2019 <img class="img-fluid" src="img/icon-copyright2.png" alt="" width="15px"> Trujillo Plaza Market. Todos los derechos reservados</p>
+	</div>
+</body>
+</html>

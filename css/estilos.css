@@ -642,6 +642,144 @@
 	#nom-pr{
 		color: black;
 	}
+
+/*--------------------------------------------------------------------------------------------------------------
+--------------------------------------- estilos para carrito de la compra ---------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+.titulo-carrito{
+	color: #00ba00;
+	margin-top: 30px;
+}
+#b_producto{
+	padding: 15px 0 15px 60px;
+}
+#produc-selec{
+	padding-top: 25px;
+}
+#eliminar-guadar{
+	color: gray;
+}
+#link-eliminar{
+	border-right-style: solid;
+	border-right-color: gray;
+	border-right-width: thin;
+}
+#costo-produc-selec{
+	text-align: center;
+	padding: 40px 0;
+	font-size: 15px;
+	font-weight: bold;
+	color: #00ba00;
+	font-family: sans-serif;
+}
+#btn-incre-dismi-carrito{
+	padding: 0 15px;
+	margin-top: 1px;
+	background: #00ba00;
+	border-style: none;
+	border-radius: 5px;
+	color: #fff;
+}
+#subtit-bd-carrito-izq, #subtit-bd-carrito-izq span{
+	font-weight: bold;
+	font-family: sans-serif;
+}
+#subtit-bd-carrito-izq span{
+	color: #00ba00;
+}
+#bl-pr-carrito{
+	margin: 20px 0 20px 20px;
+}
+#pr-carrito{
+	border:1px solid #E3DFDF;
+	border-radius: 15px;
+	max-width: 23%;
+	margin-right: 10px;
+	height: 200px;
+}
+#img-pr-carrito{
+	height: 76%;
+	padding-left: 55px;
+	padding-top: 20px;
+	padding-bottom: 16px;
+}
+/*----- contenedor derecha de la página carrito ----------*/
+#contenedor-der-carrito{
+	padding-top: 15px;
+	height: fit-content;
+	overflow: hidden;
+	border-radius: 5px;
+	margin-top: 10px;
+	border: 1px solid #d2d2d2;
+}
+#subtitulo-bd-carrito{
+	font-size: 14px;
+	*padding-top: 6px;
+	color: black;
+}
+#precio-subtotal{
+	display: block;
+	color: #00ba00;
+}
+#boton-bd-carrito{
+	width: 100%;
+	margin-bottom: 5px;
+	text-align: left;
+	padding-left: 7px;
+	background: #00ba00;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 7px;
+	border-style: none;
+}
+#boton-bd-carrito i{
+	color: #fff;
+}
+#boton-bd-carrito span{
+	margin-left: 15px;
+	color: #fff;
+	font-size: 12px;
+}
+#l1{
+	width:100%;
+	color: #00ba00;
+	font-weight: bold;
+	font-size: 11.5px;
+	text-align: right;
+	padding-top: -5px;
+}
+#l1 span{
+	display: block;
+	font-size: 9.5px;
+	margin-top: -5px;
+	font-weight: normal;
+	color: black;
+}
+#nota-pago-carrito{
+	color: black;
+	font-size: 10px;
+	line-height: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+#bl-btn-pago-carrito{
+	height: 47px;
+	position: relative;
+	padding-top: 10px;
+}
+#bl-btn-pago-carrito a{
+	text-decoration: none;	
+}
+#bl-btn-pago-carrito a:hover{
+	color: #00ba00;
+}
+#boton-pago-carrito{
+	background: orange;
+	padding: 7px 32px 7px 32px;
+	border-radius: 12px;
+	margin-left: 10px;
+	font-size: 11px;
+}
 /* --------------------------------------------------------------------------------------------------------------------
 --------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------*/
