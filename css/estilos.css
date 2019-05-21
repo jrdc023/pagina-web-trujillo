@@ -602,15 +602,15 @@
 
 /*-------------------------------*/
 	#btn-agregar-carrito{
-	width: 25%;
-	height: 30px;
-	margin: 10px 0;
-	background: #00ba00;
-	border-radius: 15px;
-	border-style: none;
-	font-size: 12px;
-	color: #fff;
-}
+		width: 25%;
+		height: 30px;
+		margin: 10px 0;
+		background: #00ba00;
+		border-radius: 15px;
+		border-style: none;
+		font-size: 12px;
+		color: #fff;
+	}
 
 /*-------------------------------*/
 	#p-relacionados{
@@ -780,6 +780,27 @@
 	margin-left: 10px;
 	font-size: 11px;
 }
+/*--------------------------------------------------------------------------------------------------------------
+--------------------------------------- estilos para compra final ---------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+.titulo-compra{
+	color: #00ba00;
+	margin-top: 10px;
+}
+#info-compra{
+	font-weight: bold;
+	font-family: sans-serif;
+	color: black;
+	line-height: 11px;
+	font-size: 12px;
+}
+#info-compra span{
+	font-weight: normal;
+	display: block;
+	font-size: 11px;
+	margin-bottom: 25px;
+}
+
 /* --------------------------------------------------------------------------------------------------------------------
 --------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------------------------
 -----------------------------------------------------------------------------------------------------------------------*/

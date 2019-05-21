@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Compra final</title>
+
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap2.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display: flex; justify-content: space-between; ">
+			<!-- Brand/logo -->
+		  	<a class="navbar-brand" href="#">
+		    	<img src="img/logo-trujillo.png" alt="logo" >
+		  	</a>
+		  	<!-- Search -->
+		  	<form class="form-inline" action="/action_page.php">
+		    	<input class="form-control mr-sm-2" type="text" placeholder="Search">
+		    	<button class="btn btn-success" type="submit">
+		    		<a href="index.html"><img src="img/icon-search.png" alt="logo" style="width:15px;"></a>
+		    	</button>
+		  	</form>  
+		  	<!-- Links -->
+		  	<ul class="navbar-nav justify-content-end">
+		    	<li class="nav-item">
+		      		<a class="nav-link" href="index.html">INICIO</a>
+		    	</li>
+		    	<li class="nav-item">
+		      		<a class="nav-link" href="#">PROMOCIONES</a>
+		    	</li>
+		    	<li class="nav-item">
+		    		<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
+		    	</li>
+		    	<li class="nav-item">
+		      		<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
+		    	</li>
+		    	<!-- Dropdown -->
+			    <li class="nav-item dropdown">
+			      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			        	Nombre Usuario
+			      	</a>
+			      	<div class="dropdown-menu">
+				        <a class="dropdown-item" href="#">Mi perfil</a>
+				        <a class="dropdown-item" href="#">Mis direcciones</a>
+				        <hr>
+				        <a class="dropdown-item" href="#">Mis pedidos</a>
+				        <a class="dropdown-item" href="#">Configuración</a>
+				        <a class="dropdown-item" href="#">Ayuda</a>
+				        <a class="dropdown-item" href="#">Salir</a>
+			      	</div>
+			    </li>
+		  	</ul>
+		</nav>
+	</header>
+	<div class="container-fluid" style="padding: 0 34px;">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12" style="padding-right: 40px;">
+						
+					<div class="col-sm-12" style="padding-bottom: 10px; padding-top: 25px;">
+						<div class="row">
+							<div class="col-sm-10" style="height: 70px;">
+								<h1 class="titulo-compra">¡Tu compra ha sido exitosa!</h1>
+							</div>
+							<div class="col-sm-2" id="" style="padding-top: 15px;border-radius: 10px;border: 1px solid #DEDDDD;">
+					    		<strong><p id="subtitulo-bd-carrito">Total (1 producto): <span id="precio-subtotal"> $22,10</span></p></strong>
+					    		<hr>
+					    		<div class="row">
+									<div class="col-sm-12" id="bl-btn-pago-carrito">
+										<a href="#">
+											<buttom id="boton-pago-carrito">Proceder al pago</buttom>
+										</a>
+									</div>
+								</div>
+					    	</div>
+							<div class="col-sm-10" style="margin-top: -60px;">
+								<p style="color: black;font-size: 14px;">Felicidades, recuerda la información de tu compra:</p>
+								<p id="info-compra">Forma de entrega:<span>Domicilio (Av. Don Bosco y Juan de Dios).</span></p>
+								<p id="info-compra">Método de pago:<span style="margin-bottom: 20px;">Efectivo (contra entrega de productos).</span></p>
+							</div>	
+							
+					    </div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="col-sm-12" style="padding-top: 20px;">
+				<h3>Descuentos y promociones</h3>
+			</div>
+			<div class="col-sm-12">
+				<div class="row" id="bl-pr-carrito">
+					<div class="col-sm-3" id="pr-carrito">
+						<img class="img-fluid" id="img-pr-carrito" src="img/IMG_5825.png" alt="">
+						<span id="precio-pr">$ 15,50</span><p id="nom-pr">Ron Don Juan</p>
+					</div>
+					<div class="col-sm-3" id="pr-carrito">
+						<img class="img-fluid" id="img-descu" src="img/descuento.png" alt="">
+						<img class="img-fluid" id="img-pr-carrito" src="img/cafe-ruavieja.png" alt="">
+						<span id="precio-pr">$ 22,10</span><p id="nom-pr">Reposado Anisado</p>
+					</div>
+					<div class="col-sm-3" id="pr-carrito">
+						<img class="img-fluid" id="img-pr-carrito" src="img/IMG_5825.png" alt="">
+						<span id="precio-pr">$ 15,50</span><p id="nom-pr">Ron Don Juan</p>
+					</div>
+					<div class="col-sm-3" id="pr-carrito">
+						<img class="img-fluid" id="img-descu" src="img/descuento.png" alt="">
+						<img class="img-fluid" id="img-pr-carrito" src="img/cafe-ruavieja.png" alt="">
+						<span id="precio-pr">$ 22,10</span><p id="nom-pr">Reposado Anisado</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="informacion contenedor" id="informacion2">
+		<div class="container">
+			<div class="marca-logo">
+				<img class="img-fluid" src="img/logo-trujillo.png" alt="">		
+			</div>
+			<h5 id="h5_personal">Crisantemos y Anturios &nbsp; --- &nbsp; (07)210 4038-098 463 0519</h5>
+			<h5 id="h5_personal">info@goodapettit.com</h5>
+		</div>
+		<div id="redes_sociales_dp">
+			<h5 id="h5_personal">SIGUENOS EN:</h5>
+			<a href=""><img class="img-fluid" src="img/icon-facebook.png" alt=""></a>
+			<a href=""><img class="img-fluid" src="img/icon-twitter.png" alt=""></a>
+			<a href=""><img class="img-fluid" src="img/icon-instagram.png" alt=""></a>
+		</div>
+	</section>
+	<div class="footer">
+		<p id="pie">Copyright 2019 <img class="img-fluid" src="img/icon-copyright2.png" alt="" width="15px"> Trujillo Plaza Market. Todos los derechos reservados</p>
+	</div>
+</body>
+</html>
