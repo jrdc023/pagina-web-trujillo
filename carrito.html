@@ -65,39 +65,49 @@
 					<h1 class="titulo-carrito">Carrito de compras</h1>
 					<hr>
 					<div class="row">
-						<div class="col-sm-2" id="b_producto">
-							<img class="img-fluid" src="img/cafe-ruavieja.png" alt="" style="width: 30%;">
-						</div>
-						<div class="col-sm-3" id="produc-selec">
-							<h6><strong>Reposado Anisado Ron Viejo</strong></h6>
-							<div class="row" id="eliminar-guadar">
-								<div class="col-sm-3" id="link-eliminar">Eliminar</div>
-								<div class="col-sm-9">Guardar producto</div>
+						<!-- =============================================== PRIMERO =========================================================== -->
+						<div class="col-sm-12" id="">
+							<div class="row">
+								<div class="col-sm-2" id="b_producto">
+									<img class="img-fluid" src="img/cafe-ruavieja.png" alt="" style="width: 30%;">
+								</div>
+								<div class="col-sm-3" id="produc-selec">
+									<h6><strong>Reposado Anisado Ron Viejo</strong></h6>
+									<div class="row" id="eliminar-guadar">
+										<div class="col-sm-4" id="link-eliminar">Eliminar</div>
+										<div class="col-sm-8">Guardar producto</div>
+									</div>
+								</div>
+								<div class="col-sm-3 justify-content-end" id="costo-produc-selec"><span>$ 22,10</span></div>
+								<div class="col-sm-4" style="padding: 35px 0 0 60px;vertical-align: middle;">
+									<div id="disminuir-incrementar">
+						            	<button id="btn-incre-dismi-carrito" onclick="myFunction()">+</button>
+								        <input type="number" id="myNumber" min="1" value="1">
+								        <button id="btn-incre-dismi-carrito" onclick="myFunction2()">-</button>
+									</div>
+									<script> //script para aumentar y decrementar cantidad de productos
+									    function myFunction() {
+									      document.getElementById("myNumber").stepUp(1);
+									    }
+									    function myFunction2() {
+									      document.getElementById("myNumber").stepDown(1);
+									    }
+									</script>
+								</div>
 							</div>
-						</div>
-						<div class="col-sm-3 justify-content-end" id="costo-produc-selec"><span>$ 22,10</span></div>
-						<div class="col-sm-4" style="padding: 35px 0 0 60px;vertical-align: middle;">
-							<div id="disminuir-incrementar">
-				            	<button id="btn-incre-dismi-carrito" onclick="myFunction()">+</button>
-						        <input type="number" id="myNumber" min="1" value="1">
-						        <button id="btn-incre-dismi-carrito" onclick="myFunction2()">-</button>
-							</div>
-							<script> //script para aumentar y decrementar cantidad de productos
-							    function myFunction() {
-							      document.getElementById("myNumber").stepUp(1);
-							    }
-							    function myFunction2() {
-							      document.getElementById("myNumber").stepDown(1);
-							    }
-							</script>
-						</div>
-						<div class="col-sm-12" style="text-align: right;padding-bottom: 10px;">
 							<hr>
+						</div>
+
+						<!-- =============================================== MEDIO =========================================================== -->
+						<div class="col-sm-12" style="text-align: right;padding-bottom: 10px;">
 							<h5 id="subtit-bd-carrito-izq">Subtotal (1producto): <span>$ 22,10</span></h5>
 						</div>
 						<div class="col-sm-12" style="padding: 10px 0 20px 20px;">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eum, quia eaque! Maiores laudantium repellat eligendi itaque esse dolorem, iste nobis tenetur ab qui, est odit expedita non fugiat impedit.
 						</div>
+						<!-- ================================================================================================================== -->	
+
+						<!-- =============================================== ULTIMO =========================================================== -->
 						<div class="col-sm-12" style="padding-top: 20px;">
 							<h3>Productos relacionados</h3>
 						</div>
@@ -123,6 +133,7 @@
 					   			</div>
 					  		</div>
 						</div>
+						<!-- =================================================================================================================== -->
 					</div>	
 				</div>
 				<div class="col-sm-2" id="contenedor-der-carrito">
@@ -144,7 +155,7 @@
 						    <hr>
 						</div>
 						<div class="col-sm-12">
-							<strong><p id="subtitulo-bd-carrito">Metodo de pago:</p></strong>
+							<strong><p id="subtitulo-bd-carrito">Método de pago:</p></strong>
 							<button id="boton-bd-carrito"><i class="fa fa-money"></i><span>Efectivo</span></button>
 							<button id="boton-bd-carrito"><i class="fa fa-id-card"></i><span>Targeta de crédito</span></button>
 							<p id="nota-pago-carrito">Recuerda que deberás cancelar a tu courier al momento de la entrega de tu pedido.</p>
