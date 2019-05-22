@@ -472,6 +472,58 @@
 	}
 
 /*--------------------------------------------------------------------------------------------------------------
+--------------------------------------------- estilos para producto --------------------------------------------
+--------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------- estilos para menu izq. categoria -------------------------------------------*/
+.accordion {
+ 	background: none;
+	*background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	*background-color: #ccc;
+}
+
+.accordion:after {
+	content: '\02C5';
+	color: #777;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\02C4";
+}
+
+.panel {
+	padding: 0 18px;
+	*background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+#btn-filtrar{
+	background: #00ba00;
+	padding: 7px 60px 7px 60px;
+	border-radius: 12px;
+	margin-left: 12px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------------------------------------------------------
 --------------------------------------- estilos para detalle de producto ---------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#cuerpo{
@@ -646,160 +698,205 @@
 /*--------------------------------------------------------------------------------------------------------------
 --------------------------------------- estilos para carrito de la compra ---------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
-.titulo-carrito{
-	color: #00ba00;
-	margin-top: 30px;
-}
-#b_producto{
-	padding: 15px 0 15px 60px;
-}
-#produc-selec{
-	padding-top: 25px;
-}
-#eliminar-guadar{
-	color: gray;
-}
-#link-eliminar{
-	border-right-style: solid;
-	border-right-color: gray;
-	border-right-width: thin;
-}
-#costo-produc-selec{
-	text-align: center;
-	padding: 40px 0;
-	font-size: 15px;
-	font-weight: bold;
-	color: #00ba00;
-	font-family: sans-serif;
-}
-#btn-incre-dismi-carrito{
-	padding: 0 15px;
-	margin-top: 1px;
-	background: #00ba00;
-	border-style: none;
-	border-radius: 5px;
-	color: #fff;
-}
-#subtit-bd-carrito-izq, #subtit-bd-carrito-izq span{
-	font-weight: bold;
-	font-family: sans-serif;
-}
-#subtit-bd-carrito-izq span{
-	color: #00ba00;
-}
-#bl-pr-carrito{
-	margin: 20px 0 20px 20px;
-}
-#pr-carrito{
-	border:1px solid #E3DFDF;
-	border-radius: 15px;
-	max-width: 23%;
-	margin-right: 10px;
-	height: 200px;
-}
-#img-pr-carrito{
-	height: 76%;
-	padding-left: 55px;
-	padding-top: 20px;
-	padding-bottom: 16px;
-}
+	.titulo-carrito{
+		color: #00ba00;
+		margin-top: 30px;
+	}
+	#b_producto{
+		padding: 15px 0 15px 60px;
+	}
+	#produc-selec{
+		padding-top: 25px;
+	}
+	#eliminar-guadar{
+		color: gray;
+	}
+	#link-eliminar{
+		border-right-style: solid;
+		border-right-color: gray;
+		border-right-width: thin;
+	}
+	#costo-produc-selec{
+		text-align: center;
+		padding: 40px 0;
+		font-size: 15px;
+		font-weight: bold;
+		color: #00ba00;
+		font-family: sans-serif;
+	}
+	#btn-incre-dismi-carrito{
+		padding: 0 15px;
+		margin-top: 1px;
+		background: #00ba00;
+		border-style: none;
+		border-radius: 5px;
+		color: #fff;
+	}
+	#subtit-bd-carrito-izq, #subtit-bd-carrito-izq span{
+		font-weight: bold;
+		font-family: sans-serif;
+	}
+	#subtit-bd-carrito-izq span{
+		color: #00ba00;
+	}
+	#bl-pr-carrito{
+		margin: 20px 0 20px 20px;
+	}
+	#pr-carrito{
+		border:1px solid #E3DFDF;
+		border-radius: 15px;
+		max-width: 23%;
+		margin-right: 10px;
+		height: 200px;
+	}
+	#img-pr-carrito{
+		height: 76%;
+		padding-left: 55px;
+		padding-top: 20px;
+		padding-bottom: 16px;
+	}
+
 /*----- contenedor derecha de la página carrito ----------*/
-#contenedor-der-carrito{
-	padding-top: 15px;
-	height: fit-content;
-	overflow: hidden;
-	border-radius: 5px;
-	margin-top: 10px;
-	border: 1px solid #d2d2d2;
+	#contenedor-der-carrito{
+		padding-top: 15px;
+		height: fit-content;
+		overflow: hidden;
+		border-radius: 5px;
+		margin-top: 10px;
+		border: 1px solid #d2d2d2;
+	}
+	#subtitulo-bd-carrito{
+		font-size: 14px;
+		*padding-top: 6px;
+		color: black;
+	}
+	#precio-subtotal{
+		display: block;
+		color: #00ba00;
+	}
+	#nota-pago-carrito{
+		color: black;
+		font-size: 10px;
+		line-height: 10px;
+		margin-top: 5px;
+		margin-bottom: 15px;
+	}
+	#bl-btn-pago-carrito{
+		height: 47px;
+		position: relative;
+		padding-top: 10px;
+	}
+	#bl-btn-pago-carrito a{
+		text-decoration: none;	
+	}
+	#bl-btn-pago-carrito a:hover{
+		color: #00ba00;
+	}
+	#boton-pago-carrito{
+		background: orange;
+		padding: 7px 32px 7px 32px;
+		border-radius: 12px;
+		margin-left: 10px;
+		font-size: 11px;
+	}
+
+/*----------------- estilos forma de entrega  de carrito de compra ---------------------------*/
+.formulario input[type="radio"]{
+	display: none;
 }
-#subtitulo-bd-carrito{
-	font-size: 14px;
-	*padding-top: 6px;
-	color: black;
-}
-#precio-subtotal{
-	display: block;
-	color: #00ba00;
-}
-#boton-bd-carrito{
+.formulario .radio1 label{
 	width: 100%;
-	margin-bottom: 5px;
-	text-align: left;
-	padding-left: 7px;
-	background: #00ba00;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	border-radius: 7px;
-	border-style: none;
-}
-#boton-bd-carrito i{
-	color: #fff;
-}
-#boton-bd-carrito span{
-	margin-left: 15px;
-	color: #fff;
-	font-size: 12px;
-}
-#l1{
-	width:100%;
-	color: #00ba00;
-	font-weight: bold;
-	font-size: 11.5px;
-	text-align: right;
-	padding-top: -5px;
-}
-#l1 span{
-	display: block;
-	font-size: 9.5px;
-	margin-top: -5px;
-	font-weight: normal;
-	color: black;
-}
-#nota-pago-carrito{
-	color: black;
-	font-size: 10px;
-	line-height: 10px;
-	margin-top: 5px;
-	margin-bottom: 15px;
-}
-#bl-btn-pago-carrito{
-	height: 47px;
+	background: #fff;
+	padding: 5px 15px;
+	border-radius: 5px;
+	color: silver;
+	display: inline-block;
 	position: relative;
-	padding-top: 10px;
+	cursor: pointer;
+	border: 1px solid silver;
 }
-#bl-btn-pago-carrito a{
-	text-decoration: none;	
+.formulario .radio1 span{
+	margin-left: 10px;
 }
-#bl-btn-pago-carrito a:hover{
+.formulario .radio1 label:hover{
+	background: #00ba00;
+	color: #fff;
+}
+.formulario .radio1 input[type="radio"]:checked + label{
+	background: #00ba00;
+	color: #fff;
+}
+.formulario .radio2 label{
+	width: 100%;
+	background: #fff;
+	border-radius: 5px;
+	color: silver;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+}
+.formulario .radio2 label span{
+		display: block;
+		font-size: 9.5px;
+		margin-top: -5px;
+		font-weight: normal;
+		*color: black;
+	}
+.formulario .radio2 label:before{
+	content: "";
+	width: 13px;
+	height: 13px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid silver;
+	position: absolute;
+	left: 90%;
+	top: 9px;
+}
+.formulario .radio2 label:hover{
+	*color: #00ba00;
+}
+.formulario .radio2 label span:hover{
+	color: black;
+	{
+		color:#00ba00;
+	};
+}
+.formulario .radio2 label:before + label:before:hover{
+	*border: 2px solid #00ba00;
+}
+.formulario .radio2 input[type="radio"]:checked + label:before{
+	border: 4px solid  #00ba00;
+
+}
+.formulario .radio2 input[type="radio"]:checked + label{
 	color: #00ba00;
 }
-#boton-pago-carrito{
-	background: orange;
-	padding: 7px 32px 7px 32px;
-	border-radius: 12px;
-	margin-left: 10px;
-	font-size: 11px;
+.formulario .radio2 input[type="radio"]:checked + label span{
+	color: black;
 }
 /*--------------------------------------------------------------------------------------------------------------
---------------------------------------- estilos para compra final ---------------------------------------
+------------------------------------------- estilos para compra final ------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
-.titulo-compra{
-	color: #00ba00;
-	margin-top: 10px;
-}
-#info-compra{
-	font-weight: bold;
-	font-family: sans-serif;
-	color: black;
-	line-height: 11px;
-	font-size: 12px;
-}
-#info-compra span{
-	font-weight: normal;
-	display: block;
-	font-size: 11px;
-	margin-bottom: 25px;
-}
+	.titulo-compra{
+		color: #00ba00;
+		margin-top: 10px;
+	}
+	#info-compra{
+		font-weight: bold;
+		font-family: sans-serif;
+		color: black;
+		line-height: 11px;
+		font-size: 12px;
+	}
+	#info-compra span{
+		font-weight: normal;
+		display: block;
+		font-size: 11px;
+		margin-bottom: 25px;
+	}
 
 /* --------------------------------------------------------------------------------------------------------------------
 --------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------------------------

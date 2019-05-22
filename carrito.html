@@ -65,7 +65,7 @@
 					<h1 class="titulo-carrito">Carrito de compras</h1>
 					<hr>
 					<div class="row">
-						<!-- =============================================== PRIMERO =========================================================== -->
+					<!-- =============================================== PRIMERO =========================================================== -->
 						<div class="col-sm-12" id="">
 							<div class="row">
 								<div class="col-sm-2" id="b_producto">
@@ -98,16 +98,16 @@
 							<hr>
 						</div>
 
-						<!-- =============================================== MEDIO =========================================================== -->
+					<!-- =============================================== MEDIO =========================================================== -->
 						<div class="col-sm-12" style="text-align: right;padding-bottom: 10px;">
 							<h5 id="subtit-bd-carrito-izq">Subtotal (1producto): <span>$ 22,10</span></h5>
 						</div>
 						<div class="col-sm-12" style="padding: 10px 0 20px 20px;">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt eum, quia eaque! Maiores laudantium repellat eligendi itaque esse dolorem, iste nobis tenetur ab qui, est odit expedita non fugiat impedit.
 						</div>
-						<!-- ================================================================================================================== -->	
+					<!-- ================================================================================================================== -->	
 
-						<!-- =============================================== ULTIMO =========================================================== -->
+					<!-- =============================================== ULTIMO =========================================================== -->
 						<div class="col-sm-12" style="padding-top: 20px;">
 							<h3>Productos relacionados</h3>
 						</div>
@@ -142,22 +142,32 @@
 		    		<div class="row">
 						<div class="col-sm-12">
 							<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
-							<button id="boton-bd-carrito"><i class="fa fa-home"></i><span>A domicilio</span></button>
-							<button id="boton-bd-carrito"><i class="fa fa-truck"></i><span>Para recoger</span></button>
-							<div class="custom-control custom-radio" style="padding-top: 5px;">
-						      <input type="radio" class="custom-control-input" id="customRadio" name="example1">
-						      <label class="custom-control-label" for="customRadio" id="l1">Casa Principal<span>Cedros y Laureles seq.</span></label>
-						    </div>
-						    <div class="custom-control custom-radio" style="padding-top: 5px;">
-						      <input type="radio" class="custom-control-input" id="customRadio2" name="example1">
-						      <label class="custom-control-label" for="customRadio2" id="l1">Trabajo<span>Av. Don Bosco y Juan de Dios</span></label>
-						    </div>
+							<form class="formulario" action="">
+								<div class="radio1">
+							      <input type="radio" id="radio" name="example1" value="domicilio" checked>
+							      <label for="radio"><i class="fa fa-home"></i><span>A domicilio</span></label>
+							      <input type="radio" id="radio2" name="example1" value="recoger">
+							      <label for="radio2"><i class="fa fa-truck"></i><span>Para recoger</span></label>
+							    </div>
+							    <div class="radio2">
+							      <input type="radio" id="radio_1" name="example2" value="cprincipal" checked>
+							      <label for="radio_1">Casa Principal<span>Cedros y Laureles seq.</span></label>
+							      <input type="radio" id="radio_2" name="example2" value="trabajo">
+							      <label for="radio_2">Trabajo<span>Av. Don Bosco y Juan de Dios</span></label>
+							    </div>
+						    </form>
 						    <hr>
 						</div>
 						<div class="col-sm-12">
-							<strong><p id="subtitulo-bd-carrito">Método de pago:</p></strong>
-							<button id="boton-bd-carrito"><i class="fa fa-money"></i><span>Efectivo</span></button>
-							<button id="boton-bd-carrito"><i class="fa fa-id-card"></i><span>Targeta de crédito</span></button>
+							<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
+							<form class="formulario" action="">
+								<div class="radio1">
+							      <input type="radio" id="radio-1" name="example3" value="efectivo" checked>
+							      <label for="radio-1"><i class="fa fa-money"></i><span>Efectivo</span></label>
+							      <input type="radio" id="radio-2" name="example3" value="tarjeta">
+							      <label for="radio-2"><i class="fa fa-id-card"></i><span>Tarjeta de credito</span></label>
+							    </div>
+						    </form>
 							<p id="nota-pago-carrito">Recuerda que deberás cancelar a tu courier al momento de la entrega de tu pedido.</p>
 							<hr>
 						</div>
