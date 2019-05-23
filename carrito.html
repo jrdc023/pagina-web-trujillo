@@ -74,8 +74,8 @@
 								<div class="col-sm-3" id="produc-selec">
 									<h6><strong>Reposado Anisado Ron Viejo</strong></h6>
 									<div class="row" id="eliminar-guadar">
-										<div class="col-sm-4" id="link-eliminar">Eliminar</div>
-										<div class="col-sm-8">Guardar producto</div>
+										<div class="col-sm-4" id="link-eliminar"><a href="">Eliminar</a></div>
+										<div class="col-sm-8"><a href="">Guardar producto</a></div>
 									</div>
 								</div>
 								<div class="col-sm-3 justify-content-end" id="costo-produc-selec"><span>$ 22,10</span></div>
@@ -151,10 +151,39 @@
 							    </div>
 							    <div class="radio2">
 							      <input type="radio" id="radio_1" name="example2" value="cprincipal" checked>
-							      <label for="radio_1">Casa Principal<span>Cedros y Laureles seq.</span></label>
+							      <label for="radio_1"><span id="s1">Casa Principal</span><span id="s2">Cedros y Laureles seq.</span></label>
 							      <input type="radio" id="radio_2" name="example2" value="trabajo">
-							      <label for="radio_2">Trabajo<span>Av. Don Bosco y Juan de Dios</span></label>
+							      <label for="radio_2"><span id="s1">Trabajo</span><span id="s2">Av. Don Bosco y Juan de Dios</span></label>
 							    </div>
+							    <label for="" id="btn-modal-nd" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker" style=""></i><span>Nueva dirección</span></label>
+							    <!-- The Modal -->
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<!-- Modal Header -->
+											<div class="modal-header">
+												<img src="img/mapa.PNG" alt="" class="img-fluid" style="border: 1px solid #56F661">
+												<button type="button" class="close" data-dismiss="modal">&times;</button>
+											</div>
+											<!-- Modal body -->
+											<div class="modal-body" style="display: inline-block;">
+												<h5 style="font-weight: bold;">Información de la nueva dirección</h5>
+												<input type="text" name="info-dir" placeholder="Calle Principal" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+												<input type="text" name="info-dir" placeholder="Calle Secundaria" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+												<input type="text" name="info-dir" placeholder="Referencia" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+												<input type="text" name="info-dir" placeholder="# de casa" style="width: 100%;margin-bottom: 0px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+												<style type="text/css">
+													.modal-body input::placeholder {color: #DBD9D8;padding-left: 3px;}
+												</style>
+											</div>
+											<!-- Modal footer -->
+											<div class="modal-footer">
+												<button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+												<button type="button" class="btn btn-success" data-dismiss="modal">Guardar dirección</button>
+											</div>
+										</div>
+									</div>
+								</div>
 						    </form>
 						    <hr>
 						</div>

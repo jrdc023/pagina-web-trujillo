@@ -403,6 +403,7 @@
 	  color: #6a7dfe;
 	}
 
+
 /*--------------------------------------------------------------------------------------------------------------
 -------------------------------------------------- estilos para registro ------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
@@ -471,12 +472,13 @@
 		font-weight: bold;
 	}
 
+
 /*--------------------------------------------------------------------------------------------------------------
 --------------------------------------------- estilos para producto --------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 
 
-/*--------------------------------- estilos para menu izq. categoria -------------------------------------------*/
+/*--------------------------------- estilos para menu izq. categoria (productos2) -------------------------------------------*/
 .accordion {
  	background: none;
 	*background-color: #eee;
@@ -522,6 +524,7 @@
 	font-size: 14px;
 	font-weight: bold;
 }
+
 
 /*--------------------------------------------------------------------------------------------------------------
 --------------------------------------- estilos para detalle de producto ---------------------------------------
@@ -695,6 +698,7 @@
 		color: black;
 	}
 
+
 /*--------------------------------------------------------------------------------------------------------------
 --------------------------------------- estilos para carrito de la compra ---------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
@@ -708,14 +712,20 @@
 	#produc-selec{
 		padding-top: 25px;
 	}
-	#eliminar-guadar{
+	#eliminar-guadar a{
 		color: gray;
+		text-decoration: none;
+	}
+	#eliminar-guadar a:hover{
+		color: #E79E11;
+		font-size: 13px;
 	}
 	#link-eliminar{
 		border-right-style: solid;
 		border-right-color: gray;
 		border-right-width: thin;
 	}
+	
 	#costo-produc-selec{
 		text-align: center;
 		padding: 40px 0;
@@ -801,82 +811,93 @@
 	}
 
 /*----------------- estilos forma de entrega  de carrito de compra ---------------------------*/
-.formulario input[type="radio"]{
-	display: none;
-}
-.formulario .radio1 label{
-	width: 100%;
-	background: #fff;
-	padding: 5px 15px;
-	border-radius: 5px;
-	color: silver;
-	display: inline-block;
-	position: relative;
-	cursor: pointer;
-	border: 1px solid silver;
-}
-.formulario .radio1 span{
-	margin-left: 10px;
-}
-.formulario .radio1 label:hover{
-	background: #00ba00;
-	color: #fff;
-}
-.formulario .radio1 input[type="radio"]:checked + label{
-	background: #00ba00;
-	color: #fff;
-}
-.formulario .radio2 label{
-	width: 100%;
-	background: #fff;
-	border-radius: 5px;
-	color: silver;
-	display: inline-block;
-	position: relative;
-	cursor: pointer;
-	font-size: 12px;
-	font-weight: bold;
-}
-.formulario .radio2 label span{
+	.formulario input[type="radio"]{
+		display: none;
+	}
+	.formulario .radio1 label{
+		width: 100%;
+		background: #fff;
+		padding: 5px 15px;
+		border-radius: 5px;
+		color: silver;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		border: 1px solid silver;
+	}
+	.formulario .radio1 span{
+		margin-left: 10px;
+	}
+	.formulario .radio1 label:hover{
+		background: #00ba00;
+		color: #fff;
+	}
+	.formulario .radio1 input[type="radio"]:checked + label{
+		background: #00ba00;
+		color: #fff;
+	}
+	.formulario .radio2 label{
+		width: 100%;
+		background: #fff;
+		border-radius: 5px;
+		color: silver;
+		display: inline-block;
+		position: relative;
+		cursor: pointer;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.formulario .radio2 label #s2{
 		display: block;
 		font-size: 9.5px;
 		margin-top: -5px;
 		font-weight: normal;
 		*color: black;
 	}
-.formulario .radio2 label:before{
-	content: "";
-	width: 13px;
-	height: 13px;
-	display: inline-block;
-	border-radius: 50%;
-	border: 2px solid silver;
-	position: absolute;
-	left: 90%;
-	top: 9px;
-}
-.formulario .radio2 label:hover{
-	*color: #00ba00;
-}
-.formulario .radio2 label span:hover{
-	color: black;
-	{
-		color:#00ba00;
-	};
-}
-.formulario .radio2 label:before + label:before:hover{
-	*border: 2px solid #00ba00;
-}
-.formulario .radio2 input[type="radio"]:checked + label:before{
-	border: 4px solid  #00ba00;
+	.formulario .radio2 label #s1:before{
+		content: "";
+		width: 13px;
+		height: 13px;
+		display: inline-block;
+		border-radius: 50%;
+		border: 2px solid silver;
+		position: absolute;
+		left: 90%;
+		top: 9px;
+	}
+	.formulario .radio2 label:hover #s1{
+		color: #00ba00;
+	}
+	.formulario .radio2 label:hover #s2{
+		color: black;
+	}
+	.formulario .radio2 input[type="radio"]:checked + label #s1:before{
+		border: 4px solid  #00ba00;
+	}
+	.formulario .radio2 input[type="radio"]:checked + label #s1{
+		color: #00ba00;
+	}
+	.formulario .radio2 input[type="radio"]:checked + label #s2{
+		color: black;
+	}
 
-}
-.formulario .radio2 input[type="radio"]:checked + label{
-	color: #00ba00;
-}
-.formulario .radio2 input[type="radio"]:checked + label span{
-	color: black;
-}
+/*------------------------ estilos para la ventana modal de carrito de la compra------------------------------*/
+	#btn-modal-nd{
+		margin-top:5px;
+		cursor: pointer;
+		padding:5px 15px;
+		width:100%;
+		border-radius:4px;
+		border-style:none;
+		background:#00BA00;
+		color:#fff;
+	}
+	#btn-modal-nd span{
+		margin-left: 10px;
+	}
+
+
+
 /*--------------------------------------------------------------------------------------------------------------
 ------------------------------------------- estilos para compra final ------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
@@ -898,9 +919,10 @@
 		margin-bottom: 25px;
 	}
 
+
 /* --------------------------------------------------------------------------------------------------------------------
---------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------------------------
------------------------------------------------------------------------------------------------------------------------*/
+--------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -----------------------------------------
+---------------------------------------------------------------------------------------------------------------------*/
 /*@media (max-width:575.98px)*/
 @media (width:360px) {
 	.navbar-nav{
