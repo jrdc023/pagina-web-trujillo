@@ -16,61 +16,15 @@
 		*height: 100%;
 		*color: #fff;
 		background: #00ba00;
-		/*background: red;*/
 	}
 	.navbar{
-		/*display: flex;
-		 *margin: auto;
-		 *width: 100%;*/
 		justify-content: space-between!important;
-		/*align-items: center;
-		 *max-width: 100%;
-		 *overflow: hidden;
-		 *height: 55px;
-		 *background: red;
-		 *padding-top: 15px;
-		 *padding-bottom: 20px;*/
 	}
 	.icono-responsivo{
 		display: none;
 		font-size: 24px;
 		padding: 23.5px 20px;
 	}
-	/*.contenedor-menu img{
-		padding-left: 15%;
-		height: 70%;
-		margin-top: 10px;
-	}
-	#menu #enlaces{
-		padding-top: 15px;
-		padding-right: 2%;
-	}
-	#menu #enlaces a{
-		display: inline-block;
-		*padding: 5px 0;
-		color: #fff;
-		margin-right: 10px;
-		font-size: 12px;
-		font-weight: 300;
-		text-decoration: none;
-		*border-bottom: 3px solid transparent;
-	}
-	#menu #enlaces a:hover{
-		color: orange;
-		transition: 0.5s;
-	}
-
-		width: 100%;
-		height: 500px;
-		position: relative;
-	}
-	.conten-img{
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-	}*/
 	.slider{
 		width: 100%;
 		margin: auto auto -7px auto;
@@ -107,13 +61,6 @@
 	 	position: absolute;
 	    margin-top: 8%;
 		text-align: right;
-		/*display: flex;
-		 *justify-content: center;
-		 *flex-direction: column;
-		 *align-items: right;
-		 *margin-left: 75%;
-		 *font-size: 12px;
-		 *font-family: Helvetica;*/
 	}
 	#h1_mb{
 		margin-bottom: 0;
@@ -184,79 +131,6 @@
 	#redes_sociales{
 		margin-top: 30px;
 	}
-	/*.content-descarga-fondo{
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-	}
-	#mensaje-descargalo2 img{
-		width: 90px;
-		height: 30px;
-		position: relative;
-	}
-	#mensaje-descargalo2{
-		margin-left: 5%;
-	}
-	#mensaje-descargalo1{
-		width: 200px;
-		text-align: left;
-		margin-left: 5%;
-		padding-top: 10%;
-		position: relative;
-	}
-	#registro{
-		width: 100%;
-		height: 500px;
-		position: relative;
-		overflow: hidden;
-	}
-	.content-registro-fondo{
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0px;
-		left: 0px;
-	}
-	#mensaje-registro2 button{
-		width: 52%;
-		height: 30px;
-		font-size: 10px;
-		text-align: center;
-		position: relative;
-	}
-	#mensaje-registro2{
-		margin-left: 75%;
-	}
-	#mensaje-registro1{
-		width: 200px;
-		text-align: right;
-		margin-left: 73%;
-		padding-top: 12%;
-		position: relative;
-	}
-	.bt2{
-		background: #00ba00;
-		color: #fff;
-		font-size: 12px; 
-		padding-top: 9px;
-		padding-left: 50px; 
-		padding-bottom: 9px; 
-		padding-right: 50px;
-		border-radius:10px;
-		border-style: none;
-		outline: 0px;
-		position: absolute;
-		font-family: sans-serif;
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -moz-box;
-		display: -ms-flexbox;
-	}
-	button:hover {
-		cursor: pointer;
-	}*/
 	footer{
 		background: orange;
 		text-align: center;
@@ -267,6 +141,7 @@
 	#pie{
 		margin-bottom: 0;
 	}
+
 
 /*--------------------------------------------------------------------------------------------------------------
 -------------------------------------------------- estilos para login ------------------------------------------
@@ -477,53 +352,48 @@
 --------------------------------------------- estilos para producto --------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 
-
-/*--------------------------------- estilos para menu izq. categoria (productos2) -------------------------------------------*/
-.accordion {
- 	background: none;
-	*background-color: #eee;
-	color: #444;
-	cursor: pointer;
-	padding: 18px;
-	width: 100%;
-	border: none;
-	text-align: left;
-	outline: none;
-	font-size: 15px;
-	transition: 0.4s;
-}
-
-.active, .accordion:hover {
-	*background-color: #ccc;
-}
-
-.accordion:after {
-	content: '\02C5';
-	color: #777;
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
-}
-
-.accordion.active:after {
-	content: "\02C4";
-}
-
-.panel {
-	padding: 0 18px;
-	*background-color: white;
-	max-height: 0;
-	overflow: hidden;
-	transition: max-height 0.2s ease-out;
-}
-#btn-filtrar{
-	background: #00ba00;
-	padding: 7px 60px 7px 60px;
-	border-radius: 12px;
-	margin-left: 12px;
-	font-size: 14px;
-	font-weight: bold;
-}
+/*-------------------------- estilos para menu izq. categoria (productos2) -------------------------------*/
+	.accordion {
+	 	background: none;
+		*background-color: #eee;
+		color: #444;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 15px;
+		transition: 0.4s;
+	}
+	.active, .accordion:hover {
+		*background-color: #ccc;
+	}
+	.accordion:after {
+		content: '\02C5';
+		color: #777;
+		font-weight: bold;
+		float: right;
+		margin-left: 5px;
+	}
+	.accordion.active:after {
+		content: "\02C4";
+	}
+	.panel {
+		padding: 0 18px;
+		*background-color: white;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+	}
+	#btn-filtrar{
+		background: #00ba00;
+		padding: 7px 60px 7px 60px;
+		border-radius: 12px;
+		margin-left: 12px;
+		font-size: 14px;
+		font-weight: bold;
+	}
 
 
 /*--------------------------------------------------------------------------------------------------------------
@@ -642,8 +512,7 @@
 	#myNumber[type="number"]{
 		-moz-appearance:textfield;
 	}
-
-	#inc-dec{
+	/*#inc-dec{
 		width: 46px;
 	    font-size: 15px;
 	    font-weight: bold;
@@ -653,7 +522,7 @@
 	    text-align: center;
 	    color: #fff;
 	    padding-bottom: 3px;
-	}
+	}*/
 
 /*-------------------------------*/
 	#btn-agregar-carrito{
@@ -707,7 +576,12 @@
 		margin-top: 30px;
 	}
 	#b_producto{
-		padding: 15px 0 15px 60px;
+		padding: 10px 0;
+		margin-left: 30px;
+		margin-right: -60px;
+	}
+	#img-produc{
+		width: 19%;
 	}
 	#produc-selec{
 		padding-top: 25px;
@@ -725,7 +599,6 @@
 		border-right-color: gray;
 		border-right-width: thin;
 	}
-	
 	#costo-produc-selec{
 		text-align: center;
 		padding: 40px 0;
@@ -733,6 +606,10 @@
 		font-weight: bold;
 		color: #00ba00;
 		font-family: sans-serif;
+	}
+	#bl-dism-inc{
+		padding: 35px 0 0 20px;
+		vertical-align: middle;
 	}
 	#btn-incre-dismi-carrito{
 		padding: 0 15px;
@@ -765,6 +642,9 @@
 		padding-top: 20px;
 		padding-bottom: 16px;
 	}
+	#contenedor-der-carrito1{
+		display: none;
+	}
 
 /*----- contenedor derecha de la página carrito ----------*/
 	#contenedor-der-carrito{
@@ -774,6 +654,7 @@
 		border-radius: 5px;
 		margin-top: 10px;
 		border: 1px solid #d2d2d2;
+		margin-bottom: 10px;
 	}
 	#subtitulo-bd-carrito{
 		font-size: 14px;
@@ -897,7 +778,6 @@
 	}
 
 
-
 /*--------------------------------------------------------------------------------------------------------------
 ------------------------------------------- estilos para compra final ------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
@@ -975,28 +855,68 @@
 		width: 3%;
 	}
 	/*------------------------------ PANTALLA DE INICIO SESION -----------------------------*/
-	#formulario{
-		width: 360px;
-		padding: 0px 10px;
-		margin: 88px 0px 0px 0px;
-	}
-	.contenedorInput input{
-		padding: 20px 0 5px 0;
-		font-size: 14px;
-	}
+		#formulario{
+			width: 360px;
+			padding: 0px 10px;
+			margin: 88px 0px 0px 0px;
+		}
+		.contenedorInput input{
+			padding: 20px 0 5px 0;
+			font-size: 14px;
+		}
 	/*------------------------------ PANTALLA DE REGISTRO -----------------------------*/
-	#registro{
-		width: 340px;
-		padding: 0px 10px;
-		margin: 42px 0px 0px 0px;
-	}
-	.contenedorInpuRegistro{
-		width: 270px;
-		margin-left: 27px;
-	}
-	#login{
-	    margin-left: 21px;
-	}
+		#registro{
+			width: 340px;
+			padding: 0px 10px;
+			margin: 42px 0px 0px 0px;
+		}
+		.contenedorInpuRegistro{
+			width: 270px;
+			margin-left: 27px;
+		}
+		#login{
+		    margin-left: 21px;
+		}
+	/*------------------------------ PANTALLA DE CARRITO -----------------------------*/
+		.col-sm-10{
+			padding-right: 0 !important;
+			padding-left: 0 !important; 
+		}
+		#bl-pr-carrito {
+		    margin: 0 0 5px 20px;
+		}
+		#pr-carrito {
+		    max-width: 45%;
+		    height: 150px;
+		    margin-top: 10px;
+		}
+		#img-pr-carrito {
+		    height: 65%;
+		    padding-left: 24px;
+		    padding-bottom: 5px;
+		}
+		#img-descu {
+		    width: 30px;
+		    border-radius: 0 0 20px 20px;
+		    float: right;
+		    margin-right: 0;
+		}
+		#precio-pr {
+		    font-size: 12px;
+		    margin-top: 5px;
+		}
+		#nom-pr{
+			font-size: 10px;
+	    	margin-bottom: 0;
+		}
+		#boton-pago-carrito {
+		    padding: 8px 77px;
+		    margin-left: 0px;
+		    font-size: 12px;
+		}
+		#informacion2{
+			padding-bottom: 7.5%;
+		}
 
 
 }
@@ -1036,12 +956,96 @@
 	#registro{
 		margin: 42px 0px 0px 90px;
 	}
+	/*------------------------------ PANTALLA DE CARRITO -----------------------------*/
+	#enlace-navbar{
+		margin-right: 0;
+	}
+	#logotipo-navbar {
+	    width: 97px;
+	    margin-left: -10px;
+	}
+	#b_producto {
+	    *padding: 10px 0;
+	    margin-left: 20px;
+	}
+	#img-produc {
+	    width: 40%;
+	}
+	#produc-selec {
+	    padding-top: 37px;
+	    padding-left: 0;
+	    padding-right: 0;
+	    margin-left: 30px;
+	}
+	#eliminar-guadar{
+		font-size: 11px;
+	}
+	#link-guardar{
+		padding-right: 0;
+		padding-left: 3px;
+	}
+	#costo-produc-selec {
+		margin-right: -40px;
+		margin-left: -40px;
+	}
+	#pr-carrito {
+	    max-width: 22%;
+	    height: 150px;
+	    padding-right: 0px;
+    	padding-left: 10px;
+	}
+	#img-pr-carrito {
+	    padding-left: 18px;
+	    padding-top: 13px;
+	    padding-bottom: 10px;
+	}
+	#img-descu {
+	    width: 25px;
+	    border-radius: 0 0 20px 20px;
+	    margin-right: -2px;
+	}
+	#precio-pr {
+		font-size: 12px;
+	}
+	#nom-pr {
+	    font-size: 10px;
+	}
+	#bl-pr-carrito {
+	    margin: 20px 0 20px 0px;
+	    width: 500px;
+	}
+	/*-------------------- estilos bloque derecho --------------------*/
+	#contenedor-der-carrito{
+		display: none;
+	}
+	#contenedor-der-carrito1{
+		padding-top: 15px;
+		height: fit-content;
+		overflow: hidden;
+		border-radius: 5px;
+		margin-top: 10px;
+		border: 1px solid #d2d2d2;
+		margin-bottom: 10px;
+		display: block;
+		margin-left: 15px;
+	}
+}
 
+@media (max-width:640px) {
+	/*.col-sm-10{
+		position: relative;
+		width: 100%;	
+	}
+	.col-sm-2{
+		position: relative;
+		width: 100%;
+	}*/
+	/*div .col-sm-2 #contenedor-der-carrito{
+		position: relative !important;
+		width: 100% !important;	
+	}*/
 }
-/*@media (min-width:576px) {
-	
-}
-@media (max-width:767.98px) {
+/*@media (max-width:767.98px) {
 	}
 @media (min-width:768px) {
 	}
