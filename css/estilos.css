@@ -785,6 +785,30 @@
 		color: #00ba00;
 		margin-top: 10px;
 	}
+	#bl-subtotal-cf{
+		padding-top: 15px;
+		border-radius: 10px;
+		*border: 1px solid #DEDDDD;
+	}
+	#bldr-subtotal-cf{
+		border: 1px solid #DEDDDD;
+		border-radius: 19px;
+		padding: 5px 0 5px 0px;
+		width: 100%;
+		margin-left: -19px;
+	}
+	#sep-bldr-subtotal-cf{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	#subtitulo-bd-cf{
+		font-size: 14px;
+		color: black;
+		margin-left: 15px;
+	}
+	#bl-ms-cf{
+		margin-top: -60px;
+	}
 	#info-compra{
 		font-weight: bold;
 		font-family: sans-serif;
@@ -798,6 +822,29 @@
 		font-size: 11px;
 		margin-bottom: 25px;
 	}
+	#boton-pago-cf{
+		background: orange;
+		padding: 7px 32px 7px 32px;
+		border-radius: 12px;
+		margin-left: 10px;
+		font-size: 11px;
+	}
+	#bl-pr-cf{
+		margin: 20px 0 20px 20px;
+	}
+	#pr-cf{
+		border:1px solid #E3DFDF;
+		border-radius: 15px;
+		max-width: 23%;
+		margin-right: 10px;
+		height: 220px;
+	}
+	#img-pr-cf{
+		height: 80%;
+		padding-left: 80px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 
 
 /* --------------------------------------------------------------------------------------------------------------------
@@ -805,56 +852,57 @@
 ---------------------------------------------------------------------------------------------------------------------*/
 /*@media (max-width:575.98px)*/
 @media (width:360px) {
-	.navbar-nav{
-		font-size: 9px;
-	}
-	#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
-		margin-top: 5%;
-	}
-	#h1_mb, #h1_2{
-		font-size: 16px;
-	}
-	#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
-		font-size: 10px;
-	}
-	#mensaje-bienvenida #parrafo2{
-		width: 70%;
-	}
-	#parrafo3, #parrafo4{
-		width: 60%;
-	}
-	#mensaje-descargalo{
-		padding-left: 15px;
-	}
-	#mensaje-descargalo img{
-		width: 85px;
-	}
-	#boton{
-		width: 35%;
-	    height: 20px;
-	    margin-top: 40px;
-	    margin-left: 65px;
-	    font-size: 8px;
-	}
-	#informacion .marca-logo img{
-		width: 45%;
-	}
-	#h5_personal{
-		font-size: 10px;
-	}
-	#redes_sociales{
-		margin-top: 15px;
-	}
-	#redes_sociales img{
-		width: 10%;
-	}
-	#pie{
-		font-size: 9px;
-	}
-	#pie img{
-		width: 3%;
-	}
-	/*------------------------------ PANTALLA DE INICIO SESION -----------------------------*/
+	/*------------------------------ general ----------------------------------------------*/
+		.navbar-nav{
+			font-size: 9px;
+		}
+		#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
+			margin-top: 5%;
+		}
+		#h1_mb, #h1_2{
+			font-size: 16px;
+		}
+		#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
+			font-size: 10px;
+		}
+		#mensaje-bienvenida #parrafo2{
+			width: 70%;
+		}
+		#parrafo3, #parrafo4{
+			width: 60%;
+		}
+		#mensaje-descargalo{
+			padding-left: 15px;
+		}
+		#mensaje-descargalo img{
+			width: 85px;
+		}
+		#boton{
+			width: 35%;
+		    height: 20px;
+		    margin-top: 40px;
+		    margin-left: 65px;
+		    font-size: 8px;
+		}
+		#informacion .marca-logo img{
+			width: 45%;
+		}
+		#h5_personal{
+			font-size: 10px;
+		}
+		#redes_sociales{
+			margin-top: 15px;
+		}
+		#redes_sociales img{
+			width: 10%;
+		}
+		#pie{
+			font-size: 9px;
+		}
+		#pie img{
+			width: 3%;
+		}
+	/*------------------------------ PANTALLA DE INICIO SESION ----------------------------*/
 		#formulario{
 			width: 360px;
 			padding: 0px 10px;
@@ -864,7 +912,7 @@
 			padding: 20px 0 5px 0;
 			font-size: 14px;
 		}
-	/*------------------------------ PANTALLA DE REGISTRO -----------------------------*/
+	/*------------------------------ PANTALLA DE REGISTRO ---------------------------------*/
 		#registro{
 			width: 340px;
 			padding: 0px 10px;
@@ -877,7 +925,7 @@
 		#login{
 		    margin-left: 21px;
 		}
-	/*------------------------------ PANTALLA DE CARRITO -----------------------------*/
+	/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
 		.col-sm-10{
 			padding-right: 0 !important;
 			padding-left: 0 !important; 
@@ -917,118 +965,180 @@
 		#informacion2{
 			padding-bottom: 7.5%;
 		}
+	/*------------------------------ PANTALLA DE COMPRA FINAL -----------------------------*/
+		.form-control {
+		    width: 81% !important;
+		}
+		#bl-subtotal-cf{
+			margin-top: 20px;
+		}
+		#boton-pago-carrito-cf {
+		    padding: 7px 50px 7px 50px;
+		    margin-left: 15px;
+		}
+		#bl-ms-cf{
+			margin-top: 15px;
+		}
+		#bl-pr-cf {
+		    margin: 10px 0 20px -10px;
+		}
+		#pr-cf {
+		    max-width: 46%;
+		    height: 155px;
+		    padding-right: 15px;
+    		padding-left: 15px;
+    		margin-top: 10px;
+		}
+		#img-pr-cf {
+		    height: 70%;
+		    padding-left: 21px;
+		    padding-bottom: 5px;
+		}
 
 
 }
 @media (width:640px) {
-	#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
-		margin-top: 7%;
-		max-width: 593px;
-	}
-	#h1_mb, #h1_2{
-		font-size: 18px;
-	}
-	#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
-		font-size: 12px;
-	}
-	#parrafo2, #parrafo3, #parrafo4{
-		width: 40%;
-	}
-	#mensaje-descargalo img{
-		width: 110px;
-	}
-	#boton{
-		width: 30%;
-	    height: 30px;
-	    margin-top: 53px;
-	    margin-left: 50px;
-	    font-size: 10px;
-	}
-	/*------------------------------ PANTALLAS DE INICIO SESION -----------------------------*/
-	#formulario{
-		margin: 40px 0px 0px 140px;
-	}
-	.contenedorInput input{
-		padding: 20px 0 5px 0;
-		font-size: 14px;
-	}
-	/*------------------------------ PANTALLA DE REGISTRO -----------------------------*/
-	#registro{
-		margin: 42px 0px 0px 90px;
-	}
-	/*------------------------------ PANTALLA DE CARRITO -----------------------------*/
-	#enlace-navbar{
-		margin-right: 0;
-	}
-	#logotipo-navbar {
-	    width: 97px;
-	    margin-left: -10px;
-	}
-	#b_producto {
-	    *padding: 10px 0;
-	    margin-left: 20px;
-	}
-	#img-produc {
-	    width: 40%;
-	}
-	#produc-selec {
-	    padding-top: 37px;
-	    padding-left: 0;
-	    padding-right: 0;
-	    margin-left: 30px;
-	}
-	#eliminar-guadar{
-		font-size: 11px;
-	}
-	#link-guardar{
-		padding-right: 0;
-		padding-left: 3px;
-	}
-	#costo-produc-selec {
-		margin-right: -40px;
-		margin-left: -40px;
-	}
-	#pr-carrito {
-	    max-width: 22%;
-	    height: 150px;
-	    padding-right: 0px;
-    	padding-left: 10px;
-	}
-	#img-pr-carrito {
-	    padding-left: 18px;
-	    padding-top: 13px;
-	    padding-bottom: 10px;
-	}
-	#img-descu {
-	    width: 25px;
-	    border-radius: 0 0 20px 20px;
-	    margin-right: -2px;
-	}
-	#precio-pr {
-		font-size: 12px;
-	}
-	#nom-pr {
-	    font-size: 10px;
-	}
-	#bl-pr-carrito {
-	    margin: 20px 0 20px 0px;
-	    width: 500px;
-	}
-	/*-------------------- estilos bloque derecho --------------------*/
-	#contenedor-der-carrito{
-		display: none;
-	}
-	#contenedor-der-carrito1{
-		padding-top: 15px;
-		height: fit-content;
-		overflow: hidden;
-		border-radius: 5px;
-		margin-top: 10px;
-		border: 1px solid #d2d2d2;
-		margin-bottom: 10px;
-		display: block;
-		margin-left: 15px;
-	}
+	/*------------------------------ general ----------------------------------------------*/
+		#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
+			margin-top: 7%;
+			max-width: 593px;
+		}
+		#h1_mb, #h1_2{
+			font-size: 18px;
+		}
+		#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
+			font-size: 12px;
+		}
+		#parrafo2, #parrafo3, #parrafo4{
+			width: 40%;
+		}
+		#mensaje-descargalo img{
+			width: 110px;
+		}
+		#boton{
+			width: 30%;
+		    height: 30px;
+		    margin-top: 53px;
+		    margin-left: 50px;
+		    font-size: 10px;
+		}
+	/*------------------------------ PANTALLAS DE INICIO SESION ---------------------------*/
+		#formulario{
+			margin: 40px 0px 0px 140px;
+		}
+		.contenedorInput input{
+			padding: 20px 0 5px 0;
+			font-size: 14px;
+		}
+	/*------------------------------ PANTALLA DE REGISTRO ---------------------------------*/
+		#registro{
+			margin: 42px 0px 0px 90px;
+		}
+	/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
+		#enlace-navbar{
+			margin-right: 0;
+		}
+		#logotipo-navbar {
+		    width: 97px;
+		    margin-left: -10px;
+		}
+		#b_producto {
+		    *padding: 10px 0;
+		    margin-left: 20px;
+		}
+		#img-produc {
+		    width: 40%;
+		}
+		#produc-selec {
+		    padding-top: 37px;
+		    padding-left: 0;
+		    padding-right: 0;
+		    margin-left: 30px;
+		}
+		#eliminar-guadar{
+			font-size: 11px;
+		}
+		#link-guardar{
+			padding-right: 0;
+			padding-left: 3px;
+		}
+		#costo-produc-selec {
+			margin-right: -40px;
+			margin-left: -40px;
+		}
+		#pr-carrito {
+		    max-width: 22%;
+		    height: 150px;
+		    padding-right: 0px;
+	    	padding-left: 10px;
+		}
+		#img-pr-carrito {
+		    padding-left: 18px;
+		    padding-top: 13px;
+		    padding-bottom: 10px;
+		}
+		#img-descu {
+		    width: 25px;
+		    border-radius: 0 0 20px 20px;
+		    margin-right: -2px;
+		}
+		#precio-pr {
+			font-size: 12px;
+		}
+		#nom-pr {
+		    font-size: 10px;
+		}
+		#bl-pr-carrito {
+		    margin: 20px 0 20px 0px;
+		    width: 500px;
+		}
+	/*------------------------------ estilos bloque derecho -------------------------------*/
+		#contenedor-der-carrito{
+			display: none;
+		}
+		#contenedor-der-carrito1{
+			padding-top: 15px;
+			height: fit-content;
+			overflow: hidden;
+			border-radius: 5px;
+			margin-top: 10px;
+			border: 1px solid #d2d2d2;
+			margin-bottom: 10px;
+			display: block;
+			margin-left: 15px;
+		}
+	/*------------------------------ PANTALLA DE COMPRA FINAL -----------------------------*/
+		#cont-logo{
+			width: 12%;
+		}
+		#logo{
+			width: 100%;
+		}
+		#bldr-subtotal-cf {
+		    width: 168px;
+		    margin-left: -50px;
+		}
+		#bl-ms-cf{
+			margin-top: 15px;
+		}
+		#bl-info-cf{
+			width: 313px;
+	    	margin-top: -90px;
+		}
+		#bl-pr-cf {
+		    margin: 10px 0 20px -10px;
+		}
+		#pr-cf {
+		    height: 155px;
+		}
+		#img-pr-cf {
+		    height: 70%;
+		    padding-left: 21px;
+		    padding-bottom: 5px;
+		}
+		#redes_sociales_dp {
+		    padding-bottom: 10px;
+		}
 }
 
 @media (max-width:640px) {
