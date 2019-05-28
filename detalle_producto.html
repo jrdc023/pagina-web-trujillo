@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viwport" content="width=device-width, initial-scale=1.0">
+	<title>Detalle de producto</title>
+
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/bootstrap2.min.css">
 
@@ -10,14 +12,13 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<title>Document</title>
 </head>
 <body>
 	<header>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display: flex; justify-content: space-between; ">
 			<!-- Brand/logo -->
-		  	<a class="navbar-brand" href="#">
-		    	<img src="img/logo-trujillo.png" alt="logo" >
+		  	<a class="navbar-brand" id="logo-menu-dp" href="#">
+		    	<img src="img/logo-trujillo.png" id="img-logo-dp" alt="logo" >
 		  	</a>
 		  	<!-- Search -->
 		  	<form class="form-inline" action="/action_page.php">
@@ -27,43 +28,55 @@
 		    	</button>
 		  	</form>  
 		  	<!-- Links -->
-		  	<ul class="navbar-nav justify-content-end">
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="index.html">INICIO</a>
-		    	</li>
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="#">PROMOCIONES</a>
-		    	</li>
-		    	<li class="nav-item">
-		    		<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
-		    	</li>
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
-		    	</li>
-		    	<!-- Dropdown -->
-			    <li class="nav-item dropdown">
-			      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-			        	Nombre Usuario
-			      	</a>
-			      	<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">Mi perfil</a>
-				        <a class="dropdown-item" href="#">Mis direcciones</a>
-				        <hr>
-				        <a class="dropdown-item" href="#">Mis pedidos</a>
-				        <a class="dropdown-item" href="#">Configuración</a>
-				        <a class="dropdown-item" href="#">Ayuda</a>
-				        <a class="dropdown-item" href="#">Salir</a>
-			      	</div>
-			    </li>
-		  	</ul>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		  	<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+			  	<ul class="navbar-nav ">
+			    	<li class="nav-item">
+			      		<a class="nav-link" href="index.html">INICIO</a>
+			    	</li>
+			    	<li class="nav-item">
+			      		<a class="nav-link" href="#">PROMOCIONES</a>
+			    	</li>
+			    	<li class="nav-item">
+			    		<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
+			    	</li>
+			    	<li class="nav-item">
+			      		<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
+			    	</li>
+			    	<!-- Dropdown -->
+				    <li class="nav-item dropdown">
+				      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+				        	Nombre Usuario
+				      	</a>
+				      	<div class="dropdown-menu">
+					        <a class="dropdown-item" href="#">Mi perfil</a>
+					        <a class="dropdown-item" href="#">Mis direcciones</a>
+					        <hr>
+					        <a class="dropdown-item" href="#">Mis pedidos</a>
+					        <a class="dropdown-item" href="#">Configuración</a>
+					        <a class="dropdown-item" href="#">Ayuda</a>
+					        <a class="dropdown-item" href="#">Salir</a>
+				      	</div>
+				    </li>
+			  	</ul>
+			</div>
 		</nav>
 	</header>
 	<div class="container-fluid" id="cuerpo">
 		<div class="container-fluid">
 	  		<div class="row">
-	    		<div class="col-sm-6" style="padding-top: 5px;">Licores/Vinos/Todos</div>
-	    		<div class="col-sm-6" style="padding-top: 5px;">
-					<div class="icon-bar" style="float: right; font-size: 16px;">
+	    		<div class="col-sm-6" id="gerarquia-links-dp">
+	    			<!--Licores/Vinos/Todos-->
+	    			<ul class="breadcrumb" id="menu-slash">
+						<li class="breadcrumb-item"><a href="#">Licores</a></li>
+					    <li class="breadcrumb-item"><a href="#">Vinos</a></li>
+					    <li class="breadcrumb-item active" style="color: black;">Todos</li>
+					</ul>
+	    		</div>
+	    		<div class="col-sm-6" id="rs">
+					<div class="icon-bar">
 					  <a href="#"><i id="i-social" class="fa fa-facebook-square"></i></a> 
 					  <a href="#"><i id="i-social" class="fa fa-twitter"></i></a> 
 					  <a href="#"><i id="i-social" class="fa fa-instagram"></i></i></a>  
@@ -87,7 +100,7 @@
 		            	</div>
 		            </div>
 	    		</div>
-	   			<div class="col-sm-8" style="padding: 0 90px;">
+	   			<div class="col-sm-8" id="cali-info-produc">
 	   				<h1 style="color: black;">Reposado Anisado Ron Viejo</h1>
 	   				<form id="calificacion">
 						<div class="row">
@@ -107,12 +120,12 @@
 						</div>
 					</form>
 					<div class="row">
-		              	<div class="col-sm-3" style="padding-left: 0;margin-left: 14px;">
-		              		<img class="img-fluid" src="img/icon-list-green.png" alt="" style="width: 16px; margin-right: 5px;">
+		              	<div class="col-sm-3" id="agre-list">
+		              		<img class="img-fluid" id="botn-agregar-marcar" src="img/icon-list-green.png" alt="">
 		              		<a href="#" style="color: black; ">Agregar a la lista</a>
 		          		</div>
-		              	<div class="col-sm-5" style="padding-left: 0;margin-left: -30px;">
-		              		<img class="img-fluid" src="img/icon-heart.png" alt="" style="width: 16px; margin-right: 5px;">
+		              	<div class="col-sm-5" id="favorito">
+		              		<img class="img-fluid" id="botn-agregar-marcar" src="img/icon-heart.png" alt="">
 		              		<a href="#" style="color: black; ">Marcar como favorito</a>
 		              	</div>
 		            </div>
@@ -140,6 +153,9 @@
 		<hr>
 		<!-- productos relacionados -->
 		<div class="container-fluid">
+			<div class="col-sm-12">
+				<h3>Productos relacionados</h3>
+			</div>
 	  		<div class="row" id="lp-re">
 	    		<div class="col-sm-3" id="colum-re">
 	    			<img class="img-fluid" id="p-relacionados" src="img/IMG_5825.png" alt="">

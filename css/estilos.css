@@ -1,4 +1,4 @@
-/*---------------- estilos para el index ---------------------*/
+/*------------------------------------------- estilos para el index ------------------------------------------*/
 	@font-face {
 	  font-family: Helvetica;
 	  src: url('../fonts/poppins/HelveticaNeueLTStd Lt.otf'); 
@@ -280,7 +280,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
--------------------------------------------------- estilos para registro ------------------------------------------
+-------------------------------------------------- estilos para registro ---------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#titulo-registro{
 		text-align: center;
@@ -352,7 +352,7 @@
 --------------------------------------------- estilos para producto --------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 
-/*-------------------------- estilos para menu izq. categoria (productos2) -------------------------------*/
+/*------------------------------ estilos para menu izq. categoria (productos2) -------------------------------*/
 	.accordion {
 	 	background: none;
 		*background-color: #eee;
@@ -402,8 +402,25 @@
 	#cuerpo{
 		width: 95%;
 	}
+	#gerarquia-links-dp{
+		padding-top: 5px;
+	}
+	#menu-slash{
+		background: none;
+	}
+	#menu-slash a{
+		color: #babbba;
+		text-decoration: none;
+	}
+	#menu-slash a:hover{
+		color: #66E666;
+	}
+	#rs{
+		padding-top: 10px;
+		font-size: 16px;
+    	text-align: right;
+	}
 	#informacion2{
-		*position: fixed;
 		left: 0;
 		bottom: 0;
 		width: 100%;
@@ -411,8 +428,8 @@
 		padding-bottom: 4.5%;
 		text-align: center;
 		background: #00ba00;
-		*display: none;
 	}
+
 	#redes_sociales_dp{
 		margin-top: 20px;
 	}
@@ -449,8 +466,19 @@
 		margin: 0 25px;
 		padding: 10px 0;
 	}
+	#cali-info-produc{
+		padding: 0 90px;
+	}
+	#agre-list{
+		padding-left: 0;
+		margin-left: 14px;
+	}
+	#favorito{
+		padding-left: 0;
+		margin-left: -30px;
+	}
 
-/*---------------------------- estilo para calificación por estrellas ---------------------*/
+/*-------------------------------------- estilo para calificación por estrellas ------------------------------*/
 	#calificacion{
 		height: 35px;
 	}
@@ -478,6 +506,10 @@
 	    padding-left: 10px;
 	    font-size: 14px;
 	}
+	#botn-agregar-marcar{
+		width: 16px;
+		margin-right: 5px;
+	}
 	/* --------------- */
 	#costo{
 		color: #00ba00;
@@ -492,7 +524,7 @@
 		margin-left: -3px;
 	}
 
-/*----------------------- disminuir-incrementar ---------------------------*/
+/*--------------------------------------------- disminuir-incrementar ----------------------------------------*/
 	#disminuir-incrementar{
 		width: 34%;
 	    display: flex;
@@ -512,7 +544,7 @@
 	#myNumber[type="number"]{
 		-moz-appearance:textfield;
 	}
-	/*#inc-dec{
+	#inc-dec{
 		width: 46px;
 	    font-size: 15px;
 	    font-weight: bold;
@@ -522,9 +554,9 @@
 	    text-align: center;
 	    color: #fff;
 	    padding-bottom: 3px;
-	}*/
+	}
 
-/*-------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
 	#btn-agregar-carrito{
 		width: 25%;
 		height: 30px;
@@ -536,7 +568,7 @@
 		color: #fff;
 	}
 
-/*-------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
 	#p-relacionados{
 		width: 60px;
 		margin-left: 40%;
@@ -569,7 +601,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
---------------------------------------- estilos para carrito de la compra ---------------------------------------
+--------------------------------------- estilos para carrito de la compra --------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	.titulo-carrito{
 		color: #00ba00;
@@ -646,7 +678,7 @@
 		display: none;
 	}
 
-/*----- contenedor derecha de la página carrito ----------*/
+/*------------------------------------ contenedor derecha de la página carrito -------------------------------*/
 	#contenedor-der-carrito{
 		padding-top: 15px;
 		height: fit-content;
@@ -691,7 +723,7 @@
 		font-size: 11px;
 	}
 
-/*----------------- estilos forma de entrega  de carrito de compra ---------------------------*/
+/*----------------------------- estilos forma de entrega  de carrito de compra -------------------------------*/
 	.formulario input[type="radio"]{
 		display: none;
 	}
@@ -847,9 +879,9 @@
 	}
 
 
-/* --------------------------------------------------------------------------------------------------------------------
---------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -----------------------------------------
----------------------------------------------------------------------------------------------------------------------*/
+/* --------------------------------------------------------------------------------------------------------------
+------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------
+---------------------------------------------------------------------------------------------------------------*/
 /*@media (max-width:575.98px)*/
 @media (width:360px) {
 	/*------------------------------ general ----------------------------------------------*/
@@ -924,6 +956,59 @@
 		}
 		#login{
 		    margin-left: 21px;
+		}
+	/*------------------------------ PANTALLA DE DETALLE DE PRODUCTO ----------------------*/
+		#logo-menu-dp{
+		    width: 30%;
+		    margin-right: 0;
+		    margin-left: -4%;
+		}
+		#img-logo-dp{
+		    width: 100%;
+		}
+		#gerarquia-links-dp{
+			max-width: 80%;
+		}
+		#menu-slash {
+		    width: 63%;
+		    padding: 0;
+		}
+		#rs{
+			position: absolute;
+		    margin-left: 147px;
+    		width: 50%;
+		}
+		#descuen {
+		    margin-left: 25px;
+    		height: 55px;
+		}
+		#miniaturas {
+		    margin: 0 15px;
+		}
+		#cali-info-produc{
+			padding: 10px 0 0 0;
+		}
+		#agre-list, #favorito{
+			margin-left: 14px;
+		}
+		#inc-dec{
+			padding-right: 15px;
+    		padding-left: 15px;
+		}
+		#btn-agregar-carrito {
+		    width: 50%;
+		}
+		#lp-re{
+			margin: 15px 0 0 0;
+		}
+		#colum-re {
+		    max-width: 46%;
+		    margin-bottom: 15px;
+		}
+		#p-relacionados {
+			width: 45%;
+			margin-left: 20%;
+			padding: 7px 0;
 		}
 	/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
 		.col-sm-10{
@@ -1033,6 +1118,54 @@
 	/*------------------------------ PANTALLA DE REGISTRO ---------------------------------*/
 		#registro{
 			margin: 42px 0px 0px 90px;
+		}
+	/*------------------------------ PANTALLA DE DETALLE DE PRODUCTO ----------------------*/
+		#logo-menu-dp{
+		    width: 15%;
+		    margin-right: 0;
+		    margin-left: -1%;
+		}
+		#img-logo-dp{
+		    width: 100%;
+		}
+		#menu-slash {
+		    background: none;
+		    width: 63%;
+		    padding: 0;
+		}
+		#descuen {
+		    margin-left: 0;
+    		height: 40px;
+    		margin-right: 0;
+		}
+		#miniaturas {
+		    margin: 0 -15px;
+		}
+		#cali-info-produc{
+			padding: 10px 0 0 10px;
+		}
+		#agre-list, #favorito{
+			margin-left: 14px;
+		}
+		#inc-dec{
+			padding-right: 15px;
+    		padding-left: 15px;
+		}
+		#btn-agregar-carrito {
+		    width: 50%;
+		}
+		#lp-re{
+			margin: 15px 0 0 0;
+		}
+		#colum-re {
+		    max-width: 23%;
+		    margin-bottom: 15px;
+		}
+		#p-relacionados {
+			width: 45%;
+			margin-left: 20%;
+			padding: 7px 0;
+		
 		}
 	/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
 		#enlace-navbar{
