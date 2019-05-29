@@ -3,11 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Carrito</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="css/bootstrap2.min.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -16,8 +20,8 @@
 	<header>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display: flex; justify-content: space-between; ">
 			<!-- Brand/logo -->
-		  	<a class="navbar-brand" href="#" id="enlace-navbar">
-		    	<img src="img/logo-trujillo.png" alt="logo" id="logotipo-navbar">
+		  	<a class="navbar-brand" id="logo-menu-dp" href="#">
+		    	<img src="img/logo-trujillo.png" id="img-logo-dp" alt="logo">
 		  	</a>
 		  	<!-- Search -->
 		  	<form class="form-inline" action="/action_page.php">
@@ -27,41 +31,46 @@
 		    	</button>
 		  	</form>  
 		  	<!-- Links -->
-		  	<ul class="navbar-nav justify-content-end">
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="index.html">INICIO</a>
-		    	</li>
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="#">PROMOCIONES</a>
-		    	</li>
-		    	<li class="nav-item">
-		    		<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
-		    	</li>
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
-		    	</li>
-		    	<!-- Dropdown -->
-			    <li class="nav-item dropdown">
-			      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-			        	Nombre Usuario
-			      	</a>
-			      	<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">Mi perfil</a>
-				        <a class="dropdown-item" href="#">Mis direcciones</a>
-				        <hr>
-				        <a class="dropdown-item" href="#">Mis pedidos</a>
-				        <a class="dropdown-item" href="#">Configuración</a>
-				        <a class="dropdown-item" href="#">Ayuda</a>
-				        <a class="dropdown-item" href="#">Salir</a>
-			      	</div>
-			    </li>
-		  	</ul>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		  		<ul class="navbar-nav justify-content-end">
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="index.html">INICIO</a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#">PROMOCIONES</a>
+		    		</li>
+		    		<li class="nav-item">
+		    			<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
+		    		</li>
+		    		<!-- Dropdown -->
+			    	<li class="nav-item dropdown">
+			      		<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			      			Nombre Usuario
+			      		</a>
+			      		<div class="dropdown-menu">
+				        	<a class="dropdown-item" href="#">Mi perfil</a>
+				        	<a class="dropdown-item" href="#">Mis direcciones</a>
+				        	<hr>
+				        	<a class="dropdown-item" href="#">Mis pedidos</a>
+				        	<a class="dropdown-item" href="#">Configuración</a>
+				        	<a class="dropdown-item" href="#">Ayuda</a>
+				        	<a class="dropdown-item" href="#">Salir</a>
+			      		</div>
+			    	</li>
+		  		</ul>
+		  	</div>
 		</nav>
 	</header>
-	<div class="container-fluid" style="padding: 0 5px;">
+	<div class="container-fluid" id="cuerpo-cc">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-10" id="colum-peq-10" style="padding-right: 40px;">
+				<div class="col-sm-10" id="c-cc">
 					<h1 class="titulo-carrito">Carrito de compras</h1>
 					<hr>
 					<div class="row">
@@ -69,17 +78,17 @@
 						<div class="col-sm-12">
 							<div class="row">
 								<div class="col-sm-2" id="b_producto">
-									<img class="img-fluid" src="img/cafe-ruavieja.png" alt="" id="img-produc">
+									<img class="img-fluid" src="img/cafe-ruavieja.png" alt="" style="width: 30%;">
 								</div>
-								<div class="col-sm-4" id="produc-selec">
+								<div class="col-sm-3" id="produc-selec">
 									<h6><strong>Reposado Anisado Ron Viejo</strong></h6>
 									<div class="row" id="eliminar-guadar">
 										<div class="col-sm-4" id="link-eliminar"><a href="">Eliminar</a></div>
-										<div class="col-sm-7" id="link-guardar"><a href="">Guardar producto</a></div>
+										<div class="col-sm-8"><a href="">Guardar producto</a></div>
 									</div>
 								</div>
-								<div class="col-sm-4 justify-content-end" id="costo-produc-selec"><span>$ 22,10</span></div>
-								<div class="col-sm-2" id="bl-dism-inc">
+								<div class="col-sm-3 justify-content-end" id="costo-produc-selec"><span>$ 22,10</span></div>
+								<div class="col-sm-4" id="cont-dis-incre">
 									<div id="disminuir-incrementar">
 						            	<button id="btn-incre-dismi-carrito" onclick="myFunction()">+</button>
 								        <input type="number" id="myNumber" min="1" value="1">
@@ -134,148 +143,118 @@
 					  		</div>
 						</div>
 						<!-- =================================================================================================================== -->
-						<div class="col-sm-12" id="contenedor-der-carrito1">
-				    		<strong><p id="subtitulo-bd-carrito">Subtotal (1 producto): <span id="precio-subtotal"> $22,10</span></p></strong>
-				    		<hr>
-				    		<div class="row">
-								<div class="col-sm-12">
-									<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
-									<form class="formulario" action="">
-										<div class="radio1">
-									      <input type="radio" id="radio" name="example1" value="domicilio" checked>
-									      <label for="radio"><i class="fa fa-home"></i><span>A domicilio</span></label>
-									      <input type="radio" id="radio2" name="example1" value="recoger">
-									      <label for="radio2"><i class="fa fa-truck"></i><span>Para recoger</span></label>
-									    </div>
-									    <div class="radio2">
-									      <input type="radio" id="radio_1" name="example2" value="cprincipal" checked>
-									      <label for="radio_1"><span id="s1">Casa Principal</span><span id="s2">Cedros y Laureles seq.</span></label>
-									      <input type="radio" id="radio_2" name="example2" value="trabajo">
-									      <label for="radio_2"><span id="s1">Trabajo</span><span id="s2">Av. Don Bosco y Juan de Dios</span></label>
-									    </div>
-									    <label for="" id="btn-modal-nd" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker" style=""></i><span>Nueva dirección</span></label>
-									    <!-- The Modal -->
-										<div class="modal fade" id="myModal">
-											<div class="modal-dialog">
-												<div class="modal-content">
-													<!-- Modal Header -->
-													<div class="modal-header">
-														<img src="img/mapa.PNG" alt="" class="img-fluid" style="border: 1px solid #56F661">
-														<button type="button" class="close" data-dismiss="modal">&times;</button>
-													</div>
-													<!-- Modal body -->
-													<div class="modal-body" style="display: inline-block;">
-														<h5 style="font-weight: bold;">Información de la nueva dirección</h5>
-														<input type="text" name="info-dir" placeholder="Calle Principal" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-														<input type="text" name="info-dir" placeholder="Calle Secundaria" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-														<input type="text" name="info-dir" placeholder="Referencia" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-														<input type="text" name="info-dir" placeholder="# de casa" style="width: 100%;margin-bottom: 0px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-														<style type="text/css">
-															.modal-body input::placeholder {color: #DBD9D8;padding-left: 3px;}
-														</style>
-													</div>
-													<!-- Modal footer -->
-													<div class="modal-footer">
-														<button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
-														<button type="button" class="btn btn-success" data-dismiss="modal">Guardar dirección</button>
-													</div>
+					</div>	
+				</div>
+				<div class="col-sm-2">
+		    		<div id="cont-der-car">
+			    		<strong><p id="subtitulo-bd-carrito">Subtotal (1 producto): <span id="precio-subtotal"> $22,10</span></p></strong>
+			    		<hr>
+			    		<div class="row">
+							<div class="col-sm-12">
+								<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
+								<form class="formulario" action="">
+									<div class="radio1">
+								      <input type="radio" id="radio" name="example1" value="domicilio" checked>
+								      <label for="radio"><i class="fa fa-home"></i><span>A domicilio</span></label>
+								      <input type="radio" id="radio2" name="example1" value="recoger">
+								      <label for="radio2"><i class="fa fa-truck"></i><span>Para recoger</span></label>
+								    </div>
+								    <div class="radio2">
+								      <input type="radio" id="radio_1" name="example2" value="cprincipal" checked>
+								      <label for="radio_1"><span id="s1">Casa Principal</span><span id="s2">Cedros y Laureles seq.</span></label>
+								      <input type="radio" id="radio_2" name="example2" value="trabajo">
+								      <label for="radio_2"><span id="s1">Trabajo</span><span id="s2">Av. Don Bosco y Juan de Dios</span></label>
+								    </div>
+								    <label for="" id="btn-modal-nd" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker" style=""></i><span>Nueva dirección</span></label>
+								    <!-- The Modal -->
+									<div class="modal fade" id="myModal">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<!-- Modal Header -->
+												<div class="modal-header">
+													<div id="map" style="width:100%; height: 340px; border: 2px solid red;"></div>
+													<!--<img src="img/mapa.PNG" alt="" class="img-fluid" style="border: 1px solid #56F661">
+													<button type="button" class="close" data-dismiss="modal">&times;</button>-->
+												</div>
+												<!-- Modal body -->
+												<div class="modal-body" style="display: inline-block;">
+													<h5 style="font-weight: bold;">Información de la nueva dirección</h5>
+													<input type="text" name="info-dir" placeholder="Calle Principal" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+													<input type="text" name="info-dir" placeholder="Calle Secundaria" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+													<input type="text" name="info-dir" placeholder="Referencia" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+													<input type="text" name="info-dir" placeholder="# de casa" style="width: 100%;margin-bottom: 0px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
+													<style type="text/css">
+														.modal-body input::placeholder {color: #DBD9D8;padding-left: 3px;}
+													</style>
+												</div>
+												<!-- Modal footer -->
+												<div class="modal-footer">
+													<button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
+													<button type="button" class="btn btn-success" data-dismiss="modal">Guardar dirección</button>
 												</div>
 											</div>
 										</div>
-								    </form>
-								    <hr>
-								</div>
-								<div class="col-sm-12">
-									<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
-									<form class="formulario" action="">
-										<div class="radio1">
-									      <input type="radio" id="radio-1" name="example3" value="efectivo" checked>
-									      <label for="radio-1"><i class="fa fa-money"></i><span>Efectivo</span></label>
-									      <input type="radio" id="radio-2" name="example3" value="tarjeta">
-									      <label for="radio-2"><i class="fa fa-id-card"></i><span>Tarjeta de credito</span></label>
-									    </div>
-								    </form>
-									<p id="nota-pago-carrito">Recuerda que deberás cancelar a tu courier al momento de la entrega de tu pedido.</p>
-									<hr>
-								</div>
-								<div class="col-sm-12" id="bl-btn-pago-carrito">
-									<a href="#">
-										<buttom id="boton-pago-carrito">Proceder al pago</buttom>
-									</a>
-								</div>
-							</div>
-				    	</div>
-
-					</div>	
-				</div>
-				<div class="col-sm-2" id="contenedor-der-carrito">
-		    		<strong><p id="subtitulo-bd-carrito">Subtotal (1 producto): <span id="precio-subtotal"> $22,10</span></p></strong>
-		    		<hr>
-		    		<div class="row">
-						<div class="col-sm-12">
-							<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
-							<form class="formulario" action="">
-								<div class="radio1">
-							      <input type="radio" id="radio" name="example1" value="domicilio" checked>
-							      <label for="radio"><i class="fa fa-home"></i><span>A domicilio</span></label>
-							      <input type="radio" id="radio2" name="example1" value="recoger">
-							      <label for="radio2"><i class="fa fa-truck"></i><span>Para recoger</span></label>
-							    </div>
-							    <div class="radio2">
-							      <input type="radio" id="radio_1" name="example2" value="cprincipal" checked>
-							      <label for="radio_1"><span id="s1">Casa Principal</span><span id="s2">Cedros y Laureles seq.</span></label>
-							      <input type="radio" id="radio_2" name="example2" value="trabajo">
-							      <label for="radio_2"><span id="s1">Trabajo</span><span id="s2">Av. Don Bosco y Juan de Dios</span></label>
-							    </div>
-							    <label for="" id="btn-modal-nd" data-toggle="modal" data-target="#myModal"><i class="fa fa-map-marker" style=""></i><span>Nueva dirección</span></label>
-							    <!-- The Modal -->
-								<div class="modal fade" id="myModal">
-									<div class="modal-dialog">
-										<div class="modal-content">
-											<!-- Modal Header -->
-											<div class="modal-header">
-												<img src="img/mapa.PNG" alt="" class="img-fluid" style="border: 1px solid #56F661">
-												<button type="button" class="close" data-dismiss="modal">&times;</button>
-											</div>
-											<!-- Modal body -->
-											<div class="modal-body" style="display: inline-block;">
-												<h5 style="font-weight: bold;">Información de la nueva dirección</h5>
-												<input type="text" name="info-dir" placeholder="Calle Principal" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-												<input type="text" name="info-dir" placeholder="Calle Secundaria" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-												<input type="text" name="info-dir" placeholder="Referencia" style="width: 100%;margin-bottom: 7px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-												<input type="text" name="info-dir" placeholder="# de casa" style="width: 100%;margin-bottom: 0px;border-radius: 3px;border:1px solid #D5CECE;padding-left: 5px;">
-												<style type="text/css">
-													.modal-body input::placeholder {color: #DBD9D8;padding-left: 3px;}
-												</style>
-											</div>
-											<!-- Modal footer -->
-											<div class="modal-footer">
-												<button type="button" class="btn btn-success" data-dismiss="modal">Cancelar</button>
-												<button type="button" class="btn btn-success" data-dismiss="modal">Guardar dirección</button>
-											</div>
-										</div>
 									</div>
-								</div>
-						    </form>
-						    <hr>
-						</div>
-						<div class="col-sm-12">
-							<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
-							<form class="formulario" action="">
-								<div class="radio1">
-							      <input type="radio" id="radio-1" name="example3" value="efectivo" checked>
-							      <label for="radio-1"><i class="fa fa-money"></i><span>Efectivo</span></label>
-							      <input type="radio" id="radio-2" name="example3" value="tarjeta">
-							      <label for="radio-2"><i class="fa fa-id-card"></i><span>Tarjeta de credito</span></label>
-							    </div>
-						    </form>
-							<p id="nota-pago-carrito">Recuerda que deberás cancelar a tu courier al momento de la entrega de tu pedido.</p>
-							<hr>
-						</div>
-						<div class="col-sm-12" id="bl-btn-pago-carrito">
-							<a href="#">
-								<buttom id="boton-pago-carrito">Proceder al pago</buttom>
-							</a>
+
+									<script type="text/javascript">
+				                      var posicion_inicial = [0,0];
+				                        function getLocation(){
+				                          if (navigator.geolocation){
+				                            navigator.geolocation.getCurrentPosition(function(position){
+				                              posicion_inicial[0] = position.coords.longitude;
+				                              posicion_inicial[1] = position.coords.latitude;
+				                            });
+				                          }
+				                          else{
+				                            posicion_inicial = [-3.98662568999,-79.196838475852];
+				                          }
+				                        }
+				                      var options = {
+				                        center:[-3.98662568999,-79.196838475852],
+				                        zoom:17
+				                      };
+				                      var map = L.map('map',options);
+				                      L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {attribution:'OSM'})
+				                      .addTo(map);
+				                      var myMarker = L.marker([-3.98662568999,-79.196838475852], {title:"MyPoint", alt:"The Big I", draggable:true})
+				                      .addTo(map)
+				                      .on('dragend',function(){
+				                        var coord = String(myMarker.getLatLng()).split(',');
+				                        console.log(coord);
+				                        var lat = coord[0].split('(');
+				                        console.log(lat);
+				                        var lng = coord[1].split(')');
+				                        console.log(lng);
+				                        myMarker.bindPopup("Moved to:" + lat[1] + "," + lng[0] + ".");
+				                      });
+				                      
+				                      $('#myModal').on('show.bs.modal',function(){
+				                        setTimeout(function(){
+				                          map.invalidateSize();
+				                        },10);
+				                      });
+				                  </script>
+							    </form>
+							    <hr>
+							</div>
+							<div class="col-sm-12">
+								<strong><p id="subtitulo-bd-carrito">Forma de entrega:</p></strong>
+								<form class="formulario" action="">
+									<div class="radio1">
+								      <input type="radio" id="radio-1" name="example3" value="efectivo" checked>
+								      <label for="radio-1"><i class="fa fa-money"></i><span>Efectivo</span></label>
+								      <input type="radio" id="radio-2" name="example3" value="tarjeta">
+								      <label for="radio-2"><i class="fa fa-id-card"></i><span>Tarjeta de credito</span></label>
+								    </div>
+							    </form>
+								<p id="nota-pago-carrito">Recuerda que deberás cancelar a tu courier al momento de la entrega de tu pedido.</p>
+								<hr>
+							</div>
+							<div class="col-sm-12" id="bl-btn-pago-carrito">
+								<a href="#">
+									<buttom id="boton-pago-carrito">Proceder al pago</buttom>
+								</a>
+							</div>
 						</div>
 					</div>
 		    	</div>

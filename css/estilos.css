@@ -351,6 +351,41 @@
 /*--------------------------------------------------------------------------------------------------------------
 --------------------------------------------- estilos para producto --------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
+/*---------------------------- estilos para slider promociones bloque izquierdo ------------------------------*/	
+	.promociones_productos{
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		margin-top: 15px;
+	}
+	.promociones_productos img{
+		width: 30%;
+		height: 20%;
+		display: block;
+	}
+	.promociones_productos p{
+		position: absolute;
+		margin: 20px 0 0 67px;
+		font-size: 12px;
+	}
+	.promociones_productos span{
+		color: #00ba00;
+		margin-left: 15px;
+	}
+	#demo a{
+	  	float:right;
+	    margin-right: 20px;
+	    margin-top:5px;
+	}
+	span[class="carousel-control-prev-icon"],span[class="carousel-control-next-icon"]{
+		position:absolute;
+	    margin-top:-40px;
+	    color: #00ba00;
+	    font-size: 25px;
+	    background-image: none;
+	    font-weight: bold;
+	}
+
 
 /*------------------------------ estilos para menu izq. categoria (productos2) -------------------------------*/
 	.accordion {
@@ -603,6 +638,12 @@
 /*--------------------------------------------------------------------------------------------------------------
 --------------------------------------- estilos para carrito de la compra --------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
+	#cuerpo-cc{
+		padding: 0 34px;
+	}
+	#c-cc{
+		padding-right: 40px;
+	}
 	.titulo-carrito{
 		color: #00ba00;
 		margin-top: 30px;
@@ -639,6 +680,10 @@
 		color: #00ba00;
 		font-family: sans-serif;
 	}
+	#cont-dis-incre{
+		padding: 35px 0 0 60px;
+		vertical-align: middle;
+	}
 	#bl-dism-inc{
 		padding: 35px 0 0 20px;
 		vertical-align: middle;
@@ -674,19 +719,17 @@
 		padding-top: 20px;
 		padding-bottom: 16px;
 	}
-	#contenedor-der-carrito1{
-		display: none;
-	}
 
 /*------------------------------------ contenedor derecha de la página carrito -------------------------------*/
-	#contenedor-der-carrito{
-		padding-top: 15px;
-		height: fit-content;
-		overflow: hidden;
+	/*#contenedor-der-carrito{
+	}*/
+	#cont-der-car{
+		padding-top: 1rem;
+		padding-right: 1rem;
+		padding-left: 1rem;
 		border-radius: 5px;
 		margin-top: 10px;
-		border: 1px solid #d2d2d2;
-		margin-bottom: 10px;
+		border: 1px solid #d2d2d2;	
 	}
 	#subtitulo-bd-carrito{
 		font-size: 14px;
@@ -1011,6 +1054,9 @@
 			padding: 7px 0;
 		}
 	/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
+		#b_producto {
+		    margin-left: 19px;
+		}
 		.col-sm-10{
 			padding-right: 0 !important;
 			padding-left: 0 !important; 
@@ -1042,8 +1088,11 @@
 			font-size: 10px;
 	    	margin-bottom: 0;
 		}
+		#cont-der-car {
+		    margin-bottom: 1rem;
+		}
 		#boton-pago-carrito {
-		    padding: 8px 77px;
+		    padding: 8px 65px;
 		    margin-left: 0px;
 		    font-size: 12px;
 		}
@@ -1175,29 +1224,40 @@
 		    width: 97px;
 		    margin-left: -10px;
 		}
+		#cuerpo-cc {
+		    padding: 0;
+		}
+		#c-cc{
+		    padding-right: 7.5rem;
+		    padding-left: 0.5rem;
+		}
 		#b_producto {
-		    *padding: 10px 0;
 		    margin-left: 20px;
 		}
 		#img-produc {
 		    width: 40%;
 		}
 		#produc-selec {
-		    padding-top: 37px;
+		    padding-top: 10px;
 		    padding-left: 0;
 		    padding-right: 0;
-		    margin-left: 30px;
+		    margin-left: 25px;
+		    max-width: 33%;
 		}
 		#eliminar-guadar{
 			font-size: 11px;
+			width: 14.4rem;
 		}
 		#link-guardar{
 			padding-right: 0;
 			padding-left: 3px;
 		}
 		#costo-produc-selec {
-			margin-right: -40px;
-			margin-left: -40px;
+			margin-right: -9px;
+    		margin-left: -10px;
+		}
+		#cont-dis-incre{
+			padding: 35px 0 0 0;
 		}
 		#pr-carrito {
 		    max-width: 22%;
@@ -1206,14 +1266,14 @@
 	    	padding-left: 10px;
 		}
 		#img-pr-carrito {
-		    padding-left: 18px;
-		    padding-top: 13px;
-		    padding-bottom: 10px;
+		    padding-left: 1rem;
+		    padding-top: 1rem;
+		    padding-bottom: 0.6rem;
 		}
 		#img-descu {
 		    width: 25px;
 		    border-radius: 0 0 20px 20px;
-		    margin-right: -2px;
+		    margin-right: 15px;
 		}
 		#precio-pr {
 			font-size: 12px;
@@ -1223,10 +1283,17 @@
 		}
 		#bl-pr-carrito {
 		    margin: 20px 0 20px 0px;
-		    width: 500px;
+		    width: 37.9rem;
+		}
+		#cont-der-car {
+		    width: 14.5rem;
+    		margin-left: -7.5rem;
+		}
+		#boton-pago-carrito {
+		    padding: 5px 24px 5px 24px;
 		}
 	/*------------------------------ estilos bloque derecho -------------------------------*/
-		#contenedor-der-carrito{
+		/*#contenedor-der-carrito{
 			display: none;
 		}
 		#contenedor-der-carrito1{
@@ -1239,7 +1306,7 @@
 			margin-bottom: 10px;
 			display: block;
 			margin-left: 15px;
-		}
+		}*/
 	/*------------------------------ PANTALLA DE COMPRA FINAL -----------------------------*/
 		#cont-logo{
 			width: 12%;
