@@ -17,8 +17,8 @@
 	<header>
 		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display: flex; justify-content: space-between; ">
 			<!-- Brand/logo -->
-		  	<a class="navbar-brand" id="cont-logo" href="#">
-		    	<img id="logo" src="img/logo-trujillo.png" alt="logo" >
+		  	<a class="navbar-brand" id="logo-menu-dp" href="#">
+		    	<img src="img/logo-trujillo.png" id="img-logo-dp" alt="logo">
 		  	</a>
 		  	<!-- Search -->
 		  	<form class="form-inline" action="/action_page.php">
@@ -28,35 +28,40 @@
 		    	</button>
 		  	</form>  
 		  	<!-- Links -->
-		  	<ul class="navbar-nav justify-content-end">
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="index.html">INICIO</a>
-		    	</li>
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="#">PROMOCIONES</a>
-		    	</li>
-		    	<li class="nav-item">
-		    		<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
-		    	</li>
-		    	<li class="nav-item">
-		      		<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
-		    	</li>
-		    	<!-- Dropdown -->
-			    <li class="nav-item dropdown">
-			      	<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-			        	Nombre Usuario
-			      	</a>
-			      	<div class="dropdown-menu">
-				        <a class="dropdown-item" href="#">Mi perfil</a>
-				        <a class="dropdown-item" href="#">Mis direcciones</a>
-				        <hr>
-				        <a class="dropdown-item" href="#">Mis pedidos</a>
-				        <a class="dropdown-item" href="#">Configuración</a>
-				        <a class="dropdown-item" href="#">Ayuda</a>
-				        <a class="dropdown-item" href="#">Salir</a>
-			      	</div>
-			    </li>
-		  	</ul>
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		  		<ul class="navbar-nav justify-content-end">
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="index.html">INICIO</a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#">PROMOCIONES</a>
+		    		</li>
+		    		<li class="nav-item">
+		    			<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
+		    		</li>
+		    		<!-- Dropdown -->
+			    	<li class="nav-item dropdown">
+			      		<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			      			Nombre Usuario
+			      		</a>
+			      		<div class="dropdown-menu">
+				        	<a class="dropdown-item" href="#">Mi perfil</a>
+				        	<a class="dropdown-item" href="#">Mis direcciones</a>
+				        	<hr>
+				        	<a class="dropdown-item" href="#">Mis pedidos</a>
+				        	<a class="dropdown-item" href="#">Configuración</a>
+				        	<a class="dropdown-item" href="#">Ayuda</a>
+				        	<a class="dropdown-item" href="#">Salir</a>
+			      		</div>
+			    	</li>
+		  		</ul>
+		  	</div>
 		</nav>
 	</header>
 	<div class="container-fluid" style="padding: 0 34px;">
@@ -102,7 +107,7 @@
 					<span id="precio-pr">$ 15,50</span><p id="nom-pr">Ron Don Juan</p>
 				</div>
 				<div class="col-sm-3" id="pr-cf">
-					<img class="img-fluid" id="img-descu" src="img/descuento.png" alt="">
+					<img class="img-fluid" id="img-descu-cf" src="img/descuento.png" alt="">
 					<img class="img-fluid" id="img-pr-cf" src="img/cafe-ruavieja.png" alt="">
 					<span id="precio-pr">$ 22,10</span><p id="nom-pr">Reposado Anisado</p>
 				</div>
@@ -111,7 +116,7 @@
 					<span id="precio-pr">$ 15,50</span><p id="nom-pr">Ron Don Juan</p>
 				</div>
 				<div class="col-sm-3" id="pr-cf">
-					<img class="img-fluid" id="img-descu" src="img/descuento.png" alt="">
+					<img class="img-fluid" id="img-descu-cf" src="img/descuento.png" alt="">
 					<img class="img-fluid" id="img-pr-cf" src="img/cafe-ruavieja.png" alt="">
 					<span id="precio-pr">$ 22,10</span><p id="nom-pr">Reposado Anisado</p>
 				</div>
