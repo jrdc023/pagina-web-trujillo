@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/bootstrap2.min.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark" style="display: flex; justify-content: space-between; ">
+			<!-- Brand/logo -->
+		  	<a class="navbar-brand" id="logo-menu-dp" href="#">
+		    	<img src="img/logo-trujillo.png" id="img-logo-dp" alt="logo">
+		  	</a>
+		  	<!-- Search -->
+		  	<form class="form-inline" action="/action_page.php">
+		    	<input class="form-control mr-sm-2" type="text" placeholder="Search">
+		    	<button class="btn btn-success" type="submit">
+		    		<a href="index.html"><img src="img/icon-search.png" alt="logo" style="width:15px;"></a>
+		    	</button>
+		  	</form>  
+		  	<!-- Links -->
+		  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+		  		<ul class="navbar-nav justify-content-end">
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="index.html">INICIO</a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#">PROMOCIONES</a>
+		    		</li>
+		    		<li class="nav-item">
+		    			<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
+		    		</li>
+		    		<li class="nav-item">
+		      			<a class="nav-link" href="#"><i class="fa fa-user-circle" style="font-size: 20px;"></i></a>
+		    		</li>
+		    		<!-- Dropdown -->
+			    	<li class="nav-item dropdown">
+			      		<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+			      			Nombre Usuario
+			      		</a>
+			      		<div class="dropdown-menu">
+				        	<a class="dropdown-item" href="#">Mi perfil</a>
+				        	<a class="dropdown-item" href="#">Mis direcciones</a>
+				        	<hr>
+				        	<a class="dropdown-item" href="#">Mis pedidos</a>
+				        	<a class="dropdown-item" href="#">Configuración</a>
+				        	<a class="dropdown-item" href="#">Ayuda</a>
+				        	<a class="dropdown-item" href="#">Salir</a>
+			      		</div>
+			    	</li>
+		  		</ul>
+		  	</div>
+		</nav>
+	</header>
+	<div id="cuerpo-nd">
+		<div class="container">
+			<form action="" id="form-nd">
+				<div id="mapa-nd">
+					mapa
+				</div>
+				<input type="text" id="ct-123" placeholder="Calle Principal">
+				<input type="text" id="ct-123" placeholder="Calle Secundaria">
+				<input type="text" id="ct-123" placeholder="Referencia del Domicilio">
+				<input type="text" id="ct-4" placeholder="# de Casa">
+				<a href="#" id="b-cancel-guardar">Cancelar</a>
+				<a href="#" id="b-cancel-guardar">Guardar dirección</a>
+			</form>
+		</div>
+	</div>
+	<section class="informacion contenedor" id="informacion2">
+		<div class="container">
+			<div class="marca-logo">
+				<img class="img-fluid" src="img/logo-trujillo.png" alt="">		
+			</div>
+			<h5 id="h5_personal">Crisantemos y Anturios &nbsp; --- &nbsp; (07)210 4038-098 463 0519</h5>
+			<h5 id="h5_personal">info@goodapettit.com</h5>
+		</div>
+		<div id="redes_sociales_dp">
+			<h5 id="h5_personal">SIGUENOS EN:</h5>
+			<a href=""><img class="img-fluid" src="img/icon-facebook.png" alt=""></a>
+			<a href=""><img class="img-fluid" src="img/icon-twitter.png" alt=""></a>
+			<a href=""><img class="img-fluid" src="img/icon-instagram.png" alt=""></a>
+		</div>
+	</section>
+	<div class="footer">
+		<p id="pie">Copyright 2019 <img class="img-fluid" src="img/icon-copyright2.png" alt="" width="15px"> Trujillo Plaza Market. Todos los derechos reservados</p>
+	</div>
+</body>
+</html>
