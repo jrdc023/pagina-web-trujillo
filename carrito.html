@@ -43,6 +43,9 @@
 		      			<a class="nav-link" href="#">PROMOCIONES</a>
 		    		</li>
 		    		<li class="nav-item">
+			      		<a class="nav-link" href="#">SEGUIR COMPRANDO</a>
+			    	</li>
+		    		<li class="nav-item">
 		    			<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
 		    		</li>
 		    		<li class="nav-item">
@@ -51,12 +54,13 @@
 		    		<!-- Dropdown -->
 			    	<li class="nav-item dropdown">
 			      		<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-			      			Nombre Usuario
+			      			Usuario
 			      		</a>
-			      		<div class="dropdown-menu">
+			      		<div class="dropdown-menu" id="menudes-plegable">
 				        	<a class="dropdown-item" href="#">Mi perfil</a>
 				        	<a class="dropdown-item" href="#">Mis direcciones</a>
 				        	<hr>
+				        	<a class="dropdown-item" href="#">Mis listas</a>
 				        	<a class="dropdown-item" href="#">Mis pedidos</a>
 				        	<a class="dropdown-item" href="#">Configuración</a>
 				        	<a class="dropdown-item" href="#">Ayuda</a>
@@ -84,14 +88,13 @@
 									<h6><strong>Reposado Anisado Ron Viejo</strong></h6>
 									<div class="row" id="eliminar-guadar">
 										<div class="col-sm-4" id="link-eliminar"><a href="">Eliminar</a></div>
-										<div class="col-sm-8"><a href="">Guardar producto</a></div>
 									</div>
 								</div>
 								<div class="col-sm-3 justify-content-end" id="costo-produc-selec"><span>$ 22,10</span></div>
 								<div class="col-sm-4" id="cont-dis-incre">
 									<div id="disminuir-incrementar">
 						            	<button id="btn-incre-dismi-carrito" onclick="myFunction()">+</button>
-								        <input type="number" id="myNumber" min="1" value="1">
+								        <input type="number" id="myNumber" min="1" value="1" disabled>
 								        <button id="btn-incre-dismi-carrito" onclick="myFunction2()">-</button>
 									</div>
 									<script> //script para aumentar y decrementar cantidad de productos
@@ -253,6 +256,11 @@
 							<div class="col-sm-12" id="bl-btn-pago-carrito">
 								<a href="#">
 									<buttom id="boton-pago-carrito">Proceder al pago</buttom>
+								</a>
+							</div>
+							<div class="col-sm-12" id="bl-btn-guardar-carrito">
+								<a href="#">
+									<buttom id="boton-guardar-carrito">Guardar productos</buttom>
 								</a>
 							</div>
 						</div>
