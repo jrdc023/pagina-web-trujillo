@@ -1,6 +1,6 @@
-/*------------------------------------------------------------------------------------------------------------
-------------------------------------------- ESTILOS PARA EL INDEX --------------------------------------------
-------------------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------------------------
+------------------------------------ ESTILOS PARA EL INDEX ----------------------------------------------------
+-------------------------------------------------------------------------------------------------------------*/
 	@font-face {
 	  font-family: Helvetica;
 	  src: url('../fonts/poppins/HelveticaNeueLTStd Lt.otf'); 
@@ -146,7 +146,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
--------------------------------------------------- ESTILOS PARA LOGIN ------------------------------------------
+------------------------------------ ESTILOS PARA LOGIN --------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#titulo-is{
 		text-align: center;
@@ -282,7 +282,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
--------------------------------------------------- ESTILOS PARA REGISTRO ---------------------------------------
+------------------------------------ ESTILOS PARA REGISTRO -----------------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#titulo-registro{
 		text-align: center;
@@ -351,7 +351,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
---------------------------------------------- ESTILOS PARA PRODUCTO --------------------------------------------
+------------------------------------ ESTILOS PARA PRODUCTO -----------------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#bloque-izq-p{
 		border: 1px solid #babbba;
@@ -361,7 +361,7 @@
 	#menudes-plegable{
 		margin-left: -4rem;
 	}
-/*------------------------------------------- estilos para el rango ------------------------------------------*/
+/*---------------------------------- estilos para el rango ---------------------------------------------------*/
 	.range {
 	    width:100%;
 	    height:10px;
@@ -393,7 +393,7 @@
 	  margin-top:20px;
 	  width: 50px;
 	}
-/*---------------------------- estilos para slider promociones bloque izquierdo ------------------------------*/	
+/*---------------------------------- estilos para slider promociones bloque izquierdo ------------------------*/
 	.promociones_productos{
 		display: flex;
 		justify-content: left;
@@ -434,13 +434,12 @@
 	    background-image: none;
 	    font-weight: bold;
 	}
-/*--------------------------------- estilos para bloque derecho en productos ---------------------------------*/
+/*---------------------------------- estilos para bloque derecho en productos --------------------------------*/
 	.hero-image {
 		background-image:  url("../img/banner2.png");
-		height: 20%;
-		*background-position: center;
+		height: 17%;
 		background-repeat: no-repeat;
-		background-size: auto;
+		background-size: cover;
 		position: relative;
 		border-radius: 2rem;
 		
@@ -450,7 +449,7 @@
 		position: absolute;
 		top: 50%;
 		left: 70%;
-		transform: translate(-10%, -80%);
+		transform: translate(15%, -39%);
 		color: white;
 	}
 	.hero-button button {
@@ -535,7 +534,7 @@
 		width: 13%;
 		padding-top: 15px;
 	}
-/*------------------------------ estilos para menu izq. categoria (productos2) -------------------------------*/
+/*---------------------------------- estilos para menu izq. categoria (productos2) ---------------------------*/
 	.accordion {
 	 	background: none;
 		*background-color: #eee;
@@ -573,7 +572,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
---------------------------------------- ESTILOS PARA DETALLE DE PRODUCTO ---------------------------------------
+------------------------------------ ESTILOS PARA DETALLE DE PRODUCTO ------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#cuerpo{
 		width: 95%;
@@ -658,7 +657,7 @@
 	    margin-right: 10px;
 	    float: right;
 	}
-/*-------------------------------------- estilo para calificación por estrellas ------------------------------*/
+/*---------------------------------- estilo para calificación por estrellas ----------------------------------*/
 	#calificacion{
 		height: 35px;
 	}
@@ -703,7 +702,7 @@
 		color: #AFACAC;
 		margin-left: -3px;
 	}
-/*--------------------------------------------- disminuir-incrementar ----------------------------------------*/
+/*---------------------------------- disminuir-incrementar ---------------------------------------------------*/
 	#disminuir-incrementar{
 		width: 34%;
 	    display: flex;
@@ -734,7 +733,7 @@
 	    color: #fff;
 	    padding-bottom: 3px;
 	}
-/*------------------------------------- estilod para boton agregar al carrito --------------------------------*/
+/*---------------------------------- estilod para boton agregar al carrito -----------------------------------*/
 	#btn-agregar-carrito{
 		width: 25%;
 		height: 30px;
@@ -745,7 +744,7 @@
 		font-size: 12px;
 		color: #fff;
 	}
-/*------------------------------------- estilos para productos relacionados ----------------------------------*/
+/*---------------------------------- estilos para productos relacionados -------------------------------------*/
 	#p-relacionados{
 		width: 60px;
 		margin-left: 40%;
@@ -808,10 +807,18 @@
 		background: #4CAF50;
 		cursor: pointer;
 	}
-
+	/*.slider::-webkit-slider-thumb {
+	  -webkit-appearance: none;
+	  appearance: none;
+	  width: 23px;
+	  height: 24px;
+	  border: 0;
+	  background: url('img/circulo.png');
+	  cursor: pointer;
+	}*/
 
 /*--------------------------------------------------------------------------------------------------------------
---------------------------------------- ESTILOS PARA CARRITO DE LA COMPRA --------------------------------------
+------------------------------------ ESTILOS PARA CARRITO DE LA COMPRA -----------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#cuerpo-cc{
 		padding: 0 34px;
@@ -848,6 +855,11 @@
 		color: #E79E11;
 		font-size: 13px;
 	}
+	/*#link-eliminar{
+		border-right-style: solid;
+		border-right-color: gray;
+		border-right-width: thin;
+	}*/
 	#costo-produc-selec{
 		text-align: center;
 		padding: 40px 0;
@@ -895,7 +907,9 @@
 		padding-top: 20px;
 		padding-bottom: 16px;
 	}
-/*------------------------------------ contenedor derecha de la página carrito -------------------------------*/
+/*---------------------------------- contenedor derecha de la página carrito ---------------------------------*/
+	/*#contenedor-der-carrito{
+	}*/
 	#cont-der-car{
 		padding-top: 1rem;
 		padding-right: 1rem;
@@ -949,7 +963,7 @@
 	#bl-btn-guardar-carrito a:hover{
 		color: orange;
 	}
-/*------------------------------------ estilos forma de entrega  de carrito de compra -------------------------*/
+/*---------------------------------- estilos forma de entrega  de carrito de compra --------------------------*/
 	.formulario input[type="radio"]{
 		display: none;
 	}
@@ -1019,7 +1033,7 @@
 	.formulario .radio2 input[type="radio"]:checked + label #s2{
 		color: black;
 	}
-/*------------------------------------ estilos para la ventana modal de carrito de la compra-------------------*/
+/*---------------------------------- estilos para la ventana modal de carrito de la compra--------------------*/
 	#btn-modal-nd{
 		margin-top:5px;
 		cursor: pointer;
@@ -1036,7 +1050,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
-------------------------------------------- ESTILOS PARA COMPRA FINAL ------------------------------------------
+------------------------------------ ESTILOS PARA COMPRA FINAL -------------------------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	.titulo-compra{
 		color: #00ba00;
@@ -1111,7 +1125,7 @@
 
 
 /*--------------------------------------------------------------------------------------------------------------
--------------------------------------- ESTILOS PARA NUEVA VENTANA DIRECCIÓN NUEVA ------------------------------
+------------------------------------ ESTILOS PARA NUEVA VENTANA DIRECCIÓN NUEVA --------------------------------
 --------------------------------------------------------------------------------------------------------------*/
 	#cuerpo-nd{
 		width: 100%;
@@ -1162,632 +1176,634 @@
 
 
 /* --------------------------------------------------------------------------------------------------------------
-------------------------------------- PANTALLAS DE 360 DE ANCHO EN ADELANTE -------------------------------------
+------------------------------------ PANTALLAS DE 360 DE ANCHO EN ADELANTE --------------------------------------
 ---------------------------------------------------------------------------------------------------------------*/
-/*@media (max-width:575.98px)*/
-@media (width:360px) {
-	/*------------------------------ GENERAL ----------------------------------------------*/
-		.navbar-nav{
-			font-size: 9px;
+	/*@media (max-width:575.98px)*/
+	@media (width:360px) {
+		/*------------------------------ GENERAL ----------------------------------------------*/
+			.navbar-nav{
+				font-size: 9px;
+			}
+			#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
+				margin-top: 5%;
+			}
+			#h1_mb, #h1_2{
+				font-size: 16px;
+			}
+			#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
+				font-size: 10px;
+			}
+			#mensaje-bienvenida #parrafo2{
+				width: 70%;
+			}
+			#parrafo3, #parrafo4{
+				width: 60%;
+			}
+			#mensaje-descargalo{
+				padding-left: 15px;
+			}
+			#mensaje-descargalo img{
+				width: 85px;
+			}
+			#boton{
+				width: 35%;
+			    height: 20px;
+			    margin-top: 40px;
+			    margin-left: 65px;
+			    font-size: 8px;
+			}
+			#informacion .marca-logo img{
+				width: 45%;
+			}
+			#h5_personal{
+				font-size: 10px;
+			}
+			#redes_sociales{
+				margin-top: 15px;
+			}
+			#redes_sociales img{
+				width: 10%;
+			}
+			#pie{
+				font-size: 9px;
+			}
+			#pie img{
+				width: 3%;
+			}
+		/*------------------------------ PANTALLA DE INICIO SESION ----------------------------*/
+			#formulario{
+				width: 360px;
+				padding: 0px 10px;
+				margin: 88px 0px 0px 0px;
+			}
+			.contenedorInput input{
+				padding: 20px 0 5px 0;
+				font-size: 14px;
+			}
+		/*------------------------------ PANTALLA DE REGISTRO ---------------------------------*/
+			#registro{
+				width: 340px;
+				padding: 0px 10px;
+				margin: 42px 0px 0px 0px;
+			}
+			.contenedorInpuRegistro{
+				width: 270px;
+				margin-left: 27px;
+			}
+			#login{
+			    margin-left: 21px;
+			}
+		/*------------------------------ PANTALLA DE PRODUCTOS --------------------------------*/
+			#bloque-izq-p{
+				width: 25.5rem;
+			}
+			#p-nom-img{
+				margin-left: 8rem;
+			}
+			#l-nom-img{
+				margin-left: 4.5rem;
+			}
+			#col-sm-10-p{
+				width: 95%;
+			}
+			#banner-promo-p	{
+				width: 95%;
+				height: 10%;
+			}
+			#cont-fil-cat{
+				padding-top: 13px;
+				width: 52%;
+			}
+			.filtro-categoria{
+				width: 57%;
+			}
+			#cont-fil-cat2{
+				width: 42%;
+			}
+			.filtro-categoria2{
+				margin: -0.5rem 0 0 0.5rem;
+	    		width: 37%;
+			}
+			#cont-square-list{
+				width: 45%;
+			}
+			#filas-product {
+			    padding: 1rem 1rem 0.5rem 1rem;
+				width: 100%;
+			}
+			#tama-celda-p {
+			    max-width: 46%;
+			    margin-bottom: 1rem;
+			}
+			#img-cafe-ruivieja{
+				width: 20%;
+				padding-top: 15px;
+			}
+			#img-5825{
+				width: 28%;
+				padding-top: 15px;
+			}
+			#cont-nom-pre-p{
+				text-align:left;
+				font-size: 16px;
+				padding-left:15px;
+				width: 8.15rem;
+			}
+			#img-desc-p{
+				width: 3rem;
+				margin-left: 2rem;
+			}
+			#img-larg-p{
+				width: 13%;
+				padding-top: 15px;
+			}
+			.hero-image {
+			    background-image: url(../img/banner3.png);
+			    height: 6%;
+			    background-size: cover;
+			    margin-top: 1rem;
+			    border-radius: 1rem;
+			}
+			.hero-button {
+			    transform: translate(0%, -49%);
+			    left: 65%;
+			}
+			.hero-button button {
+				padding: 8px 0px;
+			    font-size: 11px;
+			}
+		/*------------------------------ PANTALLA DE DETALLE DE PRODUCTO ----------------------*/
+			#logo-menu-dp{
+			    width: 30%;
+			    margin-right: 0;
+			    margin-left: -4%;
+			}
+			#img-logo-dp{
+			    width: 100%;
+			}
+			#gerarquia-links-dp{
+				max-width: 80%;
+			}
+			#menu-slash {
+			    width: 63%;
+			    padding: 0;
+			}
+			#rs{
+				position: absolute;
+			    margin-left: 147px;
+	    		width: 50%;
+			}
+			#descuen {
+			    margin-left: 25px;
+	    		height: 55px;
+			}
+			#miniaturas {
+			    margin: 0 15px;
+			}
+			#cali-info-produc{
+				padding: 10px 0 0 0;
+			}
+			#agre-list, #favorito{
+				margin-left: 14px;
+			}
+			#inc-dec{
+				padding-right: 15px;
+	    		padding-left: 15px;
+			}
+			#btn-agregar-carrito {
+			    width: 50%;
+			}
+			#lp-re{
+				margin: 15px 0 0 0;
+			}
+			#colum-re {
+			    max-width: 46%;
+			    margin-bottom: 15px;
+			}
+			#p-relacionados {
+				width: 45%;
+				margin-left: 20%;
+				padding: 7px 0;
+			}
+		/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
+			#b_producto {
+			    margin-left: 19px;
+			}
+			.col-sm-10{
+				padding-right: 0 !important;
+				padding-left: 0 !important; 
+			}
+			#bl-pr-carrito {
+			    margin: 0 0 5px 20px;
+			}
+			#pr-carrito {
+			    max-width: 45%;
+			    height: 150px;
+			    margin-top: 10px;
+			}
+			#img-pr-carrito {
+			    height: 65%;
+			    padding-left: 24px;
+			    padding-bottom: 5px;
+			}
+			#img-descu-c {
+			    width: 30px;
+			    border-radius: 0 0 20px 20px;
+			    float: right;
+			    margin-right: 0;
+			}
+			#precio-pr {
+			    font-size: 12px;
+			    margin-top: 5px;
+			}
+			#nom-pr{
+				font-size: 10px;
+		    	margin-bottom: 0;
+			}
+			#cont-der-car {
+			    margin-bottom: 1rem;
+			    width: 21rem;
+			}
+			#boton-pago-carrito {
+			    padding: 8px 65px;
+			    margin-left: 0px;
+			    font-size: 12px;
+			}
+			#boton-guardar-carrito {
+			    padding: 8px 60px;
+			    margin-left: 0px;
+			    font-size: 12px;
+			}
+			#informacion2{
+				padding-bottom: 7.5%;
+			}
+		/*------------------------------ PANTALLA DE COMPRA FINAL -----------------------------*/
+			.form-control {
+			    width: 81% !important;
+			}
+			#bl-subtotal-cf{
+				margin-top: 20px;
+			}
+			#boton-pago-carrito-cf {
+			    padding: 7px 50px 7px 50px;
+			    margin-left: 15px;
+			}
+			#bl-ms-cf{
+				margin-top: 15px;
+			}
+			#bl-pr-cf {
+			    margin: 10px 0 20px -10px;
+			}
+			#pr-cf {
+			    max-width: 46%;
+			    height: 155px;
+			    padding-right: 15px;
+	    		padding-left: 15px;
+	    		margin-top: 10px;
+			}
+			#img-descu-cf{
+				width: 30px;
+				margin-right: 0;
+			}
+			#img-pr-cf {
+			    height: 70%;
+			    padding-left: 21px;
+			    padding-bottom: 5px;
+			}
+	}
+
+
+	@media (width:640px) {
+		/*------------------------------ GENERAL ----------------------------------------------*/
+			#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
+				margin-top: 7%;
+				max-width: 593px;
+			}
+			#h1_mb, #h1_2{
+				font-size: 18px;
+			}
+			#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
+				font-size: 12px;
+			}
+			#parrafo2, #parrafo3, #parrafo4{
+				width: 40%;
+			}
+			#mensaje-descargalo img{
+				width: 110px;
+			}
+			#boton{
+				width: 30%;
+			    height: 30px;
+			    margin-top: 53px;
+			    margin-left: 50px;
+			    font-size: 10px;
+			}
+		/*------------------------------ PANTALLAS DE INICIO SESION ---------------------------*/
+			#formulario{
+				margin: 40px 0px 0px 140px;
+			}
+			.contenedorInput input{
+				padding: 20px 0 5px 0;
+				font-size: 14px;
+			}
+		/*------------------------------ PANTALLA DE REGISTRO ---------------------------------*/
+			#registro{
+				margin: 42px 0px 0px 90px;
+			}
+		/*------------------------------ PANTALLA DE PRODUCTO ---------------------------------*/
+			#bloque-izq-p {
+			    padding: 10px 5px 0 3px;
+			    width: 10.2rem;
+			    margin-left: -1rem;
+			}
+			.accordion span{
+				*display: none;
+			}
+			#btn-filtrar {
+			    padding: 7px 40px 7px 40px;
+			    margin-left: 1.5px;
+			    font-size: 13px;
+			}
+			#demo a {
+			    margin-top: 25px;
+			}
+			.promociones_productos {
+			    margin-top: 5px;
+			}
+			#p-nom-img {
+			    margin: 25px 0 0 49px;
+			}
+			#l-nom-img {
+			    margin: 25px 10px 0 30px;
+			}
+			span[class="carousel-control-prev-icon"], span[class="carousel-control-next-icon"] {
+			    font-size: 20px;
+			    margin-top: -30px;
+			}
+			.filtro-categoria {
+			    width: 89%;
+			}
+			#cont-fil-cat2 {
+			    padding-top: 13px;
+			    width: 35%;
+			}
+			.filtro-categoria2 {
+			    margin: -0.5rem 0.5rem;
+			    width: 8rem;
+			}
+			#cont-square-list{
+				margin-left: -3rem;	
+			}
+			#tama-celda-p {
+			    max-width: 22%;
+			}
+			#img-5825 {
+			    width: 45%;
+			}
+			#cont-nom-pre-p {
+			    font-size: 12px;
+			    margin-left: -1.7rem;
+			    margin-top: 1rem;
+			}
+			#img-desc-p {
+			    width: 2rem;
+			    margin-left: 2.1rem;
+			}
+			#img-cafe-ruivieja {
+			    width: 33%;
+			}
+			#img-larg-p {
+			    width: 30%;
+			}
+			.range_inpt1, .range_inpt2 {
+			    width: 49px;
+			}
+			.hero-button {
+			    transform: translate(-5%, -47%);
+			}
+			.hero-button button {
+			    padding: 6px 10px;
+			    font-size: 11px;
+			}
+			.hero-image {
+			    background-image: url(../img/banner3.png);
+			    height: 10%;
+			    background-size: cover;
+			    border-radius: 1rem;
+			}
+		/*------------------------------ PANTALLA DE DETALLE DE PRODUCTO ----------------------*/
+			.form-inline {
+				width: 18%;
+			}
+			.form-control {
+				width: 60% !important;
+			}
+			#logo-menu-dp{
+			    width: 15%;
+			    margin-right: 0;
+			    margin-left: -1%;
+			}
+			#img-logo-dp{
+			    width: 100%;
+			}
+			#menu-slash {
+			    background: none;
+			    width: 63%;
+			    padding: 0;
+			}
+			#descuen {
+			    margin-left: 0;
+	    		height: 40px;
+	    		margin-right: 0;
+			}
+			#miniaturas {
+			    margin: 0 -15px;
+			}
+			#cali-info-produc{
+				padding: 10px 0 0 10px;
+			}
+			#agre-list, #favorito{
+				margin-left: 14px;
+			}
+			#inc-dec{
+				padding-right: 15px;
+	    		padding-left: 15px;
+			}
+			#btn-agregar-carrito {
+			    width: 50%;
+			}
+			#lp-re{
+				margin: 15px 0 0 0;
+			}
+			#colum-re {
+			    max-width: 23%;
+			    margin-bottom: 15px;
+			}
+			#p-relacionados {
+				width: 45%;
+				margin-left: 20%;
+				padding: 7px 0;
+			}
+			#img-descu-dp {
+			    width: 30px;
+			    margin-right: 0;
+			}
+		/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
+			#enlace-navbar{
+				margin-right: 0;
+			}
+			#logotipo-navbar {
+			    width: 97px;
+			    margin-left: -10px;
+			}
+			#cuerpo-cc {
+			    padding: 0;
+			}
+			#c-cc{
+			    padding-right: 7.5rem;
+			    padding-left: 0.5rem;
+			}
+			#b_producto {
+			    margin-left: 20px;
+			}
+			#img-produc {
+			    width: 40%;
+			}
+			#produc-selec {
+			    padding-top: 10px;
+			    padding-left: 0;
+			    padding-right: 0;
+			    margin-left: 25px;
+			    max-width: 33%;
+			}
+			#eliminar-guadar{
+				font-size: 11px;
+				width: 14.4rem;
+			}
+			#link-guardar{
+				padding-right: 0;
+				padding-left: 3px;
+			}
+			#costo-produc-selec {
+				margin-right: -9px;
+	    		margin-left: -10px;
+			}
+			#cont-dis-incre{
+				padding: 35px 0 0 0;
+			}
+			#pr-carrito {
+			    max-width: 22%;
+			    height: 150px;
+			    padding-right: 0px;
+		    	padding-left: 10px;
+			}
+			#img-pr-carrito{
+			    padding-left: 1rem;
+			    padding-top: 1rem;
+			    padding-bottom: 0.6rem;
+			}
+			#img-descu-c{
+			    width: 25px;
+			    border-radius: 0 0 20px 20px;
+			    margin-right: 15px;
+			}
+			#precio-pr{
+				font-size: 12px;
+			}
+			#nom-pr{
+			    font-size: 10px;
+			}
+			#bl-pr-carrito{
+			    margin: 20px 0 20px 0px;
+			    width: 37.9rem;
+			}
+			#cont-der-car{
+			    width: 14.5rem;
+	    		margin-left: -7.5rem;
+			}
+			#boton-pago-carrito{
+			    padding: 5px 24px 5px 24px;
+			}
+		/*------------------------------ PANTALLA DE COMPRA FINAL -----------------------------*/
+			#cont-logo{
+				width: 12%;
+			}
+			#logo{
+				width: 100%;
+			}
+			#bldr-subtotal-cf {
+			    width: 168px;
+			    margin-left: -50px;
+			}
+			#bl-ms-cf{
+				margin-top: 15px;
+			}
+			#bl-info-cf{
+				width: 313px;
+		    	margin-top: -90px;
+			}
+			#bl-pr-cf {
+			    margin: 10px 0 20px -10px;
+			}
+			#pr-cf {
+			    height: 155px;
+			}
+			#img-descu-cf{
+				width: 30px;
+				margin-right: 0;
+			}
+			#img-pr-cf {
+			    height: 70%;
+			    padding-left: 21px;
+			    padding-bottom: 5px;
+			}
+			#redes_sociales_dp {
+			    padding-bottom: 10px;
+			}
+	}
+
+	@media (max-width:640px) {
+		/*.col-sm-10{
+			position: relative;
+			width: 100%;	
 		}
-		#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
-			margin-top: 5%;
-		}
-		#h1_mb, #h1_2{
-			font-size: 16px;
-		}
-		#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
-			font-size: 10px;
-		}
-		#mensaje-bienvenida #parrafo2{
-			width: 70%;
-		}
-		#parrafo3, #parrafo4{
-			width: 60%;
-		}
-		#mensaje-descargalo{
-			padding-left: 15px;
-		}
-		#mensaje-descargalo img{
-			width: 85px;
-		}
-		#boton{
-			width: 35%;
-		    height: 20px;
-		    margin-top: 40px;
-		    margin-left: 65px;
-		    font-size: 8px;
-		}
-		#informacion .marca-logo img{
-			width: 45%;
-		}
-		#h5_personal{
-			font-size: 10px;
-		}
-		#redes_sociales{
-			margin-top: 15px;
-		}
-		#redes_sociales img{
-			width: 10%;
-		}
-		#pie{
-			font-size: 9px;
-		}
-		#pie img{
-			width: 3%;
-		}
-	/*------------------------------ PANTALLA DE INICIO SESION ----------------------------*/
-		#formulario{
-			width: 360px;
-			padding: 0px 10px;
-			margin: 88px 0px 0px 0px;
-		}
-		.contenedorInput input{
-			padding: 20px 0 5px 0;
-			font-size: 14px;
-		}
-	/*------------------------------ PANTALLA DE REGISTRO ---------------------------------*/
-		#registro{
-			width: 340px;
-			padding: 0px 10px;
-			margin: 42px 0px 0px 0px;
-		}
-		.contenedorInpuRegistro{
-			width: 270px;
-			margin-left: 27px;
-		}
-		#login{
-		    margin-left: 21px;
-		}
-	/*------------------------------ PANTALLA DE PRODUCTOS --------------------------------*/
-		#bloque-izq-p{
-			width: 25.5rem;
-		}
-		#p-nom-img{
-			margin-left: 8rem;
-		}
-		#l-nom-img{
-			margin-left: 4.5rem;
-		}
-		#col-sm-10-p{
-			width: 95%;
-		}
-		#banner-promo-p	{
-			width: 95%;
-			height: 10%;
-		}
-		#cont-fil-cat{
-			padding-top: 13px;
-			width: 52%;
-		}
-		.filtro-categoria{
-			width: 57%;
-		}
-		#cont-fil-cat2{
-			width: 42%;
-		}
-		.filtro-categoria2{
-			margin: -0.5rem 0 0 0.5rem;
-    		width: 37%;
-		}
-		#cont-square-list{
-			width: 45%;
-		}
-		#filas-product {
-		    padding: 1rem 1rem 0.5rem 1rem;
+		.col-sm-2{
+			position: relative;
 			width: 100%;
+		}*/
+		/*div .col-sm-2 #contenedor-der-carrito{
+			position: relative !important;
+			width: 100% !important;	
+		}*/
+	}
+	/*@media (max-width:767.98px) {
 		}
-		#tama-celda-p {
-		    max-width: 46%;
-		    margin-bottom: 1rem;
+	@media (min-width:768px) {
 		}
-		#img-cafe-ruivieja{
-			width: 20%;
-			padding-top: 15px;
+	@media (max-width:991.98px) {
 		}
-		#img-5825{
-			width: 28%;
-			padding-top: 15px;
+	@media (min-width:992px) {
 		}
-		#cont-nom-pre-p{
-			text-align:left;
-			font-size: 16px;
-			padding-left:15px;
+	@media (max-width:1199.98px) {
 		}
-		#img-desc-p{
-			width: 3rem;
-			margin-left: 2rem;
+	@media (min-width:1200px) {
+		.contenedor-menu img {
+		    padding-left: 8%;
 		}
-		#img-larg-p{
-			width: 13%;
-			padding-top: 15px;
+		#menu #enlaces a{
+			margin-right: 5px;
 		}
-		.hero-image {
-		    background-image: url(../img/banner3.png);
-		    height: 6%;
-		    background-size: cover;
-		    margin-top: 1rem;
-		    border-radius: 1rem;
-		}
-		.hero-button {
-		    transform: translate(0%, -49%);
-		    left: 65%;
-		}
-		.hero-button button {
-			padding: 8px 0px;
-		    font-size: 11px;
-		}
-	/*------------------------------ PANTALLA DE DETALLE DE PRODUCTO ----------------------*/
-		#logo-menu-dp{
-		    width: 30%;
-		    margin-right: 0;
-		    margin-left: -4%;
-		}
-		#img-logo-dp{
-		    width: 100%;
-		}
-		#gerarquia-links-dp{
-			max-width: 80%;
-		}
-		#menu-slash {
-		    width: 63%;
-		    padding: 0;
-		}
-		#rs{
-			position: absolute;
-		    margin-left: 147px;
-    		width: 50%;
-		}
-		#descuen {
-		    margin-left: 25px;
-    		height: 55px;
-		}
-		#miniaturas {
-		    margin: 0 15px;
-		}
-		#cali-info-produc{
-			padding: 10px 0 0 0;
-		}
-		#agre-list, #favorito{
-			margin-left: 14px;
-		}
-		#inc-dec{
-			padding-right: 15px;
-    		padding-left: 15px;
-		}
-		#btn-agregar-carrito {
-		    width: 50%;
-		}
-		#lp-re{
-			margin: 15px 0 0 0;
-		}
-		#colum-re {
-		    max-width: 46%;
-		    margin-bottom: 15px;
-		}
-		#p-relacionados {
-			width: 45%;
-			margin-left: 20%;
-			padding: 7px 0;
-		}
-	/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
-		#b_producto {
-		    margin-left: 19px;
-		}
-		.col-sm-10{
-			padding-right: 0 !important;
-			padding-left: 0 !important; 
-		}
-		#bl-pr-carrito {
-		    margin: 0 0 5px 20px;
-		}
-		#pr-carrito {
-		    max-width: 45%;
-		    height: 150px;
-		    margin-top: 10px;
-		}
-		#img-pr-carrito {
-		    height: 65%;
-		    padding-left: 24px;
-		    padding-bottom: 5px;
-		}
-		#img-descu-c {
-		    width: 30px;
-		    border-radius: 0 0 20px 20px;
-		    float: right;
-		    margin-right: 0;
-		}
-		#precio-pr {
-		    font-size: 12px;
-		    margin-top: 5px;
-		}
-		#nom-pr{
-			font-size: 10px;
-	    	margin-bottom: 0;
-		}
-		#cont-der-car {
-		    margin-bottom: 1rem;
-		    width: 21rem;
-		}
-		#boton-pago-carrito {
-		    padding: 8px 65px;
-		    margin-left: 0px;
-		    font-size: 12px;
-		}
-		#boton-guardar-carrito {
-		    padding: 8px 60px;
-		    margin-left: 0px;
-		    font-size: 12px;
-		}
-		#informacion2{
-			padding-bottom: 7.5%;
-		}
-	/*------------------------------ PANTALLA DE COMPRA FINAL -----------------------------*/
-		.form-control {
-		    width: 81% !important;
-		}
-		#bl-subtotal-cf{
-			margin-top: 20px;
-		}
-		#boton-pago-carrito-cf {
-		    padding: 7px 50px 7px 50px;
-		    margin-left: 15px;
-		}
-		#bl-ms-cf{
-			margin-top: 15px;
-		}
-		#bl-pr-cf {
-		    margin: 10px 0 20px -10px;
-		}
-		#pr-cf {
-		    max-width: 46%;
-		    height: 155px;
+		#mensaje-bienvenida{
+			margin-left: 48%;
+		    margin-top: 10%;
 		    padding-right: 15px;
-    		padding-left: 15px;
-    		margin-top: 10px;
-		}
-		#img-descu-cf{
-			width: 30px;
-			margin-right: 0;
-		}
-		#img-pr-cf {
-		    height: 70%;
-		    padding-left: 21px;
-		    padding-bottom: 5px;
-		}	
-}
-
-
-@media (width:640px) {
-	/*------------------------------ GENERAL ----------------------------------------------*/
-		#mensaje-bienvenida, #mensaje-descargalo, #mensaje-registro{
-			margin-top: 7%;
-			max-width: 593px;
-		}
-		#h1_mb, #h1_2{
-			font-size: 18px;
-		}
-		#parrafo, #parrafo2, #parrafo3, #mensaje-registro #parrafo4{
-			font-size: 12px;
-		}
-		#parrafo2, #parrafo3, #parrafo4{
-			width: 40%;
-		}
-		#mensaje-descargalo img{
-			width: 110px;
-		}
-		#boton{
-			width: 30%;
-		    height: 30px;
-		    margin-top: 53px;
-		    margin-left: 50px;
 		    font-size: 10px;
 		}
-	/*------------------------------ PANTALLAS DE INICIO SESION ---------------------------*/
-		#formulario{
-			margin: 40px 0px 0px 140px;
-		}
-		.contenedorInput input{
-			padding: 20px 0 5px 0;
-			font-size: 14px;
-		}
-	/*------------------------------ PANTALLA DE REGISTRO ---------------------------------*/
-		#registro{
-			margin: 42px 0px 0px 90px;
-		}
-	/*------------------------------ PANTALLA DE PRODUCTO ---------------------------------*/
-		#bloque-izq-p {
-		    padding: 10px 5px 0 3px;
-		    width: 10.2rem;
-		    margin-left: -1rem;
-		}
-		.accordion span{
-			*display: none;
-		}
-		#btn-filtrar {
-		    padding: 7px 40px 7px 40px;
-		    margin-left: 1.5px;
-		    font-size: 13px;
-		}
-		#demo a {
-		    margin-top: 25px;
-		}
-		.promociones_productos {
-		    margin-top: 5px;
-		}
-		#p-nom-img {
-		    margin: 25px 0 0 49px;
-		}
-		#l-nom-img {
-		    margin: 25px 10px 0 30px;
-		}
-		span[class="carousel-control-prev-icon"], span[class="carousel-control-next-icon"] {
-		    font-size: 20px;
-		    margin-top: -30px;
-		}
-		.filtro-categoria {
-		    width: 89%;
-		}
-		#cont-fil-cat2 {
-		    padding-top: 13px;
-		    width: 35%;
-		}
-		.filtro-categoria2 {
-		    margin: -0.5rem 0.5rem;
-		    width: 8rem;
-		}
-		#cont-square-list{
-			margin-left: -3rem;	
-		}
-		#tama-celda-p {
-		    max-width: 22%;
-		}
-		#img-5825 {
-		    width: 45%;
-		}
-		#cont-nom-pre-p {
-		    font-size: 12px;
-		    margin-left: -1.7rem;
-		    margin-top: 1rem;
-		}
-		#img-desc-p {
-		    width: 2rem;
-		    margin-left: 2.1rem;
-		}
-		#img-cafe-ruivieja {
-		    width: 33%;
-		}
-		#img-larg-p {
-		    width: 30%;
-		}
-		.range_inpt1, .range_inpt2 {
-		    width: 49px;
-		}
-		.hero-button {
-		    transform: translate(-5%, -47%);
-		}
-		.hero-button button {
-		    padding: 6px 10px;
-		    font-size: 11px;
-		}
-		.hero-image {
-		    background-image: url(../img/banner3.png);
-		    height: 10%;
-		    background-size: cover;
-		    border-radius: 1rem;
-		}
-	/*------------------------------ PANTALLA DE DETALLE DE PRODUCTO ----------------------*/
-		.form-inline {
-			width: 18%;
-		}
-		.form-control {
-			width: 60% !important;
-		}
-		#logo-menu-dp{
-		    width: 15%;
-		    margin-right: 0;
-		    margin-left: -1%;
-		}
-		#img-logo-dp{
-		    width: 100%;
-		}
-		#menu-slash {
-		    background: none;
-		    width: 63%;
-		    padding: 0;
-		}
-		#descuen {
-		    margin-left: 0;
-    		height: 40px;
-    		margin-right: 0;
-		}
-		#miniaturas {
-		    margin: 0 -15px;
-		}
-		#cali-info-produc{
-			padding: 10px 0 0 10px;
-		}
-		#agre-list, #favorito{
-			margin-left: 14px;
-		}
-		#inc-dec{
-			padding-right: 15px;
-    		padding-left: 15px;
-		}
-		#btn-agregar-carrito {
-		    width: 50%;
-		}
-		#lp-re{
-			margin: 15px 0 0 0;
-		}
-		#colum-re {
-		    max-width: 23%;
-		    margin-bottom: 15px;
-		}
-		#p-relacionados {
-			width: 45%;
-			margin-left: 20%;
-			padding: 7px 0;
-		}
-		#img-descu-dp {
-		    width: 30px;
-		    margin-right: 0;
-		}
-	/*------------------------------ PANTALLA DE CARRITO ----------------------------------*/
-		#enlace-navbar{
-			margin-right: 0;
-		}
-		#logotipo-navbar {
-		    width: 97px;
-		    margin-left: -10px;
-		}
-		#cuerpo-cc {
-		    padding: 0;
-		}
-		#c-cc{
-		    padding-right: 7.5rem;
-		    padding-left: 0.5rem;
-		}
-		#b_producto {
-		    margin-left: 20px;
-		}
-		#img-produc {
-		    width: 40%;
-		}
-		#produc-selec {
-		    padding-top: 10px;
-		    padding-left: 0;
-		    padding-right: 0;
-		    margin-left: 25px;
-		    max-width: 33%;
-		}
-		#eliminar-guadar{
-			font-size: 11px;
-			width: 14.4rem;
-		}
-		#link-guardar{
-			padding-right: 0;
-			padding-left: 3px;
-		}
-		#costo-produc-selec {
-			margin-right: -9px;
-    		margin-left: -10px;
-		}
-		#cont-dis-incre{
-			padding: 35px 0 0 0;
-		}
-		#pr-carrito {
-		    max-width: 22%;
-		    height: 150px;
-		    padding-right: 0px;
-	    	padding-left: 10px;
-		}
-		#img-pr-carrito{
-		    padding-left: 1rem;
-		    padding-top: 1rem;
-		    padding-bottom: 0.6rem;
-		}
-		#img-descu-c{
-		    width: 25px;
-		    border-radius: 0 0 20px 20px;
-		    margin-right: 15px;
-		}
-		#precio-pr{
-			font-size: 12px;
-		}
-		#nom-pr{
-		    font-size: 10px;
-		}
-		#bl-pr-carrito{
-		    margin: 20px 0 20px 0px;
-		    width: 37.9rem;
-		}
-		#cont-der-car{
-		    width: 14.5rem;
-    		margin-left: -7.5rem;
-		}
-		#boton-pago-carrito{
-		    padding: 5px 24px 5px 24px;
-		}
-	/*------------------------------ PANTALLA DE COMPRA FINAL -----------------------------*/
-		#cont-logo{
-			width: 12%;
-		}
-		#logo{
-			width: 100%;
-		}
-		#bldr-subtotal-cf {
-		    width: 168px;
-		    margin-left: -50px;
-		}
-		#bl-ms-cf{
-			margin-top: 15px;
-		}
-		#bl-info-cf{
-			width: 313px;
-	    	margin-top: -90px;
-		}
-		#bl-pr-cf {
-		    margin: 10px 0 20px -10px;
-		}
-		#pr-cf {
-		    height: 155px;
-		}
-		#img-descu-cf{
-			width: 30px;
-			margin-right: 0;
-		}
-		#img-pr-cf {
-		    height: 70%;
-		    padding-left: 21px;
-		    padding-bottom: 5px;
-		}
-		#redes_sociales_dp {
-		    padding-bottom: 10px;
-		}
-}
+		.content-descarga-fondo{
+			*width: 100%;
+			height: 100%;
+			margin: auto;
+			overflow: hidden;
+		}
+	}*/
 
-@media (max-width:640px) {
-	/*.col-sm-10{
-		position: relative;
-		width: 100%;	
-	}
-	.col-sm-2{
-		position: relative;
-		width: 100%;
-	}*/
-	/*div .col-sm-2 #contenedor-der-carrito{
-		position: relative !important;
-		width: 100% !important;	
-	}*/
-}
-/*@media (max-width:767.98px) {
-	}
-@media (min-width:768px) {
-	}
-@media (max-width:991.98px) {
-	}
-@media (min-width:992px) {
-	}
-@media (max-width:1199.98px) {
-	}
-@media (min-width:1200px) {
-	.contenedor-menu img {
-	    padding-left: 8%;
-	}
-	#menu #enlaces a{
-		margin-right: 5px;
-	}
-	#mensaje-bienvenida{
-		margin-left: 48%;
-	    margin-top: 10%;
-	    padding-right: 15px;
-	    font-size: 10px;
-	}
-	.content-descarga-fondo{
-		*width: 100%;
-		height: 100%;
-		margin: auto;
-		overflow: hidden;
-	}
-}*/
