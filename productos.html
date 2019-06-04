@@ -40,6 +40,9 @@
 			      		<a class="nav-link" href="#">PROMOCIONES</a>
 			    	</li>
 			    	<li class="nav-item">
+			      		<a class="nav-link" href="#">SEGUIR COMPRANDO</a>
+			    	</li>
+			    	<li class="nav-item">
 			    		<a class="nav-link" href="carrito.html"><i class="fa fa-shopping-cart" style="font-size: 20px;"></i></a>
 			    	</li>
 			    	<li class="nav-item">
@@ -163,7 +166,11 @@
 					<hr>
 					<div class="col-sm-12" style="padding: 0 0 15px 0;">
 						<h4>Precio</h4>
-						<div style="margin-bottom: 57px;">
+						<div style="margin-bottom: 57px;"> <!--padding: 35%;margin-bottom: 1.5rem;">-->
+							<!--<div class="slidecontainer">
+								<input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+								<p style="color: black;">Value: <span id="demo2"></span></p>
+							</div>-->
 							<div id='cont-slider' class="range">
 								<div id='space-btw-rango' class='range__between'></div>
 								<button id='boton-izq-rango' class="range__button_1"></button>
@@ -171,6 +178,15 @@
 								<input id='valor-r1-izq' class='range_inpt1' type='number' min='10' max='100'> &nbsp;&nbsp; <input id='valor-r2-der' class='range_inpt2' type='number' min='10' max='100'>
 							</div>
 
+							<!--<script>
+								var slider = document.getElementById("myRange");
+								var output = document.getElementById("demo2");
+								output.innerHTML = slider.value;
+
+								slider.oninput = function() {
+									output.innerHTML = this.value;
+								}
+							</script>-->
 							<script type="text/javascript">
 								setTimeout(init2slider('cont-slider', 'space-btw-rango', 'boton-izq-rango', 'boton-der-rango', 'valor-r1-izq', 'valor-r2-der'), 0);
 								function init2slider(ids, idsbr, idbir, idbdr, idvri, idvrd) {
@@ -395,6 +411,7 @@
 							<!-- The slideshow -->
 							<div class="carousel-inner">
 								<div class="carousel-item active">
+							  		<!--<img src="la.jpg" alt="Los Angeles" width="1100" height="500">-->
 							  		<div class="promociones_productos">
 										<img src="img/IMG_5825.png" id="img-ron-slider-promo" alt="" >
 										<span><strong>$ 15.50</strong></span>
@@ -407,6 +424,7 @@
 									</div>
 								</div>
 								<div class="carousel-item">
+							  		<!--<img src="chicago.jpg" alt="Chicago" width="1100" height="500">-->
 									<div class="promociones_productos">
 										<img src="img/vinoBlanco.png" alt="" id="botel-large-slider-promo">
 										<span><strong>$ 15.50</strong></span>
@@ -419,6 +437,7 @@
 									</div>
 								</div>
 								<div class="carousel-item">
+							  		<!--<img src="ny.jpg" alt="New York" width="1100" height="500">-->
 									<div class="promociones_productos">
 										<img src="img/licor-blue-curacao-moya.png" alt="" id="botel-large-slider-promo">
 										<span><strong>$ 15.50</strong></span>
@@ -441,6 +460,7 @@
 						<button>Revisa nuestros descuento</button>
 					</div>
 				</div>
+				<!--<img id="banner-promo-p" src="img/banner.png" alt="">-->
 				<div class="col-sm-12">
 					<div class="row" style="justify-content: space-between;">
 						<div id="cont-fil-cat">
