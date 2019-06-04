@@ -441,8 +441,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		position: relative;
-		border-radius: 2rem;
-		
+		border-radius: 2rem;	
 	}
 	.hero-button {
 		text-align: center;
@@ -459,7 +458,6 @@
 		padding: 10px 25px;
 		color: #fff;
 		font-weight: bold;
-		*border: 2px solid #00ba00;
 		background: #00ba00;
 		text-align: center;
 		cursor: pointer;
@@ -510,6 +508,7 @@
 		max-width: 23%;
 		margin-right: 1rem;
 		cursor: pointer;
+		margin-top: 1rem;
 	}
 	#img-cafe-ruivieja{
 		width: 20%;
